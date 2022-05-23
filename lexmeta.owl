@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lexmeta="http://w3id.org/meta-share/lexmeta/"
+     xml:base="http://w3id.org/meta-share/lexmeta/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ms="http://w3id.org/meta-share/meta-share/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrc="http://swrc.ontoware.org/ontology#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://w3id.org/meta-share/lexmeta/">
+        <owl:versionIRI rdf:resource="http://w3id.org/meta-share/lexmeta/0.0.1"/>
+        <dc:description xml:lang="en">LexMeta ontology for the description of lexica and dictionaries. Extends the MS and LexBib ontologies</dc:description>
+        <dc:title xml:lang="en">LexMeta ontology</dc:title>
+        <dct:creator>Christiane Klaes</dct:creator>
+        <dct:creator>David Lindemann</dct:creator>
+        <dct:creator>Penny Labropoulou</dct:creator>
+        <dct:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix>lexmeta</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/lexmeta/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/dictionaryAccessType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryAccessType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Classifies the dictionary based on the approach (onomasiological vs. semasiological) adopted for the organization of the lexical entries</rdfs:comment>
+        <rdfs:label xml:lang="en">dictionary access type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/dictionaryFunctionType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryFunctionType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Classifies the dictionary in terms of its intended function (e.g., text translation, vocabulary learning) according to the Theory of Lexicographical Functions</rdfs:comment>
+        <rdfs:label xml:lang="en">ditionary function type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/dictionaryScopeType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryScopeType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Classifies the dictionary in terms of its contents and intended use, based mainly on the classification proposed by Engelberg &amp; Storrer (Typologie von Internetwörterbüchern und -portalen, 2016)</rdfs:comment>
+        <rdfs:label xml:lang="en">dictionary scope type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/dictionaryTextPart -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryTextPart">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Specifies text parts present in the dictionary text (such as front or back matters, and entry types)</rdfs:comment>
+        <rdfs:label xml:lang="en">dictionary text part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/lemmaType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/lemmaType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/LemmaTypeScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Specifies the types of headwords included in a dictionary (e.g., whether it includes single- or multi-word units, abbreviations, neologisms, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">lemma type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/lexicographicalProcessType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/lexmeta/lexicographicalProcessType">
+        <rdfs:domain rdf:resource="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Provides information on how the dictionary was created (e.g., in a collaborative mode, involving academic lexicographers vs. citizens, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">lexicographical process type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/LexicalConceptualResource -->
+
+    <owl:Class rdf:about="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/LemmaTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/LemmaTypeScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
