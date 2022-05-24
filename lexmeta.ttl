@@ -7249,4 +7249,3 @@ lexmeta:MicrostructureFeatureScheme a skos:ConceptScheme ;
         lexmeta:translationInformation,
         lexmeta:usageInformation,
         lexmeta:wordCombination .
-
