@@ -42,7 +42,8 @@ dct:language a owl:ObjectProperty ;
 dct:publisher a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P123,
         lexbib:P35 ;
-    rdfs:domain frbr:Manifestation .
+    rdfs:domain frbr:Manifestation ;
+    rdfs:range ms:Actor .
 
 dct:subject a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P921,
@@ -1495,7 +1496,7 @@ lexmeta:dictionaryPortal a ms:DatasetDistributionForm,
         "portale"@it,
         "portal de dicționare"@ro,
         "portal web"@ro ;
-    skos:broader lexmeta:accessibleThroughInterface ;
+    skos:broader lexmeta:dictionaryAccessibleThroughInterface ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme .
 
 lexmeta:dictionaryScopeType a owl:ObjectProperty ;
@@ -5106,16 +5107,15 @@ lexmeta:voice a skos:Concept ;
     skos:exactMatch ms:voice1 ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-lexmeta:wikibaseEntity a owl:ObjectProperty .
-
-lexmeta:wikidataEntity a owl:ObjectProperty ;
-    rdfs:label "wikidata entity"@en ;
-    lexmeta:wikibaseEntity lexbib:P2 .
+lexmeta:wikibaseEntity a owl:ObjectProperty ;
+    rdfs:label "wikibase entity"@en ;
+    lexmeta:wikibaseEntity lexbib:P2 ;
+    rdfs:comment "Points to an equivalent entity described on wikidata or another wikibase."@en .
 
 lexmeta:wikisourceTranscription a ms:DatasetDistributionForm ;
     rdfs:label "Wikisource transcription"@en ;
     lexmeta:wikibaseEntity lexbib:Q24187 ;
-    skos:broader lexmeta:accessibleThroughInterface ;
+    skos:broader lexmeta:dictionaryAccessibleThroughInterface ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme .
 
 lexmeta:wordFamilyDictionary a skos:Concept ;
@@ -5289,7 +5289,7 @@ ms:isVersionOf a owl:ObjectProperty ;
 ms:language a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P56 ;
     rdfs:domain ms:LexicalConceptualResource ;
-    rdfs:range ms:Language ;
+    rdfs:range dct:LinguisticSystem ;
     skos:definition "Specifies the language that is used in the resource or supported by the tool/service" .
 
 ms:lingualityType a owl:ObjectProperty ;
@@ -5301,7 +5301,7 @@ ms:lingualityType a owl:ObjectProperty ;
 ms:metalanguage a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P122 ;
     rdfs:domain ms:LexicalConceptualResource ;
-    rdfs:range ms:Language ;
+    rdfs:range dct:LinguisticSystem ;
     skos:definition "Specifies the language that is used as support for the resource (e.g., English for a grammar of French described in English or for a French dictionary with English definitions)" .
 
 <http://w3id.org/meta-share/meta-share/ms:isSimilarTo> a owl:ObjectProperty ;
@@ -5332,12 +5332,12 @@ ms:resourceProvider a owl:ObjectProperty ;
 ms:sourceLanguage a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P150 ;
     rdfs:domain ms:LexicalConceptualResource ;
-    rdfs:range ms:Language .
+    rdfs:range dct:LinguisticSystem .
 
 ms:targetLanguage a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P134 ;
     rdfs:domain ms:LexicalConceptualResource ;
-    rdfs:range ms:Language .
+    rdfs:range dct:LinguisticSystem .
 
 rdfs:subClassOf a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P279,
@@ -6105,16 +6105,6 @@ lexmeta:subentry a skos:Concept ;
     skos:definition "a listed or defined derivative of a lexical unit, one of the numbered senses of a headword within a dictionary entry; a derivative, idiom, etc. listed or defined within or following a dictionary entry; compare main entry." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-lexmeta:accessibleThroughInterface a ms:DatasetDistributionForm,
-        skos:Concept ;
-    rdfs:label "dictionary accessible through interface"@en ;
-    lexmeta:wikibaseEntity lexbib:Q32768 ;
-    skos:altLabel "accessible through interface"@en ;
-    skos:broader lexmeta:onlineDictionary ;
-    skos:definition "Value for distribution medium, used for corpora and lexical/conceptual resources that can be accessed via a human-intended interface (e.g., corpus workbench, lexicon browsing interface, etc.)" ;
-    skos:exactMatch ms:accessibleThroughInterface ;
-    skos:inScheme lexmeta:DatasetDistributionFormScheme .
-
 lexmeta:bilingualDictionary a ms:LingualityType,
         skos:Concept ;
     rdfs:label "перакладны слоўнік"@be,
@@ -6174,6 +6164,15 @@ lexmeta:descriptiveDictionary a skos:Concept ;
     lexmeta:wikibaseEntity lexbib:Q24188 ;
     skos:broader lexmeta:dictionaryScope ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
+
+lexmeta:dictionaryAccessibleThroughInterface a ms:DatasetDistributionForm,
+        skos:Concept ;
+    rdfs:label "dictionary accessible through interface"@en ;
+    lexmeta:wikibaseEntity lexbib:Q32768 ;
+    skos:altLabel "accessible through interface"@en ;
+    skos:broader lexmeta:onlineDictionary ;
+    skos:definition "Value for distribution medium, used for corpora and lexical/conceptual resources that can be accessed via a human-intended interface (e.g., corpus workbench, lexicon browsing interface, etc.)" ;
+    skos:inScheme lexmeta:DatasetDistributionFormScheme .
 
 lexmeta:domainIndication a skos:Concept ;
     rdfs:label "marca d'especialitat"@ca,
@@ -6714,8 +6713,9 @@ lexmeta:wordFormation a skos:Concept ;
     skos:definition "creation of a new word" ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-ms:Actor a owl:Class ;
-    lexmeta:wikibaseEntity lexbib:Q14 .
+dct:LinguisticSystem a owl:Class ;
+    lexmeta:wikibaseEntity wikidata:Q34770,
+        lexbib:Q8 .
 
 lexmeta:LexicographicalProcessTypeScheme a skos:ConceptScheme ;
     rdfs:label "Lexicographical Process Type"@en ;
@@ -6828,10 +6828,8 @@ lexmeta:varietyOrientedDictionary a skos:Concept ;
     skos:broader lexmeta:specializedDictionary ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
 
-ms:Language a owl:Class ;
-    lexmeta:wikibaseEntity wikidata:Q34770,
-        lexbib:Q8 ;
-    skos:exactMatch dct:LinguisticSystem .
+ms:Actor a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q14 .
 
 lexmeta:example a skos:Concept ;
     rdfs:label "exemple"@ca,
@@ -7249,3 +7247,4 @@ lexmeta:MicrostructureFeatureScheme a skos:ConceptScheme ;
         lexmeta:translationInformation,
         lexmeta:usageInformation,
         lexmeta:wordCombination .
+
