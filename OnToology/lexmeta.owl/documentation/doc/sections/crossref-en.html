@@ -1,0 +1,394 @@
+<h2 id="crossreference" class="list">Cross-reference for LexMeta ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by LexMeta ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#dictionaryAccessType"
+            title="http://w3id.org/meta-share/lexmeta/dictionaryAccessType">dictionary access type</a>
+      </li>
+      <li>
+         <a href="#dictionaryScopeType"
+            title="http://w3id.org/meta-share/lexmeta/dictionaryScopeType">dictionary scope type</a>
+      </li>
+      <li>
+         <a href="#dictionaryTextPart"
+            title="http://w3id.org/meta-share/lexmeta/dictionaryTextPart">dictionary text part</a>
+      </li>
+      <li>
+         <a href="#dictionaryFunctionType"
+            title="http://w3id.org/meta-share/lexmeta/dictionaryFunctionType">ditionary function type</a>
+      </li>
+      <li>
+         <a href="#lemmaType" title="http://w3id.org/meta-share/lexmeta/lemmaType">lemma type</a>
+      </li>
+      <li>
+         <a href="#lexicographicalProcessType"
+            title="http://w3id.org/meta-share/lexmeta/lexicographicalProcessType">lexicographical process type</a>
+      </li>
+   </ul>
+   <div class="entity" id="dictionaryAccessType">
+      <h3>dictionary access type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/dictionaryAccessType</p>
+      <div class="comment">
+         <span class="markdown">Classifies the dictionary based on the approach (onomasiological vs. semasiological) adopted for the organization of the lexical entries</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#AccessStructureTypeScheme"
+                  title="http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme">access structure type scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dictionaryScopeType">
+      <h3>dictionary scope type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/dictionaryScopeType</p>
+      <div class="comment">
+         <span class="markdown">Classifies the dictionary in terms of its contents and intended use, based mainly on the classification proposed by Engelberg &amp; Storrer (Typologie von Internetwörterbüchern und -portalen, 2016)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#DictionaryScopeTypeScheme"
+                  title="http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme">dictionary scope type scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dictionaryTextPart">
+      <h3>dictionary text part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/dictionaryTextPart</p>
+      <div class="comment">
+         <span class="markdown">Specifies text parts present in the dictionary text (such as front or back matters, and entry types)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#DictionaryTextPartScheme"
+                  title="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme">dictionary text part scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dictionaryFunctionType">
+      <h3>ditionary function type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/dictionaryFunctionType</p>
+      <div class="comment">
+         <span class="markdown">Classifies the dictionary in terms of its intended function (e.g., text translation, vocabulary learning) according to the Theory of Lexicographical Functions</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#DictionaryFunctionTypeScheme"
+                  title="http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme">dictionary function type scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lemmaType">
+      <h3>lemma type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/lemmaType</p>
+      <div class="comment">
+         <span class="markdown">Specifies the types of headwords included in a dictionary (e.g., whether it includes single- or multi-word units, abbreviations, neologisms, etc.)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#LemmaTypeScheme"
+                  title="http://w3id.org/meta-share/lexmeta/LemmaTypeScheme">lemma type scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lexicographicalProcessType">
+      <h3>lexicographical process type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/lexicographicalProcessType</p>
+      <div class="comment">
+         <span class="markdown">Provides information on how the dictionary was created (e.g., in a collaborative mode, involving academic lexicographers vs. citizens, etc.)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+                  target="_blank"
+                  title="http://w3id.org/meta-share/meta-share/LexicalConceptualResource">lexical conceptual resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#LexicographicalProcessTypeScheme"
+                  title="http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme">lexicographical process type scheme</a>)</dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#AccessStructureTypeScheme"
+            title="http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme">
+            <span>access structure type scheme</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DictionaryFunctionTypeScheme"
+            title="http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme">
+            <span>dictionary function type scheme</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DictionaryScopeTypeScheme"
+            title="http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme">
+            <span>dictionary scope type scheme</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DictionaryTextPartScheme"
+            title="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme">
+            <span>dictionary text part scheme</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LemmaTypeScheme"
+            title="http://w3id.org/meta-share/lexmeta/LemmaTypeScheme">
+            <span>lemma type scheme</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LexicographicalProcessTypeScheme"
+            title="http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme">
+            <span>lexicographical process type scheme</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="AccessStructureTypeScheme">
+      <h3>access structure type scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DictionaryFunctionTypeScheme">
+      <h3>dictionary function type scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DictionaryScopeTypeScheme">
+      <h3>dictionary scope type scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DictionaryTextPartScheme">
+      <h3>dictionary text part scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LemmaTypeScheme">
+      <h3>lemma type scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/LemmaTypeScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LexicographicalProcessTypeScheme">
+      <h3>lexicographical process type scheme<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
+               target="_blank"
+               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">concept scheme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

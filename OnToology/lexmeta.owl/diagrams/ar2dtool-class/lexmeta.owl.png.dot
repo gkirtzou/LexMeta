@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "skos:Concept" "ms:LexicalConceptualResource" "3fb4990a:181d29e9348:-7fe8" "3fb4990a:181d29e9348:-7fec" "3fb4990a:181d29e9348:-7ff0" "3fb4990a:181d29e9348:-7ff4" "3fb4990a:181d29e9348:-7ff8" "3fb4990a:181d29e9348:-7ffc" ; /*classes style*/
+	"lexmeta:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "dct:license" ];
+	"lexmeta:" -> "http://w3id.org/meta-share/lexmeta/0.0.1" [ label = "owl:versionIRI" ];
+	"lexmeta:" -> "lexmeta:" [ label = "vann:preferredNamespaceUri" ];
+	"NULL" -> "lexmeta:DictionaryScopeTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7feb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7fe7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ff7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7fe9" [ label = "rdf:rest" ];
+	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "lexmeta:DictionaryFunctionTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7fef" [ label = "owl:intersectionOf" ];
+	"NULL" -> "lexmeta:AccessStructureTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "lexmeta:LemmaTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ff3" [ label = "owl:intersectionOf" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7fe5" [ label = "rdf:rest" ];
+	"NULL" -> "lexmeta:LexicographicalProcessTypeScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "3fb4990a:181d29e9348:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "lexmeta:DictionaryTextPartScheme" [ label = "owl:hasValue" ];
+	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
+	"lexmeta:lemmaType" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7ffc" [ label = "lexmeta:dictionaryAccessType" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7fe8" [ label = "lexmeta:lexicographicalProcessType" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7ff4" [ label = "lexmeta:dictionaryScopeType" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7ff8" [ label = "lexmeta:dictionaryFunctionType" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7fec" [ label = "lexmeta:lemmaType" ];
+	"ms:LexicalConceptualResource" -> "3fb4990a:181d29e9348:-7ff0" [ label = "lexmeta:dictionaryTextPart" ];
+
+}

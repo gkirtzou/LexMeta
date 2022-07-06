@@ -1,0 +1,69 @@
+{
+  "@context" : {
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "dictionaryFunctionType" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryFunctionType",
+      "@type" : "@id"
+    },
+    "dictionaryScopeType" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryScopeType",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "LexicalConceptualResource" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "dictionaryTextPart" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryTextPart",
+      "@type" : "@id"
+    },
+    "lemmaType" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/lemmaType",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "dictionaryAccessType" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryAccessType",
+      "@type" : "@id"
+    },
+    "lexicographicalProcessType" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/lexicographicalProcessType",
+      "@type" : "@id"
+    }
+  }
+}
