@@ -1,4 +1,6 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix frbr: <http://purl.org/vocab/frbr/core#> .
@@ -11,12 +13,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 
 frbrer:P3057 a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P291,
         lexbib:P10 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range schema:Place .
 
 dct:creator a owl:ObjectProperty ;
@@ -28,11 +31,11 @@ dct:creator a owl:ObjectProperty ;
 dct:date a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P577,
         lexbib:P15 ;
-    rdfs:domain frbr:Manifestation .
+    rdfs:domain bibo:Document .
 
 dct:isPartOf a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P9 ;
-    rdfs:domain frbr:Manifestation .
+    rdfs:domain bibo:Document .
 
 dct:language a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P407,
@@ -42,13 +45,13 @@ dct:language a owl:ObjectProperty ;
 dct:publisher a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P123,
         lexbib:P35 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range ms:Actor .
 
 dct:subject a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P921,
         lexbib:P27 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range skos:Concept .
 
 dct:title a owl:DatatypeProperty ;
@@ -59,8 +62,8 @@ dct:title a owl:DatatypeProperty ;
 bibo:cites a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P2860,
         lexbib:P147 ;
-    rdfs:domain frbr:Manifestation ;
-    rdfs:range frbr:Manifestation .
+    rdfs:domain bibo:Document ;
+    rdfs:range bibo:Document .
 
 bibo:doi a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P356,
@@ -69,7 +72,7 @@ bibo:doi a owl:DatatypeProperty ;
 bibo:editor a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P98,
         lexbib:P13 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range foaf:Person .
 
 bibo:isbn10 a owl:DatatypeProperty ;
@@ -87,7 +90,7 @@ bibo:issn a owl:DatatypeProperty ;
 bibo:issue a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P433,
         lexbib:P23 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     skos:definition "An issue number" .
 
 bibo:oclcnum a owl:DatatypeProperty ;
@@ -97,19 +100,19 @@ bibo:oclcnum a owl:DatatypeProperty ;
 bibo:pages a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P304,
         lexbib:P24 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     skos:definition "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties." .
 
 bibo:presentedAt a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P36 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range bibo:Conference ;
     skos:definition "Relates a document to an event; for example, a paper to a conference." .
 
 bibo:reviewOf a owl:ObjectProperty ;
     lexmeta:wikibaseEntity wikidata:P6977,
         lexbib:P25 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     rdfs:range frbr:Endeavour .
 
 bibo:shortTitle a owl:DatatypeProperty ;
@@ -120,12 +123,29 @@ bibo:shortTitle a owl:DatatypeProperty ;
 bibo:volume a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P478,
         lexbib:P22 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     skos:definition "A volume number" .
 
-frbr:Work a owl:Class ;
+<http://w3id.org/meta-share/lexmeta> a owl:Ontology ;
+    dc:abstract "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en ;
+    dc:description "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en ;
+    dc:title "LexMeta ontology"@en ;
+    dct:contributor "Christiane Klaes",
+        "Katerina Gkirtzou" ;
+    dct:creator "David Lindemann",
+        "Penny Labropoulou" ;
+    dct:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dct:modified "2022-07-07T19:48:50" ;
+    bibo:status "Draft" ;
+    vann:preferredNamespacePrefix "lexmeta" ;
+    vann:preferredNamespaceUri lexmeta: ;
+    owl:versionIRI lexmeta:0.0.1 .
+
+lexmeta:LCRSeries a owl:Class ;
+    rdfs:label "Work"@en ;
     lexmeta:wikibaseEntity lexbib:Q41 ;
-    rdfs:subClassOf frbr:Endeavour .
+    rdfs:subClassOf frbr:Work,
+        dcat:DatasetSeries .
 
 lexmeta:abbreviation a skos:Concept ;
     rdfs:label "abbreviation"@en,
@@ -157,18 +177,24 @@ lexmeta:analogicalDictionary a skos:Concept ;
     rdfs:label "diccionari analògic"@ca,
         "analogiordbog"@da,
         "analogisches Wörterbuch"@de,
+        "αναλογικό λεξικό"@el,
         "analogical dictionary"@en,
         "diccionario analógico"@es,
         "mõisteline sõnaraamat"@et,
         "hiztegi analogiko"@eu,
+        "analogikus szótár"@hu,
         "dizionario analogico"@it,
         "analoginis žodynas"@lt,
         "słownik analogiczny"@pl,
         "dicionário analógico"@pt,
+        "dicționar ideografic"@ro,
+        "словарь словосочетаний, синонимов и трудных слов"@ru,
         "аналошки речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14980 ;
     skos:altLabel "diccionari de col·locacions"@ca,
-        "associationsordbog"@da ;
+        "associationsordbog"@da,
+        "dicționar analogic"@ro,
+        "словарь аналогий"@ru ;
     skos:broader lexmeta:informationTypeOrientedDictionary ;
     skos:definition "a work containing information such as collocations, synonyms, confusable words, etc. (e.g. Macmillan Collocations Dictionary)." ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
@@ -185,23 +211,31 @@ lexmeta:analyticalDefinition a skos:Concept ;
     rdfs:label "definició analítica"@ca,
         "analytisk definition"@da,
         "analytische Definition"@de,
+        "αναλυτικός ορισμός"@el,
         "analytical definition"@en,
         "definición analítica"@es,
         "analüütiline definitsioon"@et,
         "definizio analitiko"@eu,
+        "definición analítica"@gl,
+        "analitikus definíció"@hu,
         "fræðileg skilgreining"@is,
         "definizione analitica"@it,
         "analitinė apibrėžtis"@lt,
+        "аналитичка дефиниција"@mk,
+        "analytische definitie"@nl,
         "definicja klasyczna"@pl,
         "definiție analitică"@ro,
+        "родовидовое определение"@ru,
         "analitična razlaga"@sl,
         "аналитичка дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14448 ;
     skos:altLabel "intensionel definition"@da,
         "logisk definition"@da,
+        "definición lóxica"@gl,
         "fræðileg skýring"@is,
         "definizione logica"@it,
         "loginė apibrėžtis"@lt,
+        "аналитическая дефиниция"@ru,
         "leksikografska razlaga"@sl ;
     skos:broader lexmeta:definition ;
     skos:definition "the classical formula to explain the meaning of a word or phrase usingthe genus (generic term) and differentia (distinguishing feature orfeatures) formula; also called logical definition (e.g. triangle – aplane figure (genus) that has three straight bounding sides (differentia)." ;
@@ -214,18 +248,24 @@ lexmeta:antedating a skos:Concept ;
         "primera documentación"@es,
         "varaseim esitus"@et,
         "lehen lekukotasun"@eu,
+        "primeira datación"@gl,
+        "első adat megtalálása"@hu,
         "antecedente"@it,
         "ankstyviausias paliudijimas"@lt,
         "antydatowanie"@pl,
         "antedatare"@ro,
+        "антидатинг"@ru,
         "антидатирање"@sr ;
     lexmeta:wikibaseEntity wikidata:Q17012656,
         lexbib:Q14320 ;
     skos:altLabel "primera documentació"@ca,
         "testimoni més antic"@ca,
         "documentación más antigua"@es,
+        "primeiro testimonio"@gl,
         "istorinis paliudijimas"@lt,
-        "antedatowanie"@pl ;
+        "antedatowanie"@pl,
+        "доказательства появления слова или фразы до дати, указанной в историческом словаре"@ru,
+        "антедатирање"@sr ;
     skos:broader lexmeta:formalInformation ;
     skos:definition "citation selection from the earliest possible sources; evidence of the occurrenceof a word or phrase given in an historical dictionary." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -306,12 +346,17 @@ lexmeta:argumentStructure a skos:Concept ;
         "rökliðir"@is,
         "struttura tematica"@it,
         "argumentų struktūra"@lt,
+        "argumentstructuur"@nl,
+        "forma logică"@ro,
+        "аргументная структура"@ru,
         "аргументска структура"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14997 ;
     skos:altLabel "ορισματική δομή"@el,
         "marco predicativo"@es,
         "valencia"@es,
-        "vonzatszerkezet"@hu ;
+        "vonzatszerkezet"@hu,
+        "structură verbală"@ro,
+        "место, которое может занимать имя существительное в высказывании (в порождающей грамматике)"@ru ;
     skos:broader lexmeta:syntagmaticInformation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -363,6 +408,7 @@ lexmeta:audioContent a skos:Concept ;
         "audio"@es,
         "heli"@et,
         "entzunezko eduki"@eu,
+        "audio"@gl,
         "hang-"@hu,
         "hljóð"@is,
         "audio"@it,
@@ -384,6 +430,7 @@ lexmeta:audioContent a skos:Concept ;
         "audio"@en,
         "grabación sonora"@es,
         "audio-"@et,
+        "rexistro sonoro"@gl,
         "hljóðupptaka"@is,
         "audio-opname"@nl,
         "geluidsopname"@nl,
@@ -454,15 +501,19 @@ lexmeta:bilingualizedDictionary a ms:LingualityType,
         skos:Concept ;
     rdfs:label "diccionari bilingüe unidireccional"@ca,
         "bilingvaliseret ordbog"@da,
+        "διγλωσσοποιημένο λεξικό"@el,
         "bilingualized dictionary"@en,
         "diccionario bilingualizado"@es,
         "kakskeelestatud sõnastik"@et,
         "hiztegi elebidundu"@eu,
+        "dicionario bilingualizado"@gl,
         "kétnyelvűsített szótár"@hu,
         "tvímála orðabók"@is,
         "dizionario bilingue"@it,
         "sudvikalbintas žodynas"@lt,
+        "двојазичен речник"@mk,
         "dicționar bilingv"@ro,
+        "двуязычный словарь для учебных целей"@ru,
         "билингвализовани речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14451 ;
     skos:broader lexmeta:bilingualDictionary ;
@@ -682,6 +733,7 @@ lexmeta:citation a skos:Concept ;
         "aipu"@eu,
         "lähdeviittaus"@fi,
         "citation"@fr,
+        "cita"@gl,
         "הפניה למקור"@he,
         "Citiranje radova"@hr,
         "idézet"@hu,
@@ -706,6 +758,7 @@ lexmeta:citation a skos:Concept ;
         lexbib:Q14429 ;
     skos:altLabel "citacions"@ca,
         "citació"@ca,
+        "belæg"@da,
         "citat"@da,
         "eksempel"@da,
         "tekstbelæg"@da,
@@ -714,6 +767,7 @@ lexmeta:citation a skos:Concept ;
         "quote"@en,
         "cita literal"@es,
         "citación"@es,
+        "citación"@gl,
         "sítat"@is,
         "aanhaling"@nl,
         "allegatie"@nl,
@@ -729,19 +783,25 @@ lexmeta:classificatoryLabel a skos:Concept ;
         "marca clasificatoria"@es,
         "semantiline tüüp"@et,
         "etiketa sailkatzaile"@eu,
+        "nome científico"@gl,
         "tudományos név"@hu,
         "flokkunarfræðileg merking"@is,
         "classificazione"@it,
         "klasifikacijos vieneto pavadinimas"@lt,
-        "clasificare"@ro ;
+        "класификациска ознака"@mk,
+        "clasificare"@ro,
+        "помета"@ru,
+        "класификациона ознака"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14452 ;
     skos:altLabel "klassifikation"@da,
         "taksonomisk navn"@da,
         "videnskabelig klassifikation"@da,
         "taxonomic name"@en,
         "latin név"@hu,
+        "ознака за класификација"@mk,
         "caracteristică"@ro,
-        "etichetă"@ro ;
+        "etichetă"@ro,
+        "классифицирующая помета"@ru ;
     skos:broader lexmeta:semanticInformation ;
     skos:definition "a taxonomic name or class of a sense or entry, for example, the order and genus for an animal; also called taxonomic name, scientific classification (e.g. Felis catus)." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -759,21 +819,26 @@ lexmeta:collegeDictionary a skos:Concept ;
     rdfs:label "diccionari universitari"@ca,
         "studieordbog"@da,
         "Schulwörterbuch"@de,
+        "λεξικό εκμάθησης γλώσσας"@el,
         "college dictionary"@en,
         "diccionario universitario"@es,
         "spetsiifiline sõnastik"@et,
         "eskola hiztegi"@eu,
+        "dicionario escolar"@gl,
         "kéziszótár"@hu,
         "orðabók fyrir framhaldsskóla"@is,
         "dizionario collegiale"@it,
         "studijuojančiojo žodynas"@lt,
         "dicționar pentru elevi"@ro,
+        "учебный словарь"@ru,
         "школски речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14576 ;
     skos:altLabel "håndordbog"@da,
+        "κολεγιακό λεξικό"@el,
         "õpilase sõnaraamat"@et,
         "studentų žodynas"@lt,
-        "dicționar de buzunar"@ro ;
+        "dicționar de buzunar"@ro,
+        "учебный словарь для учеников школы"@ru ;
     skos:broader lexmeta:userGroupOrientedDictionary ;
     skos:definition "an intermediate-size, single-volume dictionary intended for use by students or at an office desk and containing information similar to an abridged general dictionary, for example, Merriam-Webster’s Collegiate Dictionary." ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
@@ -796,15 +861,20 @@ lexmeta:collocator a skos:Concept ;
         "coocurrente"@es,
         "kollokaat"@et,
         "kolokazio"@eu,
+        "base"@gl,
         "stoðliður"@is,
         "collocatore"@it,
         "kolokatorius"@lt,
+        "termen care participă la formarea unei colocații"@ro,
+        "слово, которое часто или регулярно сочетается с другим словом"@ru,
         "kolokator"@sl,
         "колокатор"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14496 ;
     skos:altLabel "combinatòria"@ca,
         "concorrent"@ca,
-        "colocado"@es ;
+        "colocado"@es,
+        "colocator"@ro,
+        "коллокатор"@ru ;
     skos:broader lexmeta:collocation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -817,6 +887,7 @@ lexmeta:colloquial a skos:Concept ;
         "coloquial"@es,
         "kõnekeelne"@et,
         "kolokial"@eu,
+        "coloquial"@gl,
         "köznyelvi"@hu,
         "óformlegt"@is,
         "colloquiale"@it,
@@ -853,12 +924,17 @@ lexmeta:competenceExample a skos:Concept ;
         "ejemplo competente"@es,
         "näide"@et,
         "konpetentzia adibide"@eu,
+        "exemplo inventado"@gl,
         "tilbúið dæmi"@is,
         "competenza"@it,
-        "žodynininko sugalvotas žodžio vartosenos pavyzdys"@lt ;
+        "žodynininko sugalvotas žodžio vartosenos pavyzdys"@lt,
+        "exemplu de competență"@ro,
+        "пример компетенције"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14389 ;
     skos:altLabel "ejemplo de competencia"@es,
-        "esempio di competenza"@it ;
+        "exemplo de competencia"@gl,
+        "esempio di competenza"@it,
+        "exemplu demonstrativ"@ro ;
     skos:broader lexmeta:example ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -912,7 +988,7 @@ lexmeta:compoundWord a skos:Concept ;
         "hitz elkartu"@eu,
         "yhdyssana"@fi,
         "mot composé"@fr,
-        "Palabra composta"@gl,
+        "palabra composta"@gl,
         "הרכב"@he,
         "összetett szó"@hu,
         "samsett orð"@is,
@@ -944,6 +1020,7 @@ lexmeta:compoundWord a skos:Concept ;
         "palabra compuesta"@es,
         "liitum"@et,
         "Composto"@gl,
+        "composto"@gl,
         "szóösszetétel"@hu,
         "samsetning"@is,
         "composto"@it,
@@ -969,7 +1046,7 @@ lexmeta:connotation a skos:Concept ;
         "konotazio"@eu,
         "Konnotaatio"@fi,
         "connotation"@fr,
-        "Connotación"@gl,
+        "connotación"@gl,
         "משמעות לוואי"@he,
         "Konotacija"@hr,
         "konnotáció"@hu,
@@ -1057,10 +1134,14 @@ lexmeta:coocurrent a skos:Concept ;
         "coocurrente"@es,
         "koosesinev üksus"@et,
         "agerkide"@eu,
+        "coocorrente"@gl,
         "co-occorrente"@it,
-        "dažnai kartu vartojamas"@lt ;
+        "dažnai kartu vartojamas"@lt,
+        "coocurent"@ro,
+        "коокурентан"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14391 ;
-    skos:altLabel "gemeinsam auftretend"@de ;
+    skos:altLabel "gemeinsam auftretend"@de,
+        "simultan"@ro ;
     skos:broader lexmeta:wordCombination ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -1072,6 +1153,7 @@ lexmeta:countability a skos:Concept ;
         "contable"@es,
         "loendatavus"@et,
         "zenbagarritasun"@eu,
+        "contabilidade"@gl,
         "megszámlálhatóság"@hu,
         "teljanleiki"@is,
         "numerabilità"@it,
@@ -1109,17 +1191,21 @@ lexmeta:definingVocabulary a skos:Concept ;
         "vocabulario definidor"@es,
         "definitsioonisõnavara"@et,
         "definizioen bokabularioa"@eu,
+        "vocabulario controlado"@gl,
         "skýringarorðaforði"@is,
         "lessico"@it,
         "aiškinamasis žodynas"@lt,
         "słownictwo definiujące"@pl,
-        "определяющая лексика"@ru ;
+        "număr limitat de cuvinte folosit pentru definirea cuvintelor într-un dicționar"@ro,
+        "ограниченный набор слов, используемый для определения всех других слов в словаре"@ru,
+        "дефиницијски вокабулар"@sr ;
     lexmeta:wikibaseEntity wikidata:Q15192747,
         lexbib:Q14458 ;
     skos:altLabel "definicions amb llenguatge controlat"@ca,
         "λεξιλόγιο αναφοράς"@el,
         "limited defining vocabulary"@en,
-        "lenguaje controlado"@es ;
+        "lenguaje controlado"@es,
+        "vocabulario definitorio"@gl ;
     skos:broader lexmeta:definition ;
     skos:definition "a restricted set of words used to define all other terms in a dictionary; the controlled use of vocabulary in definitions, restricting the descriptions to using the most frequent words of a vocabulary to describe other words. This is a practice of learner’s dictionaries, for example, Longman Dictionary of Contemporary English.",
         "list of words used by lexicographers to write dictionary definitions" ;
@@ -1145,7 +1231,7 @@ lexmeta:denotation a skos:Concept ;
         "denotazio"@eu,
         "Denotaatio"@fi,
         "dénotation"@fr,
-        "Denotación"@gl,
+        "denotación"@gl,
         "denotáció"@hu,
         "denotazione"@it,
         "denotacija"@lt,
@@ -1220,6 +1306,7 @@ lexmeta:derivation a skos:Concept ;
         "деривация"@ru,
         "словопроизводство"@ru,
         "извођење"@sr ;
+    skos:broader lexmeta:morphologicalInformation ;
     skos:definition "in linguistics, the process of forming a new word on the basis of an existing one" ;
     skos:exactMatch ms:derivation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1233,6 +1320,7 @@ lexmeta:derivative a skos:Concept ;
         "derivado"@es,
         "tuletis"@et,
         "eratorri"@eu,
+        "derivativo"@gl,
         "képzett szó"@hu,
         "afleitt orð"@is,
         "derivato"@it,
@@ -1262,17 +1350,21 @@ lexmeta:designatum a skos:Concept ;
         "designatum"@es,
         "designaat"@et,
         "designatu"@eu,
+        "designatum"@gl,
         "jelentés"@hu,
         "designatum"@it,
         "denotatas"@lt,
         "desygnat"@pl,
         "designat"@ro,
+        "десигнат"@ru,
         "десигнатум"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14323 ;
     skos:altLabel "tähistatav"@et,
+        "designado"@gl,
         "designatas"@lt,
         "designatum"@ro,
-        "indicat"@ro ;
+        "indicat"@ro,
+        "означаемое"@ru ;
     skos:broader lexmeta:semanticInformation ;
     skos:definition "an object that is referred to by a lexical unit (word or phrase), whether it actually exists or not; the aspect of meaning identified for expression by a word or phrase. It is contrasted with denotatum." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1320,6 +1412,7 @@ lexmeta:diacritic a skos:Concept ;
         "diacritical mark"@en,
         "signo diacrítico"@es,
         "diakriitik"@et,
+        "signo diacrítico"@gl,
         "mellékjel"@hu,
         "segno diacritico"@it,
         "diakritikas"@lt,
@@ -1353,15 +1446,20 @@ lexmeta:dialectLabel a skos:Concept ;
         "etiqueta dialectal"@es,
         "murdesõna"@et,
         "dialekto-etiketa"@eu,
+        "marca dialectal"@gl,
         "mállýskumerking"@is,
         "dialetto"@it,
+        "dialectlabel"@nl,
         "kwalifikator geograficzny"@pl,
-        "trăsătură dialectală"@ro ;
+        "trăsătură dialectală"@ro,
+        "диалектная помета"@ru,
+        "ознака дијалекта"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14324 ;
     skos:altLabel "marca de registre"@ca,
         "marca dialectal"@ca,
         "marca dialectal"@es,
-        "kwalifikator terytorialny"@pl ;
+        "kwalifikator terytorialny"@pl,
+        "дијалекатски квалификатор"@sr ;
     skos:broader lexmeta:dialect ;
     skos:definition "a label indicating a specific geographic area where a sense or entry is used, for example, New England, British (also called regional label), or a particular group of speakers, for example, kids’ slang." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1380,21 +1478,28 @@ lexmeta:dictionaryApp a ms:DatasetDistributionForm,
     rdfs:label "aplicació"@ca,
         "ordbogsapp"@da,
         "Wörterbuch-App"@de,
+        "λεξικογραφική εφαρμογή"@el,
         "dictionary app"@en,
-        "aplicación de diccionario"@es,
+        "aplicación del diccionario"@es,
         "sõnastikuäpp"@et,
         "hiztegi-aplikazio"@eu,
+        "aplicación de dicionario"@gl,
         "szótáralkalmazás"@hu,
         "orðabókarapp"@is,
         "app di dizionario"@it,
         "žodyno programėlė"@lt,
-        "aplikacja słownikowa"@pl ;
+        "woordenboekapp"@nl,
+        "aplikacja słownikowa"@pl,
+        "dicționar electronic"@ro,
+        "словарное приложение"@ru,
+        "речничка апликација"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14288 ;
     skos:altLabel "aplicació de diccionari"@ca,
         "ordbogsapplikation"@da,
         "Wörterbuch-Anwendung"@de,
         "Wörterbuchanwendung"@de,
         "app de diccionario"@es,
+        "app del diccionario"@es,
         "e-sõnastik"@et,
         "mobiilisõnastik"@et,
         "szótárapplikáció"@hu,
@@ -1481,17 +1586,21 @@ lexmeta:dictionaryPortal a ms:DatasetDistributionForm,
         "portal de diccionarios"@es,
         "sõnastikuportaal"@et,
         "hiztegi-atari"@eu,
+        "portal de dicionarios"@gl,
         "szótárportál"@hu,
         "orðabókagátt"@is,
         "portale web"@it,
         "žodyno svetainė"@lt,
-        "portal"@ro ;
+        "portal"@ro,
+        "веб-сайт или веб-страница, предоставляющая доступ к словарю"@ru,
+        "лексикографски портал"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14555 ;
     skos:altLabel "portal de diccionaris"@ca,
         "pàgina de diccionaris"@ca,
         "portal"@en,
         "portal"@es,
         "keeleportaal"@et,
+        "dicionario de dicionarios"@gl,
         "vefgátt fyrir orðabækur"@is,
         "portale"@it,
         "portal de dicționare"@ro,
@@ -1524,21 +1633,26 @@ lexmeta:differentia a skos:Concept ;
         "diferenciación"@es,
         "eristav tunnus"@et,
         "differentia specifica"@eu,
+        "differentia specifica"@gl,
         "megkülönböztető tulajdonság"@hu,
         "aðgreinir"@is,
         "differentia"@it,
         "diferenciacija"@lt,
         "cecha odróżniająca"@pl,
-        "diferență specifică"@ro ;
+        "diferență specifică"@ro,
+        "отличительное свойство"@ru,
+        "диференција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14462 ;
     skos:altLabel "tret distintiu"@ca,
         "adskillende træk"@da,
         "differentia specifica"@en,
         "diferencia"@es,
         "rasgo distintivo"@es,
+        "diferenza específica"@gl,
         "skirstymas"@lt,
         "differentia specifica"@pl,
-        "diferențiere"@ro ;
+        "diferențiere"@ro,
+        "отличительный признак вида или класса"@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "the specifying term or terms in an analytic, classical or logical definition, the term which qualifies or characterizes the genus, one or more of the characteristic features which distinguish the word explained from the generic term (genus) of which it is considered a specific instance; also called differentia specifica (e.g. autumn/fall: the third season of the year, when crops and fruits are gathered and leaves fall)." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1573,18 +1687,22 @@ lexmeta:directSense a skos:Concept ;
         "sentido recto"@es,
         "otsene tähendus"@et,
         "adiera zuzen"@eu,
+        "significado literal"@gl,
         "főjelentés"@hu,
         "bókstafleg merking"@is,
         "senso diretto"@it,
         "tiesioginė reikšmė"@lt,
-        "sens principal"@ro ;
+        "sens principal"@ro,
+        "прямое значение"@ru,
+        "основно значење"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14327 ;
     skos:altLabel "significat literal"@ca,
         "direkte betydning"@da,
         "primær betydning"@da,
         "sentido literal"@es,
         "frummerking"@is,
-        "sens de bază"@ro ;
+        "sens de bază"@ro,
+        "непосредно значење"@sr ;
     skos:broader lexmeta:semanticInformation ;
     skos:definition "the primary or significant sense of a lexical unit." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1656,20 +1774,25 @@ lexmeta:encyclopedicDefinition a skos:Concept ;
     rdfs:label "definició enciclopèdica"@ca,
         "encyklopædisk definition"@da,
         "enzyklopädische Definition"@de,
+        "εγκυκλοπαιδικός ορισμός"@el,
         "encyclopedic definition"@en,
         "definición enciclopédica"@es,
         "entsüklopeediline definitsioon"@et,
         "definizio entziklopediko"@eu,
+        "definición enciclopédica"@gl,
         "enciklopédikus értelmezés"@hu,
         "alfræðiskýring"@is,
         "definzione enciclopedica"@it,
         "enciklopedinė definicija"@lt,
+        "encyclopedische definitie"@nl,
         "definicja encyklopedyczna"@pl,
         "definiție enciclopedică"@ro,
+        "энциклопедическое определение"@ru,
         "енциклопедијска дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14463 ;
     skos:altLabel "alfræðileg skýring"@is,
-        "enciklopedinė apibrėžtis"@lt ;
+        "enciklopedinė apibrėžtis"@lt,
+        "энциклопедическая дефиниция"@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "an explanation of a word or phrase that is comprehensive and includes information that is not strictly linguistic, a definition that reflects encyclopedic knowledge or facts; for example, the definition of elephant in Collins English Dictionary: Either of the two proboscidean mammals of the family Elephantidae. The African elephant (Loxodonta africana) is the larger species, with large flapping ears and a less humped back than the Indian elephant (Elephas maximus), of S and SE Asia." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1681,11 +1804,15 @@ lexmeta:entryBlock a skos:Concept ;
         "bloque de entrada"@es,
         "päis"@et,
         "sarrera-eremu"@eu,
+        "entrada"@gl,
         "szócikkblokk"@hu,
         "blocco di entrate"@it,
-        "žodyninis straipsnis"@lt ;
+        "žodyninis straipsnis"@lt,
+        "articol lexicografic"@ro,
+        "словарная статья"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14464 ;
-    skos:altLabel "entry block"@it ;
+    skos:altLabel "entry block"@it,
+        "articol de dicționar"@ro ;
     skos:broader lexmeta:entryLayoutFeature ;
     skos:definition "a paragraph describing a lexical unit or part of speech of a lexical unit." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1697,11 +1824,15 @@ lexmeta:entryLine a skos:Concept ;
         "entrada"@es,
         "kirje rida"@et,
         "sarrera-lerro"@eu,
+        "información sobre o lema"@gl,
         "címszó"@hu,
         "flettuhaus"@is,
         "entry line"@it,
-        "žodžio informacija, pateikiama prieš apibrėžtį"@lt ;
+        "žodžio informacija, pateikiama prieš apibrėžtį"@lt,
+        "informații de uz (fonetice, morfologice, gramaticale)"@ro,
+        "заглавное слово, сопровождаемое  орфоэпической информацией, грамматической информацией, пометой"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14465 ;
+    skos:altLabel "заглавное слово и вся информация о нем до определения"@ru ;
     skos:broader lexmeta:entryLayoutFeature ;
     skos:definition "the parts of an entry which precede the definition(s), usually the headword, pronunciation and syllabication, part of speech, and label(s); the initial line of a reference-work entry indicated by indentation or typography (e.g. boldface)." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -1819,10 +1950,12 @@ lexmeta:exampleSentence a skos:Concept ;
     rdfs:label "exemple"@ca,
         "eksempelsætning"@da,
         "Beispielsatz"@de,
+        "παράδειγμα"@el,
         "example sentence"@en,
         "oración de ejemplo"@es,
         "näitelause"@et,
         "adibide-esaldi"@eu,
+        "exemplo de uso"@gl,
         "példamondat"@hu,
         "notkunardæmi"@is,
         "frase d'esempio"@it,
@@ -1833,7 +1966,8 @@ lexmeta:exampleSentence a skos:Concept ;
         "реченични пример"@sr ;
     lexmeta:wikibaseEntity wikidata:Q65581468,
         lexbib:Q14493 ;
-    skos:altLabel "linguistic example sentence"@en,
+    skos:altLabel "παράδειγμα χρήσης"@el,
+        "linguistic example sentence"@en,
         "frase de ejemplo"@es,
         "kasutusnäide"@et,
         "dæmi"@is,
@@ -1863,13 +1997,17 @@ lexmeta:fascicle a ms:DatasetDistributionForm,
         "fascículo"@es,
         "vihik"@et,
         "faszikulu"@eu,
+        "fascículo"@gl,
         "hefti"@is,
         "fascicolo"@it,
         "leidinio (sąsiuvinis)"@lt,
-        "fascicul"@ro ;
+        "fascicul"@ro,
+        "отдельный выпуск (какого-либо издания)"@ru,
+        "свеска"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14579 ;
     skos:altLabel "hæfte"@da,
-        "köide"@et ;
+        "köide"@et,
+        "свезак"@sr ;
     skos:broader lexmeta:paperDictionary ;
     skos:definition "any of the sections of a book being brought out in instalments prior to its publication in completed form; one of several instalments of a published reference work, once a practice of large historical dictionaries." ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme .
@@ -1877,10 +2015,12 @@ lexmeta:fascicle a ms:DatasetDistributionForm,
 lexmeta:fieldLabel a skos:Concept ;
     rdfs:label "marca d'especialitat"@ca,
         "emnemarkør"@da,
+        "ένδειξη θεματικού πεδίου"@el,
         "domain label"@en,
         "marca de especialidad"@es,
         "valdkond"@et,
         "eremu-adierazle"@eu,
+        "marca de especialidade"@gl,
         "sviðsmerking"@is,
         "etichetta del campo"@it,
         "termino pažyma; vartosenos pažyma"@lt,
@@ -1909,7 +2049,7 @@ lexmeta:figurative a skos:Concept ;
         "arte figuratibo"@eu,
         "figuratiivinen taide"@fi,
         "art figuratif"@fr,
-        "arte figurativo"@gl,
+        "figurado"@gl,
         "אמנות פיגורטיבית"@he,
         "yfirfærð merking"@is,
         "figurato"@it,
@@ -1917,15 +2057,15 @@ lexmeta:figurative a skos:Concept ;
         "perkeltinis; vaizdingas"@lt,
         "фигуративна уметност"@mk,
         "figurativ kunst"@nb,
-        "figuratieve kunst"@nl,
+        "figuurlijk"@nl,
         "figurativ kunst"@nn,
         "figuratywizm"@pl,
         "figurado"@pt,
         "figurat"@ro,
-        "фигуративизм"@ru,
+        "переносное значение"@ru,
         "Figuratívne umenie"@sk,
         "art figurative"@sq,
-        "Фигуративна уметност"@sr,
+        "фигуративан"@sr,
         "figurativ konst"@sv,
         "фігуративізм"@uk ;
     lexmeta:wikibaseEntity wikidata:Q1622217,
@@ -1935,10 +2075,12 @@ lexmeta:figurative a skos:Concept ;
         "overført"@da,
         "figurative art"@en,
         "figurativo"@es,
+        "sentido figurado"@gl,
         "traslato"@it,
         "perkeltinės reikšmės"@lt,
         "figurativo"@pt,
-        "figurativ"@ro ;
+        "figurativ"@ro,
+        "метафорическое значение"@ru ;
     skos:broader lexmeta:semanticInformation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -1955,7 +2097,7 @@ lexmeta:fixedExpression a skos:Concept ;
         "Sanaliitto"@fi,
         "expression figée"@fr,
         "cor cainte"@ga,
-        "Frase feita"@gl,
+        "expresión fixa"@gl,
         "fast orðasamband"@is,
         "frase fatta"@it,
         "sustabarėjęs junginys; frazeologizmas; kolokacija"@lt,
@@ -1994,16 +2136,23 @@ lexmeta:fixedExpression a skos:Concept ;
 
 lexmeta:formulaicDefinition a skos:Concept ;
     rdfs:label "definició estereotipada"@ca,
+        "τυποποιημένος ορισμός"@el,
         "formulaic definition"@en,
         "definición formulaica"@es,
         "definitsioon"@et,
         "definizio formulaiko"@eu,
+        "definición formulaica"@gl,
         "mynsturskýring"@is,
         "definizione troncata"@it,
-        "definicija pagal formules"@lt ;
+        "definicija pagal formules"@lt,
+        "definiție trunchiată"@ro,
+        "стандартное определение"@ru,
+        "типска дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14468 ;
     skos:altLabel "definitsioonimall"@et,
-        "formúluskýring"@is ;
+        "formúluskýring"@is,
+        "definiție standard"@ro,
+        "определение, составленное по определенному шаблону"@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "a style of describing meaning written in a specified, traditional formula, also called truncated definition. The formulas differ according to parts of speech and are used to provide consistency in treatment." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -2020,6 +2169,7 @@ lexmeta:frequency a skos:Concept ;
         "sagedus"@et,
         "Maiztasun"@eu,
         "fréquence"@fr,
+        "frecuencia"@gl,
         "שכיחות"@he,
         "gyakoriság"@hu,
         "tíðni"@is,
@@ -2075,7 +2225,7 @@ lexmeta:gender a skos:Concept ;
         "genero gramatikal"@eu,
         "suku"@fi,
         "genre grammatical"@fr,
-        "xénero gramatical"@gl,
+        "xénero"@gl,
         "מין דקדוקי"@he,
         "Gramatički rod"@hr,
         "nem"@hu,
@@ -2144,7 +2294,7 @@ lexmeta:geography a skos:Concept ;
         "geografia"@pl,
         "geografia"@pt,
         "geografie"@ro,
-        "география"@ru,
+        "географическая помета"@ru,
         "geografia"@sk,
         "geografija"@sl,
         "gjeografi"@sq,
@@ -2159,6 +2309,8 @@ lexmeta:geography a skos:Concept ;
         "maateadus"@et,
         "földrajztudomány"@hu,
         "geográfia"@hu,
+        "региональная помета"@ru,
+        "территориальная помета"@ru,
         "zemljepis"@sl ;
     skos:broader lexmeta:usageInformation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -2175,7 +2327,7 @@ lexmeta:gloss a skos:Concept ;
         "glosa"@eu,
         "Glossa"@fi,
         "glose"@fr,
-        "Glosa"@gl,
+        "glosa"@gl,
         "glossza"@hu,
         "ábending"@is,
         "glossa"@it,
@@ -2252,6 +2404,7 @@ lexmeta:historicalDictionary a skos:Concept ;
         "hiztegi historiko"@eu,
         "dictionnaire historique"@fr,
         "foclóir stairiúil"@ga,
+        "dicionario histórico"@gl,
         "történeti szótár"@hu,
         "söguleg orðabók"@is,
         "dizionario storico"@it,
@@ -2366,14 +2519,18 @@ lexmeta:hyphenation a skos:Concept ;
         "hitz banaketa"@eu,
         "tavutus"@fi,
         "césure"@fr,
+        "separación con trazos"@gl,
         "elválasztás"@hu,
         "orðskipting"@is,
         "sillabazione"@it,
         "žodžių rašyba su brūkšneliu"@lt,
         "orddeling"@nb,
+        "afbreking"@nl,
         "orddeling"@nn,
         "podział przy przenoszeniu"@pl,
-        "перенос"@ru,
+        "despărțirea în silabe"@ro,
+        "перенос (слов в тексте)"@ru,
+        "подела речи на крају реда"@sr,
         "avstavning"@sv,
         "правила переносу слів на письмі"@uk ;
     lexmeta:wikibaseEntity wikidata:Q11994045,
@@ -2382,8 +2539,11 @@ lexmeta:hyphenation a skos:Concept ;
         "Trennung"@de,
         "división de palabras a final de renglón"@es,
         "silbitamine"@et,
+        "división de palabras a final de liña"@gl,
         "línuskipting"@is,
-        "unione tramite trattino"@it ;
+        "unione tramite trattino"@it,
+        "silabisire"@ro,
+        "использование дефиса"@ru ;
     skos:broader lexmeta:wordDivision ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -2567,16 +2727,24 @@ lexmeta:indexEntry a skos:Concept ;
         "entrada secundaria"@es,
         "sõnaloend"@et,
         "indize-sarrera"@eu,
+        "remisión"@gl,
+        "utaló szócikk"@hu,
         "færsla"@is,
         "voce di indice"@it,
-        "lemos variantas"@lt ;
+        "lemos variantas"@lt,
+        "index"@ro,
+        "словарная статья с указательной дефиницией"@ru,
+        "индексна одредница"@sr ;
     lexmeta:wikibaseEntity wikidata:Q80684476,
         lexbib:Q14335 ;
     skos:altLabel "index record"@en,
         "variante de lema"@es,
         "lemmaloend"@et,
         "märksõnaloend"@et,
-        "index entry"@it ;
+        "índice de subentrada"@gl,
+        "index entry"@it,
+        "liste de cuvinte"@ro,
+        "словарная статья, заглавное слово которой является вариантом и перекрестной ссылкой на полностью определенное заглавное слово в словаре"@ru ;
     skos:broader lexmeta:dictionaryEntry ;
     skos:definition "an entry whose headword is a variant and cross-reference of a fully defined headword in a reference book.",
         "entry in an information system containing a list of further entries" ;
@@ -2648,9 +2816,12 @@ lexmeta:inflectionMorphology a skos:Concept ;
         "flexión"@es,
         "muutemorfoloogia"@et,
         "flexio morfologia"@eu,
+        "morfoloxía flexiva"@gl,
         "morfologia della flessione"@it,
         "kaitybinė morfologija"@lt,
         "morfologia fleksyjna"@pl,
+        "morfologie flexionară"@ro,
+        "флективная морфология"@ru,
         "флективна морфологија"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14299 ;
     skos:altLabel "fleksionsmorfologi"@da,
@@ -2666,27 +2837,39 @@ lexmeta:inkhornTerm a skos:Concept ;
         "cultismo superfluo"@es,
         "raamatusõna"@et,
         "kultismo"@eu,
+        "cultismo superfluo"@gl,
         "inkhorn"@it,
-        "tarptautinis žodis"@lt ;
+        "pretenzingas tarptautinis žodis"@lt,
+        "termen pedantic"@ro,
+        "термин из чернильницы"@ru ;
     lexmeta:wikibaseEntity wikidata:Q2080363,
         lexbib:Q14580 ;
     skos:altLabel "raamatulik sõna"@et,
-        "pretenzingas žodis"@lt ;
+        "pedantería"@gl,
+        "pretenzingas žodis"@lt,
+        "cuvânt erudit"@ro,
+        "трудное слово, обычно образованное от латинских или греческих корней, и считающееся ненужным или чрезмерно претенциозным"@ru ;
     skos:broader lexmeta:loanword ;
     skos:definition "a hard word usually coined from foreign roots such as Latin or Greek, and thought to be unnecessary or overly pretentious, for example, animadversion for ‘criticism’." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
 lexmeta:intentionalDefinition a skos:Concept ;
     rdfs:label "definició intensiva"@ca,
+        "εντασιακός ορισμός"@el,
         "intentional definition"@en,
         "definición intensiva"@es,
         "intentsionaalne definitsioon"@et,
         "definizio intentzional"@eu,
+        "definición intensiva"@gl,
         "definizione intenzionale"@it,
-        "apibrėžtis per hiperonimo tikslinimą"@lt ;
+        "apibrėžtis per hiperonimo tikslinimą"@lt,
+        "definiție intensională"@ro,
+        "интенциональная дефиниция"@ru,
+        "интензионална дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14469 ;
     skos:altLabel "intensió"@ca,
-        "intensión"@es ;
+        "intensión"@es,
+        "тип определения с использованием формулы, которая указывает атрибуты или характеристики понятия по отношению к его гиперониму (родовому термину), например, сосна — это «разновидность вечнозеленого дерева»."@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "a type of definition using a formula which specifies the attributes or characteristics of a concept in relation to its hypernym (generic term), for example, pine is ‘kind of evergreen tree’." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -2771,10 +2954,12 @@ lexmeta:learnersDictionary a skos:Concept ;
         "učební slovník"@cs,
         "lørnerordbog"@da,
         "Lernerwörterbuch"@de,
+        "λεξικό εκμάθησης γλώσσας"@el,
         "learners’ dictionary"@en,
         "diccionario escolar"@es,
         "õppesõnastik"@et,
         "ikaslearen hiztegi"@eu,
+        "dicionario de aprendizaxe"@gl,
         "tanulószótár"@hu,
         "skólaorðabók"@is,
         "dizionario scolastico"@it,
@@ -2787,6 +2972,7 @@ lexmeta:learnersDictionary a skos:Concept ;
         lexbib:Q14581 ;
     skos:altLabel "Lernwörterbuch"@de,
         "Schulwörterbuch"@de,
+        "λεξικό μαθητή"@el,
         "learner dictionary"@en,
         "learner's dictionary"@en,
         "learners' dictionary"@en,
@@ -2839,22 +3025,26 @@ lexmeta:lemmaType a owl:ObjectProperty ;
 lexmeta:lexicographicDefinition a skos:Concept ;
     rdfs:label "definició lexicogràfica"@ca,
         "leksikografisk definition"@da,
-        "λεξικογραφικός ορισμός"@el,
+        "Ερμήνευμα"@el,
         "lexicographic definition"@en,
         "definición lexicográfica"@es,
         "definizio lexikografiko"@eu,
+        "definición lexicográfica"@gl,
         "orðabókarskýring"@is,
         "definizione lessicografica"@it,
         "leksikografinė apibrėžtis"@lt,
         "definicja słownikowa"@pl,
         "definiție"@ro,
+        "лексикографическое определение"@ru,
         "leksikografska definicija"@sl,
         "лексикографска дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14471 ;
-    skos:altLabel "skýring"@is,
+    skos:altLabel "λεξικογραφικός ορισμός"@el,
+        "skýring"@is,
         "leksikografinė definicija"@lt,
         "definicja leksykograficzna"@pl,
-        "definiție lexicografică"@ro ;
+        "definiție lexicografică"@ro,
+        "лексикографическая дефиниция"@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "an explanation of meaning that is considered the equivalent of the lexical unit and may be substituted for the lexical unit in a context (e.g. The book was long = The set of written, printed or blank sheets bound together into a volume was long)." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -2871,14 +3061,19 @@ lexmeta:lexicographicalProcessType a owl:ObjectProperty ;
 lexmeta:logicalDefinition a skos:Concept ;
     rdfs:label "definició lògica"@ca,
         "logisk definition"@da,
+        "λογικός ορισμός"@el,
         "logical definition"@en,
         "definición lógica"@es,
         "definitsioon"@et,
         "definizio logiko"@eu,
+        "definición lóxica"@gl,
         "fræðileg skilgreining"@is,
         "definizione logica"@it,
         "loginė apibrėžtis"@lt,
-        "definicja logiczna"@pl ;
+        "definicja logiczna"@pl,
+        "definiție analitică"@ro,
+        "логическая дефиниция"@ru,
+        "логичка дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14472 ;
     skos:altLabel "analytisk definition"@da,
         "intensionel definition"@da,
@@ -2908,6 +3103,7 @@ lexmeta:mainEntry a skos:Concept ;
         "entrada"@es,
         "märksõna"@et,
         "sarrera nagusi"@eu,
+        "entrada"@gl,
         "címszó"@hu,
         "aðalfletta"@is,
         "lemma"@it,
@@ -2921,6 +3117,7 @@ lexmeta:mainEntry a skos:Concept ;
         "opslagsord"@da,
         "entrada principal"@es,
         "sarrera"@eu,
+        "lema"@gl,
         "aðalfærsla"@is,
         "entrata lessicale"@it,
         "główny wyraz hasłowy"@pl,
@@ -2937,6 +3134,7 @@ lexmeta:meaningDiscrimination a skos:Concept ;
         "discriminación de sentidos"@es,
         "tähenduste eristamine"@et,
         "adieren bereizketa"@eu,
+        "desambiguación de significado"@gl,
         "jelentésmegkülönböztetés"@hu,
         "merkingaraðgreining"@is,
         "discriminazione di significato"@it,
@@ -3043,29 +3241,33 @@ lexmeta:morphemeDictionary a skos:Concept ;
 lexmeta:multiWordLexicalUnit a skos:Concept ;
     rdfs:label "multiwoorduitdrukking"@af,
         "unitat pluriverbal"@ca,
-        "flerordsudtryk"@da,
+        "flerordsforbindelse"@da,
         "Mehrwortausdruck"@de,
-        "πολυλεκτικό"@el,
+        "πολυλεκτικό σύνθετο"@el,
         "multi-word lexical unit"@en,
-        "expresión pluriverbal"@es,
+        "unidad pluriverbal"@es,
         "mitmesõnaline üksus"@et,
         "hitz anitzeko adierazpen"@eu,
         "expression à mots multiples"@fr,
+        "unidade pluriverbal"@gl,
         "többszavas kifejezés"@hu,
         "fleiryrtur"@is,
-        "espressione polirematica"@it,
-        "pastovusis žodžių junginys"@lt,
+        "polirematica"@it,
+        "daugiažodis pavadinimas"@lt,
         "mutliwoorduitdrukking"@nl,
         "fleirordseining"@nn,
-        "expresie compusă din două sau mai multe cuvinte"@ro,
+        "sintagmă"@ro,
         "лексическая единица, состоящая из нескольких слов"@ru,
-        "вишечлани израз"@sr,
+        "вишечлана лексичка јединица"@sr,
         "flerordsuttryck"@sv ;
     lexmeta:wikibaseEntity wikidata:Q6935164,
         lexbib:Q14414 ;
-    skos:altLabel "unitat polilèxica"@ca,
+    skos:altLabel "polilèxic"@ca,
+        "unitat polilèxica"@ca,
         "flerordsforbindelse"@da,
+        "flerordsudtryk"@da,
         "Mehrwortlexem"@de,
+        "πολυλεκτικό"@el,
         "πολυλεκτικό σύνθετο"@el,
         "multi-word"@en,
         "multi-word entity"@en,
@@ -3078,6 +3280,8 @@ lexmeta:multiWordLexicalUnit a skos:Concept ;
         "mwes"@en,
         "expresión multipalabra"@es,
         "expresión pluriléxica"@es,
+        "multipalabra"@es,
+        "unidad poliléxica"@es,
         "hitz anitzeko"@eu,
         "hitz anitzeko unitate"@eu,
         "fleiryrt samband"@is,
@@ -3086,6 +3290,7 @@ lexmeta:multiWordLexicalUnit a skos:Concept ;
         "polirematico"@it,
         "pastovusis junginys"@lt,
         "samplaika"@lt,
+        "construcție fixă"@ro,
         "словосочетание"@ru,
         "вишечлана лексема"@sr,
         "вишечлана лексичка јединица"@sr,
@@ -3163,20 +3368,26 @@ lexmeta:neologismsDictionary a skos:Concept ;
 lexmeta:nesting a skos:Concept ;
     rdfs:label "inclusió"@ca,
         "indlejring"@da,
+        "εγκιβωτισμός"@el,
         "nesting"@en,
         "anidamiento"@es,
         "pesa"@et,
         "nesting"@eu,
+        "aniñamento"@gl,
         "undirskipan"@is,
         "nidificazione"@it,
         "lizdinis pateikimas"@lt,
         "gniazdowanie"@pl,
-        "cuiburi"@ro ;
+        "cuiburi"@ro,
+        "гнездовой принцип организации микростуркутры"@ru,
+        "груписање речи у гнезда"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14474 ;
     skos:altLabel "redestruktur"@da,
         "inclusión"@es,
         "alamhulk"@et,
-        "annidamento"@it ;
+        "annidamento"@it,
+        "кластерная микроструктура"@ru,
+        "образовање лексичких гнезда"@sr ;
     skos:broader lexmeta:entryLayoutFeature ;
     skos:definition "the practice of clustering related words/phrases within an entry in a reference work, for example, the entry for casual would nest the entries casually, casualness at the end of the entry." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -3279,10 +3490,13 @@ lexmeta:onomasticDictionary a skos:Concept ;
         "diccionario onomástico"@es,
         "onomastika sõnastik"@et,
         "hiztegi onomastiko"@eu,
+        "dicionario de onomástica"@gl,
         "nafnaorðabók"@is,
         "dizionario onomastico"@it,
         "tikrinių vardų žodynas"@lt,
         "słownik onomastyczny"@pl,
+        "dicționar onomastic"@ro,
+        "ономастический словарь"@ru,
         "ономастички речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14338 ;
     skos:altLabel "navneleksikon"@da,
@@ -3290,6 +3504,7 @@ lexmeta:onomasticDictionary a skos:Concept ;
         "dictionary of named entities"@en,
         "named entities dictionary"@en,
         "diccionario de onomástica"@es,
+        "dicionario onomástico"@gl,
         "nafnabók"@is,
         "örnefnabók"@is ;
     skos:broader lexmeta:lemmaTypeOrientedDictionary ;
@@ -3405,16 +3620,19 @@ lexmeta:ostensiveDefinition a skos:Concept ;
         "Ostenzivní definice"@cs,
         "ostensiv definition"@da,
         "ostensive Definition"@de,
+        "δεικτικός ορισμός"@el,
         "ostensive definition"@en,
         "definición ostensiva"@es,
         "ostensiivne definitsioon"@et,
         "definizio ostentsibo"@eu,
         "définition ostensive"@fr,
+        "definición ostensiva"@gl,
         "definizione ostensiva"@it,
+        "prototipinė definicija"@lt,
         "Ostension"@nl,
         "definicja ostensywna"@pl,
-        "Definiție ostensivă"@ro,
-        "Остенсивное определение"@ru,
+        "definiție ostensivă"@ro,
+        "остенсивное определение"@ru,
         "остензивна дефиниција"@sr,
         "Ostension"@sv ;
     lexmeta:wikibaseEntity wikidata:Q3043208,
@@ -3423,7 +3641,8 @@ lexmeta:ostensiveDefinition a skos:Concept ;
         "hinweisende Definition"@de,
         "ostensiivneve määratlus"@et,
         "definizione sintetica"@it,
-        "definicja deiktyczna"@pl ;
+        "definicja deiktyczna"@pl,
+        "остенсивная дефиниция"@ru ;
     skos:broader lexmeta:definition ;
     skos:definition "a definition which includes a representation of the object or idea being described, as ‘yellow: a colour whose hue resembles that of ripe lemons or sunflowers’; also called synthetic definition. In a dictionary this can be supplemented by pictorial illustration or otherwise pointing directly at an object.",
         "conveying the meaning of a term by pointing out examples" ;
@@ -3606,6 +3825,7 @@ lexmeta:phraseologicalInformation a skos:Concept ;
         "información fraseológica"@es,
         "fraseoloogiline info"@et,
         "argibide fraseologiko"@eu,
+        "información fraseolóxica"@gl,
         "frazeológiai információ"@hu,
         "informazione fraseologica"@it,
         "frazeologinė informacija"@lt,
@@ -3669,13 +3889,19 @@ lexmeta:pocketElectronicDictionary a ms:DatasetDistributionForm,
         "diccionario electónico de bolsillo"@es,
         "elektrooniline taskusõnastik"@et,
         "PED"@eu,
+        "dicionario electrónico de peto"@gl,
+        "elektronikus zsebszótár"@hu,
         "rafræn vasaorðabók"@is,
         "dizionario elettronico portatile"@it,
-        "elektroninis kišeninis žodynas"@lt ;
+        "elektroninis kišeninis žodynas"@lt,
+        "dicționar electronic de buzunar"@ro,
+        "карманный электронный словарь"@ru,
+        "џепни електронски речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14958 ;
     skos:altLabel "diccionari electrònic portàtil"@ca,
         "PED"@en,
         "ped"@en,
+        "dicionario electrónico de bolso"@gl,
         "pocket electronic dictionary"@it ;
     skos:broader lexmeta:offlineDictionary ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme .
@@ -3711,13 +3937,17 @@ lexmeta:primarySchoolDictionary a skos:Concept ;
         "diccionario escolar"@es,
         "põhikooliõpik"@et,
         "lehen hezkuntzarako hiztegi"@eu,
+        "dicionario escolar"@gl,
         "általános iskolai szótár"@hu,
         "grunnskólaorðabók"@is,
         "dizionario elementare"@it,
         "pradinukų žodynas"@lt,
-        "dicționar pentru elevi"@ro ;
+        "dicționar pentru elevi"@ro,
+        "словарь для начальной школы"@ru,
+        "речник за основну школу"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14633 ;
-    skos:altLabel "dicționar școlar"@ro ;
+    skos:altLabel "dicionario escolar para educación primaria"@gl,
+        "dicționar școlar"@ro ;
     skos:broader lexmeta:userGroupOrientedDictionary ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
 
@@ -3823,6 +4053,7 @@ lexmeta:quotation a skos:Concept ;
         "aipu"@eu,
         "sitaatti"@fi,
         "citation"@fr,
+        "cita"@gl,
         "ציטוט"@he,
         "idézet"@hu,
         "tilvitnun"@is,
@@ -3849,6 +4080,7 @@ lexmeta:quotation a skos:Concept ;
         "cita literal"@es,
         "citación"@es,
         "tsiteering"@et,
+        "citación"@gl,
         "citate"@ro ;
     skos:broader lexmeta:example ;
     skos:definition "a phrase or sentence excerpted from a written or spoken source that contains a form of the entry word and which indicates additional information about its grammatical or semantic characteristics; in a dictionary entry or citation file, a citation; also called example, illustrative citation, illustrative example, illustrative phrase, illustrative quotation, illustrative sentence, verbal illustration." ;
@@ -3921,16 +4153,19 @@ lexmeta:respelledPronunciation a skos:Concept ;
         "transcripción indicativa"@es,
         "kirjapildihääldus"@et,
         "ahoskeraren errepresentaziorako idazkera"@eu,
+        "transcrición intuitiva"@gl,
         "stafsetningarframburður"@is,
         "respelling della pronuncia"@it,
         "изговорен препис"@mk,
-        "ortografie fonetică"@ro ;
+        "ortografie fonetică"@ro,
+        "схематическое написание слова, чтобы передать его произношение"@ru ;
     lexmeta:wikibaseEntity wikidata:Q7249970,
         lexbib:Q14586 ;
     skos:altLabel "udtalebaseret ortografi"@da,
         "pronunciation respelling"@en,
         "respelling"@en,
         "kirjatähtedega hääldus"@et,
+        "transcrición indicativa"@gl,
         "transcriere fonetică"@ro ;
     skos:broader lexmeta:pronunciation ;
     skos:definition "a pronunciation transcription system using conventional letters or characters and a minimum number of diacritical symbols.",
@@ -3946,6 +4181,7 @@ lexmeta:reverseDictionary a skos:Concept ;
         "pöördsõnastik"@et,
         "atzerunzko hiztegia"@eu,
         "dictionnaire inverse"@fr,
+        "dicionario inverso"@gl,
         "szóvégmutató szótár"@hu,
         "bakstöðuorðabók"@is,
         "dizionario inverso"@it,
@@ -3955,11 +4191,13 @@ lexmeta:reverseDictionary a skos:Concept ;
         "dicționarul invers"@ro,
         "обратный словарь"@ru,
         "Odzadnji slovar"@sl,
+        "обратни речник"@sr,
         "Інверсійний словник"@uk ;
     lexmeta:wikibaseEntity wikidata:Q1304223,
         lexbib:Q14991 ;
     skos:altLabel "backward dictionary"@en,
-        "seinni liða orðabók"@is ;
+        "seinni liða orðabók"@is,
+        "инверзни речник"@sr ;
     skos:broader lexmeta:informationTypeOrientedDictionary ;
     skos:definition "a reference work which alphabetically lists clue words or phrases that offer users a way of moving from a concept, idea, or meaning to the target word – an inversion of the traditional order; also called onomasiological dictionary, word-finding dictionary.",
         "dictionary organized in a non-standard order" ;
@@ -3985,6 +4223,7 @@ lexmeta:rootWord a skos:Concept ;
         "hitz erro"@eu,
         "vartalo"@fi,
         "thème morphologique"@fr,
+        "raíz"@gl,
         "szótő"@hu,
         "rót"@is,
         "radice della parola"@it,
@@ -3995,8 +4234,9 @@ lexmeta:rootWord a skos:Concept ;
         "ordstamme"@nn,
         "rdzeń (wyrazu)"@pl,
         "radical"@ro,
-        "основа слова"@ru,
+        "корень"@ru,
         "Stemi i fjalës"@sq,
+        "корен речи"@sr,
         "ordstam"@sv,
         "основа слова"@uk ;
     lexmeta:wikibaseEntity wikidata:Q210523,
@@ -4010,9 +4250,12 @@ lexmeta:rootWord a skos:Concept ;
         "word stem"@en,
         "radical"@es,
         "raíz"@es,
+        "radical"@gl,
         "radice"@it,
         "šakninis žodis"@lt,
-        "rădăcină"@ro ;
+        "rădăcină"@ro,
+        "корневая морфема"@ru,
+        "корен"@sr ;
     skos:broader lexmeta:wordFormation ;
     skos:definition "part of a word",
         "the base of a word; the form of a word after all affixes are removed, for example, vigour as the root of reinvigorating." ;
@@ -4137,10 +4380,14 @@ lexmeta:senseOrdering a skos:Concept ;
         "ordenación de sentidos"@es,
         "tähendusjaotus"@et,
         "adieren ordena"@eu,
+        "ordenación de significados"@gl,
+        "jelentések sorrendje"@hu,
         "röðun merkinga"@is,
         "ordine di senso"@it,
         "reikšmių rikiavimas; reikšmių eiliškumo nustatymas"@lt,
-        "filiația sensurilor"@ro ;
+        "filiația sensurilor"@ro,
+        "система организации значений полисемантического слова в словаре"@ru,
+        "редослед значења"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14587 ;
     skos:altLabel "betydningordning"@da,
         "ordenación de acepciones"@es,
@@ -4169,11 +4416,14 @@ lexmeta:signpost a skos:Concept ;
         "marca"@es,
         "silt"@et,
         "seinale"@eu,
+        "marca"@gl,
         "segnaletica"@it,
-        "teksto kūrimas"@lt ;
+        "teksto kūrimas"@lt,
+        "колонтитул"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14353 ;
     skos:altLabel "vejskilt"@da,
-        "tähendusvihje"@et ;
+        "tähendusvihje"@et,
+        "marcador discursivo"@gl ;
     skos:broader lexmeta:entryLayoutFeature ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -4199,6 +4449,7 @@ lexmeta:slang a skos:Concept ;
         "slangi"@fi,
         "argot"@fr,
         "Béarlagair"@ga,
+        "xerga"@gl,
         "סלנג"@he,
         "szleng"@hu,
         "slangur"@is,
@@ -4225,7 +4476,9 @@ lexmeta:slang a skos:Concept ;
         "Slang"@de,
         "germanía"@es,
         "jerga"@es,
+        "argot"@gl,
         "gergo"@it,
+        "жаргонное слово"@ru,
         "slang"@sl ;
     skos:broader lexmeta:registerLabel ;
     skos:definition "any informal word or phrase that is not considered appropriate in certain circumstances, such as formal occasions. Slang used by a particular group of people is sometimes called cant, jargon or argot.",
@@ -4239,14 +4492,17 @@ lexmeta:specializedSense a skos:Concept ;
         "sentido especializado"@es,
         "tähendusvarjund"@et,
         "adiera berezitu"@eu,
+        "significado especializado"@gl,
         "þrengd merking"@is,
         "sensi speciali"@it,
         "specialioji reikšmė"@lt,
         "znaczenie specjalistyczne"@pl,
-        "sens specializat"@ro ;
+        "sens specializat"@ro,
+        "специјализовано значење"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14588 ;
     skos:altLabel "sentit especialitzat"@ca,
         "sentido terminológico"@es,
+        "significado terminolóxico"@gl,
         "sérhæfð merking"@is,
         "sens conotativ"@ro ;
     skos:broader lexmeta:polysemyIndication ;
@@ -4261,6 +4517,7 @@ lexmeta:spellingVariant a skos:Concept ;
         "forma alternativa"@es,
         "ortograafiline variant"@et,
         "idazkera alternatibo"@eu,
+        "variante ortográfica"@gl,
         "írásmódváltozat"@hu,
         "annar ritháttur"@is,
         "variante ortografica"@it,
@@ -4297,13 +4554,17 @@ lexmeta:standardSpelling a skos:Concept ;
         "ortografía estándar"@es,
         "normeeritud õigekiri"@et,
         "hizkera estandar"@eu,
+        "ortografía normativa"@gl,
         "almennur ritháttur"@is,
         "standard spelling"@it,
         "standartinė rašyba"@lt,
-        "ortografie standard"@ro ;
+        "ortografie standard"@ro,
+        "стандардно писање"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14542 ;
     skos:altLabel "normeret stavemåde"@da,
-        "normikeel"@et ;
+        "normikeel"@et,
+        "ortografía estándar"@gl,
+        "стандардна ортографија"@sr ;
     skos:broader lexmeta:spelling ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -4314,11 +4575,15 @@ lexmeta:statusLabel a skos:Concept ;
         "marca de uso"@es,
         "register"@et,
         "estatus-adierazle"@eu,
+        "marca de rexistro"@gl,
         "málsniðsmerking"@is,
         "etichetta sullo stato"@it,
-        "vartosenos statusas"@lt ;
+        "vartosenos statusas"@lt,
+        "informații de uz"@ro,
+        "нормативни квалификатор"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14342 ;
-    skos:altLabel "vartosenos vertinimas; statuso pavadinimas; vertinimo laipsnis"@lt ;
+    skos:altLabel "vartosenos vertinimas; statuso pavadinimas; vertinimo laipsnis"@lt,
+        "ознака нормативног статуса"@sr ;
     skos:broader lexmeta:usageInformation ;
     skos:definition "a label used to mark the acceptability or currency of a word or phrase in a dictionary, for example, obsolete, rare." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -4330,6 +4595,7 @@ lexmeta:styleLabel a skos:Concept ;
         "etiqueta de estilo"@es,
         "stiilimärgend"@et,
         "estilo-adierazle"@eu,
+        "marca de estilo"@gl,
         "stílusminősítés"@hu,
         "stílmerking"@is,
         "etichetta di stile"@it,
@@ -4375,6 +4641,7 @@ lexmeta:subjectLabel a skos:Concept ;
         "gaiaren adierazle"@eu,
         "asiasana"@fi,
         "mot clé"@fr,
+        "marca de especialidade"@gl,
         "מילת מפתח"@he,
         "deskriptor"@hr,
         "merkingarflokkur"@is,
@@ -4389,6 +4656,7 @@ lexmeta:subjectLabel a skos:Concept ;
         "categorie"@ro,
         "ключевое слово"@ru,
         "področna oznaka"@sl,
+        "ознака области"@sr,
         "Ämnesord"@sv,
         "ключове слово"@uk ;
     lexmeta:wikibaseEntity wikidata:Q1128340,
@@ -4398,7 +4666,8 @@ lexmeta:subjectLabel a skos:Concept ;
         "etiqueta de especialidad"@es,
         "kwalifikator dziedzinowy"@pl,
         "domeniu"@ro,
-        "področni kvalifikator"@sl ;
+        "področni kvalifikator"@sl,
+        "квалификатор области"@sr ;
     skos:broader lexmeta:domainIndication ;
     skos:definition "a label used to mark the field, domain, or subject of a sense or entry, for example, chemistry, computer science, psychology.",
         "term that captures the essence of the topic of a document" ;
@@ -4411,13 +4680,16 @@ lexmeta:subsense a skos:Concept ;
         "subaccepción"@es,
         "alltähendus"@et,
         "azpi-adiera"@eu,
+        "acepción"@gl,
         "aljelentés"@hu,
         "undirmerking"@is,
         "sottosenso"@it,
         "reikšmės atspalvis"@lt,
-        "subsent"@ro ;
+        "subsent"@ro,
+        "подзначење"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14591 ;
     skos:altLabel "sub-sense"@en,
+        "subacepción"@gl,
         "sens derivat"@ro ;
     skos:broader lexmeta:polysemyIndication ;
     skos:definition "one of the distinct meanings of a polysemous word, often marked by a number; a meaning that follows or is attached to a main sense of a word or phrase and which gives a more specific meaning or use." ;
@@ -4443,6 +4715,7 @@ lexmeta:syllabification a skos:Concept ;
         "silabifikazio"@eu,
         "tavutus"@fi,
         "césure"@fr,
+        "silabación"@gl,
         "Elválasztás"@hu,
         "skipting í atkvæði"@is,
         "sillabazione"@it,
@@ -4462,6 +4735,7 @@ lexmeta:syllabification a skos:Concept ;
         "Worttrennung"@de,
         "syllabication"@en,
         "separación silábica"@es,
+        "separación silábica"@gl,
         "divisione in sillabe"@it,
         "silabisire"@ro,
         "силабификација"@sr ;
@@ -4543,14 +4817,19 @@ lexmeta:syntheticDefinition a skos:Concept ;
     rdfs:label "definició sintètica"@ca,
         "syntetická definice"@cs,
         "syntetisk definition"@da,
+        "δεικτικός ορισμός"@el,
         "synthetic definition"@en,
         "definición sintética"@es,
         "sünteetiline definitsioon"@et,
         "definizio sintetiko"@eu,
+        "definición ostensiva"@gl,
+        "szintetikus definíció"@hu,
         "tengjandi skilgreining"@is,
         "definizione sintetica"@it,
+        "prototipinė definicija"@lt,
         "definiție enciclopedică"@ro,
-        "Syntetická definícia"@sk ;
+        "Syntetická definícia"@sk,
+        "синтетичка дефиниција"@sr ;
     lexmeta:wikibaseEntity wikidata:Q12057979,
         lexbib:Q14485 ;
     skos:broader lexmeta:definition ;
@@ -4612,6 +4891,7 @@ lexmeta:terminologicalDictionary a skos:Concept ;
         "diccionario terminológico"@es,
         "terminisõnastik"@et,
         "terminologia hiztegi"@eu,
+        "dicionario terminolóxico"@gl,
         "terminológiai szótár"@hu,
         "íðorðabók"@is,
         "dizionario di nomenclatura"@it,
@@ -4636,14 +4916,20 @@ lexmeta:textProduction a skos:Concept ;
     rdfs:label "producció de textos"@ca,
         "tekstproduktion"@da,
         "Textproduktion"@de,
+        "παραγωγή κειμένου"@el,
         "text production"@en,
         "producción de textos"@es,
         "teksti loomine"@et,
         "testu ekoizpen"@eu,
+        "produción textual"@gl,
         "produzione del testo"@it,
-        "realizarea textului"@ro ;
+        "teksto generavimas"@lt,
+        "tekstproductie"@nl,
+        "realizarea textului"@ro,
+        "продукција текста"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14940 ;
     skos:altLabel "teksti moodustamine"@et,
+        "produción de textos"@gl,
         "generarea de text"@ro,
         "producere de text"@ro ;
     skos:broader lexmeta:languageProduction ;
@@ -4659,15 +4945,20 @@ lexmeta:textReception a skos:Concept ;
     rdfs:label "recepció de textos"@ca,
         "tekstforståelse"@da,
         "Textrezeption"@de,
+        "πρόσληψη κειμένου"@el,
         "text reception"@en,
         "recepción de textos"@es,
         "tekstist arusaamine"@et,
         "testu-harrera"@eu,
+        "recepción textual"@gl,
         "ricezione del testo"@it,
         "teksto suvokimas"@lt,
-        "receptarea textului"@ro ;
+        "receptarea textului"@ro,
+        "рецепција текста"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14941 ;
-    skos:altLabel "teksti mõistmine"@et,
+    skos:altLabel "κατανόηση κειμένου"@el,
+        "teksti mõistmine"@et,
+        "recepción de textos"@gl,
         "receptare"@ro ;
     skos:broader lexmeta:languageReception ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
@@ -4678,27 +4969,27 @@ lexmeta:textTranslation a skos:Concept ;
         "traducció"@ca,
         "překlad"@cs,
         "oversættelse"@da,
-        "Übersetzung"@de,
-        "μετάφραση"@el,
+        "Textübersetzung"@de,
+        "μετάφραση κειμένου"@el,
         "text translation"@en,
         "traducción"@es,
-        "vaste"@et,
+        "tõlkimine"@et,
         "itzulpen"@eu,
         "kääntäminen"@fi,
         "traduction"@fr,
         "aistriúchán"@ga,
-        "tradución"@gl,
+        "tradución de textos"@gl,
         "תרגום"@he,
         "Prevođenje"@hr,
         "fordítás"@hu,
         "þýðing"@is,
-        "traduzione"@it,
+        "traduzione di un testo"@it,
         "Iwwersetzung"@lb,
-        "vertimas"@lt,
+        "teksto vertimas"@lt,
         "tulkošana"@lv,
         "преведување"@mk,
         "oversettelse"@nb,
-        "vertaling"@nl,
+        "tekstvertaling"@nl,
         "omsetjing"@nn,
         "tłumaczenie"@pl,
         "tradução"@pt,
@@ -4707,7 +4998,7 @@ lexmeta:textTranslation a skos:Concept ;
         "Preklad"@sk,
         "prevod"@sl,
         "Përkthimi"@sq,
-        "превод"@sr,
+        "превод текста"@sr,
         "översättning"@sv,
         "переклад"@uk ;
     lexmeta:wikibaseEntity wikidata:Q7553,
@@ -4715,6 +5006,7 @@ lexmeta:textTranslation a skos:Concept ;
     skos:altLabel "tekstoversættelse"@da,
         "διαγλωσσική απόδοση"@el,
         "translation"@en,
+        "teksti tõlkimine"@et,
         "tõlkevaste"@et,
         "itzulpengintza"@eu,
         "versione"@it,
@@ -4729,7 +5021,7 @@ lexmeta:textTranslation a skos:Concept ;
 
 lexmeta:thesaurus a skos:Concept ;
     rdfs:label "Тезаурус"@bg,
-        "tesaurus"@ca,
+        "diccionari de sinònims"@ca,
         "tezaurus"@cs,
         "begrebsordbog"@da,
         "Thesaurus"@de,
@@ -4737,36 +5029,37 @@ lexmeta:thesaurus a skos:Concept ;
         "thesaurus"@en,
         "diccionario de sinónimos"@es,
         "tesaurus"@et,
-        "Thesaurus"@eu,
+        "tesauro"@eu,
         "tesaurus"@fi,
         "thésaurus lexicographique"@fr,
         "teasóras"@ga,
-        "dicionario de sinónimos"@gl,
+        "dicionario temático"@gl,
         "אגרון"@he,
         "Tezaurus"@hr,
         "tezaurusz"@hu,
         "hugtakaorðabók"@is,
-        "tesauro"@it,
+        "dizionario tematico"@it,
         "Thesaurus"@lb,
-        "tezauras"@lt,
+        "teminis žodynas"@lt,
         "тезаурус"@mk,
         "teżawru"@mt,
         "tesaurus"@nb,
         "thesaurus"@nl,
         "tesaurus"@nn,
-        "tezaurus"@pl,
+        "słownik tematyczny"@pl,
         "tesauro"@pt,
-        "tezaur"@ro,
+        "dicționar tematic"@ro,
         "тезаурус"@ru,
         "Tezaurus"@sk,
         "tezaver"@sl,
         "Thesaurusi"@sq,
-        "речник синонима"@sr,
+        "тематски речник"@sr,
         "synonymordbok"@sv,
         "тезаурус"@uk ;
     lexmeta:wikibaseEntity wikidata:Q179797,
         lexbib:Q14345 ;
     skos:altLabel "diccionari de sinònims"@ca,
+        "tesaurus"@ca,
         "onomasiologisk ordbog"@da,
         "tematisk ordbog"@da,
         "tesaurus"@da,
@@ -4777,6 +5070,7 @@ lexmeta:thesaurus a skos:Concept ;
         "tesauro"@es,
         "tesoro"@es,
         "samheitaorðabók"@is,
+        "tesauro"@it,
         "thesaurus"@it,
         "teminis žodynas"@lt,
         "słownik tematyczny"@pl,
@@ -4842,7 +5136,8 @@ lexmeta:translationEquivalent a skos:Concept ;
         "translation equivalent"@en,
         "equivalente"@es,
         "tõlkevaste"@et,
-        "itzulpen-baliokide"@eu,
+        "itzulpen-ordain"@eu,
+        "equivalente de tradución"@gl,
         "jafnheiti"@is,
         "traduzione equivalente"@it,
         "atitikmuo"@lt,
@@ -4856,6 +5151,7 @@ lexmeta:translationEquivalent a skos:Concept ;
         "equivalent"@en,
         "equivalente de traducción"@es,
         "vaste"@et,
+        "equivalente"@gl,
         "corrispettivo"@it,
         "ekvivalentas"@lt,
         "ekwiwalent tłumaczeniowy"@pl,
@@ -4882,8 +5178,10 @@ lexmeta:typifyingDefinition a skos:Concept ;
         "definición prototípica"@es,
         "definitsioon"@et,
         "definizio tipifikatzaile"@eu,
+        "definición prototípica"@gl,
         "tipizzazione"@it,
-        "definiție"@ro ;
+        "definiție"@ro,
+        "типизирајућа дефиниција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14487 ;
     skos:altLabel "definiție de uz general"@ro ;
     skos:broader lexmeta:definition ;
@@ -4897,6 +5195,7 @@ lexmeta:usageLabel a skos:Concept ;
         "marca de uso"@es,
         "kasutusmärgend"@et,
         "erabilpenaren adierazle"@eu,
+        "marca de uso"@gl,
         "stílmerking"@is,
         "etichetta di uso"@it,
         "vartosenos pažyma"@lt,
@@ -4918,6 +5217,7 @@ lexmeta:usageNote a skos:Concept ;
         "indicación de uso"@es,
         "kasutusmärkus"@et,
         "erabilpen-ohar"@eu,
+        "nota de uso"@gl,
         "ábending"@is,
         "nota d'uso"@it,
         "vartosenos pastaba"@lt,
@@ -4940,13 +5240,14 @@ lexmeta:valency a skos:Concept ;
         "valence"@cs,
         "valens"@da,
         "Valenz"@de,
+        "σθένος"@el,
         "valency"@en,
         "valencia"@es,
         "valents"@et,
         "balentzia"@eu,
         "Valenssi"@fi,
         "valence"@fr,
-        "Valencia"@gl,
+        "valencia"@gl,
         "valencia"@hu,
         "fallstjórn"@is,
         "valenza"@it,
@@ -4983,9 +5284,11 @@ lexmeta:variant a skos:Concept ;
     rdfs:label "variant"@ca,
         "variant"@da,
         "Variante"@de,
+        "παραλλαγή"@el,
         "variant"@en,
         "variante"@es,
         "variant"@et,
+        "variante"@gl,
         "variáns"@hu,
         "tilbrigði"@is,
         "variante"@it,
@@ -5012,15 +5315,19 @@ lexmeta:verbalIllustration a skos:Concept ;
         "ilustración"@es,
         "täislausekujuline definitsioon"@et,
         "definizio argigarri"@eu,
+        "exemplo"@gl,
         "illustrazione verbale"@it,
         "iliustracinis pavyzdys"@lt,
         "ilustracja tekstowa"@pl,
-        "definiție"@ro ;
+        "definiție"@ro,
+        "пример"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14488 ;
     skos:altLabel "belæg"@da,
         "citat"@da,
+        "exemplo ilustrativo"@gl,
         "exemplu"@ro,
-        "ilustrație"@ro ;
+        "ilustrație"@ro,
+        "илустративни пример"@sr ;
     skos:broader lexmeta:definition ;
     skos:definition "a phrase or sentence excerpted from a written or spoken source or written by a lexicographer that contains a form of the entry word and which indicates additional information about its grammatical or semantic characteristics, such as its context and usage; also called citation, example, illustrative citation, illustrative example, illustrative phrase, illustrative quotation, illustrative sentence." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -5046,13 +5353,17 @@ lexmeta:vocabularyLearning a skos:Concept ;
         "aprendizaje de léxico"@es,
         "sõnavara õppimine"@et,
         "hiztegiaren ikasketa"@eu,
+        "aprendizaxe de vocabulario"@gl,
         "apprendimento del vocabolario"@it,
-        "žodyno mokymasis"@lt ;
+        "žodyno mokymasis"@lt,
+        "învățarea vocabularului"@ro,
+        "учење вокабулара"@sr ;
     lexmeta:wikibaseEntity wikidata:Q48842322,
         lexbib:Q14445 ;
     skos:altLabel "aprenentatge de vocabulari"@ca,
         "glosetræning"@da,
-        "aprendizaje de vocabulario"@es ;
+        "aprendizaje de vocabulario"@es,
+        "învățarea de cuvinte"@ro ;
     skos:broader lexmeta:cognitiveFunction ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
 
@@ -5063,10 +5374,14 @@ lexmeta:vocabularyRetention a skos:Concept ;
         "retención de léxico"@es,
         "sõnavara omandamine"@et,
         "hiztegiaren erretentzio"@eu,
+        "memorización de vocabulario"@gl,
         "orðaforðageymd"@is,
         "retenzione del vocabolario"@it,
-        "žodyno išlaikymas atmintyje"@lt ;
+        "žodyno išlaikymas atmintyje"@lt,
+        "capacitatea de reținere a cuvintelor"@ro,
+        "ретенција вокабулара"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14395 ;
+    skos:altLabel "retención de vocabulario"@gl ;
     skos:broader lexmeta:cognitiveFunction ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
 
@@ -5138,7 +5453,7 @@ lexmeta:wordSense a skos:Concept ;
         "acepción"@es,
         "sõnatähendus"@et,
         "adiera"@eu,
-        "Acepción"@gl,
+        "significado"@gl,
         "משמעות מילה"@he,
         "szójelentés"@hu,
         "merking"@is,
@@ -5165,6 +5480,7 @@ lexmeta:wordSense a skos:Concept ;
         "word meaning"@en,
         "sentido"@es,
         "significado"@es,
+        "acepción"@gl,
         "szó értelme"@hu,
         "merking orðs"@is,
         "betekenis"@nl,
@@ -5188,7 +5504,7 @@ ms:distribution a owl:ObjectProperty ;
 
 ms:distributionForm a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P91 ;
-    rdfs:domain frbr:Manifestation,
+    rdfs:domain bibo:Document,
         ms:DatasetDistribution ;
     rdfs:range ms:DatasetDistributionForm ;
     skos:definition "Specifies the form (medium/channel) with which a resource is distributed (delivered or provided access to)" .
@@ -5280,6 +5596,12 @@ ms:isReplacedWith a owl:ObjectProperty ;
     rdfs:range ms:LexicalConceptualResource ;
     skos:definition "Links to LR B that is a newer version of LR A (the one being described) and replaces it" .
 
+ms:isSimilarTo a owl:ObjectProperty ;
+    lexmeta:wikibaseEntity lexbib:P136 ;
+    rdfs:domain ms:LexicalConceptualResource ;
+    rdfs:range ms:LexicalConceptualResource ;
+    skos:definition "Links to LR B that bears resemblances to LR A (the one being described), e.g., they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools" .
+
 ms:isVersionOf a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P133 ;
     rdfs:domain ms:LexicalConceptualResource ;
@@ -5303,12 +5625,6 @@ ms:metalanguage a owl:ObjectProperty ;
     rdfs:domain ms:LexicalConceptualResource ;
     rdfs:range dct:LinguisticSystem ;
     skos:definition "Specifies the language that is used as support for the resource (e.g., English for a grammar of French described in English or for a French dictionary with English definitions)" .
-
-<http://w3id.org/meta-share/meta-share/ms:isSimilarTo> a owl:ObjectProperty ;
-    lexmeta:wikibaseEntity lexbib:P136 ;
-    rdfs:domain ms:LexicalConceptualResource ;
-    rdfs:range ms:LexicalConceptualResource ;
-    skos:definition "Links to LR B that bears resemblances to LR A (the one being described), e.g., they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools" .
 
 ms:replaces a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P135 ;
@@ -5359,7 +5675,7 @@ foaf:homepage a owl:DatatypeProperty ;
 schema:bookEdition a owl:DatatypeProperty ;
     lexmeta:wikibaseEntity wikidata:P393,
         lexbib:P64 ;
-    rdfs:domain frbr:Manifestation ;
+    rdfs:domain bibo:Document ;
     skos:definition "The name defining a special edition of a document. Normally its a literal value composed of a version number and words." .
 
 schema:review a owl:ObjectProperty ;
@@ -5368,6 +5684,18 @@ schema:review a owl:ObjectProperty ;
 bibo:Conference a owl:Class ;
     lexmeta:wikibaseEntity wikidata:Q2020153,
         lexbib:Q6 .
+
+frbr:Expression a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q61 ;
+    rdfs:subClassOf frbr:Endeavour .
+
+frbr:Manifestation a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q62 ;
+    rdfs:subClassOf frbr:Endeavour .
+
+frbr:Work a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q63 ;
+    rdfs:subClassOf frbr:Endeavour .
 
 lexmeta:academicDictionary a skos:Concept ;
     rdfs:label "akademický slovník"@cs,
@@ -5402,20 +5730,31 @@ lexmeta:collaborativeDictionary a skos:Concept ;
     rdfs:label "diccionari col·laboratiu"@ca,
         "crowdsourcet ordbog"@da,
         "kollaboratives Wörterbuch"@de,
+        "συλλογικό λεξικό"@el,
         "collaborative dictionary"@en,
         "diccionario colaborativo"@es,
         "koosloomesõnastik"@et,
         "hiztegi kolaboratibo"@eu,
+        "dicionario colaborativo"@gl,
+        "közösségi szótár"@hu,
         "samstarfsorðabók"@is,
         "dizionario collaborativo"@it,
         "interneto vartotojų kuriamas  žodynas; bendrai žmonių kuriamasinternetinis žodynas"@lt,
+        "колаборативен речник"@mk,
+        "collaboratief woordenboek"@nl,
+        "dicționar colectiv"@ro,
+        "коллаборативный словарь"@ru,
         "колаборативни речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14439 ;
     skos:altLabel "brugergenereret ordbog"@da,
         "wikiordbog"@da,
+        "συνεργατικό λεξικό"@el,
         "rahvahankesõnastik"@et,
         "ühisloomesõnastik"@et,
-        "auzolanezko hiztegi"@eu ;
+        "auzolanezko hiztegi"@eu,
+        "dicionario semi-colaborativo, dicionario institucional-colaborativo"@gl,
+        "словарь, содержание которого создано пользователями"@ru,
+        "словарь, созданный объединённой группой"@ru ;
     skos:inScheme lexmeta:LexicographicalProcessTypeScheme .
 
 lexmeta:collocation a skos:Concept ;
@@ -5599,20 +5938,28 @@ lexmeta:languageProduction a skos:Concept ;
     rdfs:label "producció"@ca,
         "sprogproduktion"@da,
         "Sprachproduktion"@de,
-        "παραγωγή γλώσσας"@el,
+        "γλωσσική παραγωγή"@el,
         "language production"@en,
         "producción"@es,
         "keel moodustamine"@et,
         "hizkuntza sorkuntza"@eu,
+        "produción lingüística"@gl,
         "A beszédprodukció modelljei"@hu,
         "málbeiting"@is,
         "produzione del linguaggio"@it,
-        "kalbos produkcija"@lt ;
+        "kalbos produkcija"@lt,
+        "producerea limbajului"@ro,
+        "воспроизводство речи"@ru,
+        "језичка продукција"@sr ;
     lexmeta:wikibaseEntity wikidata:Q463837,
         lexbib:Q14441 ;
     skos:altLabel "producció lingüística"@ca,
         "produktion"@da,
-        "producción lingüística"@es ;
+        "παραγωγή γλώσσας"@el,
+        "producción lingüística"@es,
+        "expresión"@gl,
+        "устная или письменная речь"@ru,
+        "продукција језика"@sr ;
     skos:broader lexmeta:communicativeFunction ;
     skos:definition "process by which people translate thoughts into spoken, written or signed words" ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
@@ -5621,41 +5968,49 @@ lexmeta:languageReception a skos:Concept ;
     rdfs:label "recepció"@ca,
         "sprogreception"@da,
         "Sprachrezeption"@de,
-        "κατανόηση γλώσσας"@el,
+        "πρόσληψη γλώσσας"@el,
         "language reception"@en,
         "recepción"@es,
         "keelest arusaamine"@et,
         "hizkuntza harrera"@eu,
+        "recepción lingüística"@gl,
         "málskilningur"@is,
         "ricezione del linguaggio"@it,
-        "kalbos recepcija"@lt ;
+        "kalbos recepcija"@lt,
+        "receptarea limbajului"@ro,
+        "восприятие речи"@ru,
+        "језичка рецепција"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14442 ;
     skos:altLabel "recepció lingüística"@ca,
         "reception"@da,
         "sprogforståelse"@da,
+        "κατανόηση γλώσσας"@el,
         "recepción lingüística"@es,
-        "málviðtaka"@is ;
+        "comprensión"@gl,
+        "málviðtaka"@is,
+        "навыки аудирования и чтения"@ru,
+        "рецепција језика"@sr ;
     skos:broader lexmeta:communicativeFunction ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
 
 lexmeta:lemma a skos:Concept ;
-    rdfs:label "entrada"@ca,
+    rdfs:label "lema"@ca,
         "lemma"@cs,
-        "lemma"@da,
+        "opslagsform"@da,
         "Lemma"@de,
         "λήμμα"@el,
         "lemma"@en,
-        "entrada"@es,
+        "lema"@es,
         "lemma"@et,
         "hiztegi-sarrera"@eu,
         "lemme"@fr,
         "Leama"@ga,
-        "Forma canónica"@gl,
+        "lema"@gl,
         "צורה מילונית"@he,
         "Lema"@hr,
         "címszó"@hu,
         "flettimynd"@is,
-        "lemma"@it,
+        "forma canonica"@it,
         "Lemma"@lb,
         "lema"@lt,
         "lemma"@lv,
@@ -5665,30 +6020,35 @@ lexmeta:lemma a skos:Concept ;
         "forma podstawowa"@pl,
         "lema"@pt,
         "lemă"@ro,
-        "лемма"@ru,
+        "каноническая форма"@ru,
         "slovníková forma"@sk,
         "lema"@sl,
-        "лема"@sr,
+        "канонски облик"@sr,
         "lemma"@sv,
         "лема"@uk ;
     lexmeta:wikibaseEntity wikidata:Q18514,
         lexbib:Q14450 ;
     skos:altLabel "forma de citació"@ca,
         "lema"@ca,
+        "kanonisk form"@da,
         "opslagsord"@da,
         "Eintragswort"@de,
         "Grundform"@de,
+        "Kanonische Form"@de,
         "Schlagwort"@de,
         "Stichwort"@de,
+        "λέξη εισόδου"@el,
         "canonical form"@en,
         "entry word"@en,
         "headword"@en,
         "lemmata"@en,
         "forma de citación"@es,
+        "forma de diccionario"@es,
         "lema"@es,
         "märksõna"@et,
-        "lema"@eu,
-        "sarrera"@eu,
+        "hiztegi sarrera"@eu,
+        "entrada"@gl,
+        "forma canónica"@gl,
         "lemma"@hu,
         "fletta"@is,
         "lemma"@it,
@@ -5699,6 +6059,8 @@ lexmeta:lemma a skos:Concept ;
         "forma standard"@ro,
         "входное слово"@ru,
         "каноническая форма слова"@ru,
+        "лемма"@ru,
+        "основная форма входного слова"@ru,
         "Lema"@sl,
         "основни облик"@sr ;
     skos:definition "A type of content included in a language resource pertaining to the lemma@en",
@@ -5717,7 +6079,7 @@ lexmeta:loanword a skos:Concept ;
         "Lehnwort"@de,
         "δάνειο"@el,
         "loanword"@en,
-        "calco"@es,
+        "préstamo"@es,
         "laensõna"@et,
         "mailegu"@eu,
         "lainasana"@fi,
@@ -5728,11 +6090,11 @@ lexmeta:loanword a skos:Concept ;
         "Posuđenice"@hr,
         "jövevényszó"@hu,
         "tökuorð"@is,
-        "prestito linguistico"@it,
+        "prestito"@it,
         "skolinys"@lt,
         "aizguvums"@lv,
         "lånord"@nb,
-        "leenwoord"@nl,
+        "bastaardwoord"@nl,
         "Lånord"@nn,
         "zapożyczenie"@pl,
         "empréstimo lingüístico"@pt,
@@ -5747,14 +6109,20 @@ lexmeta:loanword a skos:Concept ;
         lexbib:Q14638 ;
     skos:altLabel "préstec"@ca,
         "fremmedord"@da,
+        "indlån"@da,
         "Entlehnung"@de,
         "Fremdwort"@de,
+        "Lehnwort"@de,
         "borrowing"@en,
         "foreignism"@en,
         "loan-word"@en,
+        "calco"@es,
         "prestamo"@es,
         "sõnalaen"@et,
+        "calco"@gl,
         "prestito lessicale"@it,
+        "prestito linguistico"@it,
+        "krediet"@nl,
         "pożyczka"@pl,
         "cuvânt de împrumut"@ro,
         "cuvânt împrumutat"@ro,
@@ -5762,7 +6130,8 @@ lexmeta:loanword a skos:Concept ;
         "заимствованное слово"@ru,
         "izposojenka"@sl,
         "sposojenka"@sl,
-        "позајмљена реч"@sr ;
+        "позајмљена реч"@sr,
+        "позајмљивање"@sr ;
     skos:broader lexmeta:etymologicalInformation ;
     skos:definition "a word or phrase that has been borrowed into a language and has not been fully assimilated into the vocabulary; also called borrowing.",
         "a word-formation process in which a word or phrase is transferred from one language to another; a word or phrase from one language taken into another language and naturalized; also called loanword (e.g. goulash, into English from Hungarian ‘gulyás-hús’); see also calque.",
@@ -5810,12 +6179,13 @@ lexmeta:monolingualDictionary a ms:LingualityType,
         "výkladový slovník"@cs,
         "monolingval ordbog"@da,
         "einsprachiges Wörterbuch"@de,
-        "ερμηνευτικό λεξικό"@el,
+        "μονόγλωσσο λεξικό"@el,
         "monolingual dictionary"@en,
         "diccionario monolingüe"@es,
         "ükskeelne sõnastik"@et,
         "hiztegi elebakar"@eu,
         "dictionnaire explicatif"@fr,
+        "dicionario monolingüe"@gl,
         "egynyelvű szótár"@hu,
         "einsmálsorðabók"@is,
         "dizionario monolingua"@it,
@@ -5858,7 +6228,7 @@ lexmeta:multilingualDictionary a ms:LingualityType,
         "hiztegi elebidun"@eu,
         "dictionnaire bilingue"@fr,
         "foclóir dátheangach"@ga,
-        "dicionario bilingüe"@gl,
+        "dicionario multilingüe"@gl,
         "מילון דו-לשוני"@he,
         "többnyelvű szótár"@hu,
         "margmála orðabók"@is,
@@ -5906,7 +6276,7 @@ lexmeta:onomasiologicalDictionary a skos:Concept ;
         "tezaurus"@cs,
         "onomasiologisk ordbog"@da,
         "onomasiologisches Wörterbuch"@de,
-        "Θησαυρός"@el,
+        "εννοιολογικό λεξικό"@el,
         "onomasiological dictionary"@en,
         "diccionario onomasiológico"@es,
         "onomasioloogiline sõnaraamat"@et,
@@ -5914,7 +6284,7 @@ lexmeta:onomasiologicalDictionary a skos:Concept ;
         "tesaurus"@fi,
         "thésaurus lexicographique"@fr,
         "teasóras"@ga,
-        "dicionario de sinónimos"@gl,
+        "dicionario onomasiolóxico"@gl,
         "אגרון"@he,
         "Tezaurus"@hr,
         "tezaurusz"@hu,
@@ -5929,7 +6299,8 @@ lexmeta:onomasiologicalDictionary a skos:Concept ;
         "tesaurus"@nn,
         "słownik onomazjologiczny"@pl,
         "tesauro"@pt,
-        "тезаурус"@ru,
+        "dicționar onomasiologic"@ro,
+        "ономасиологический словарь"@ru,
         "Tezaurus"@sk,
         "Tezaver"@sl,
         "Thesaurusi"@sq,
@@ -5938,10 +6309,12 @@ lexmeta:onomasiologicalDictionary a skos:Concept ;
         "тезаурус"@uk ;
     lexmeta:wikibaseEntity wikidata:Q179797,
         lexbib:Q14476 ;
-    skos:altLabel "mõisteline sõnastik"@et,
+    skos:altLabel "ονομαστικό λεξικό"@el,
+        "mõisteline sõnastik"@et,
         "hugtakaorðabók"@is,
         "vocabolario onomasiologico"@it,
-        "słownik pojęciowy"@pl ;
+        "słownik pojęciowy"@pl,
+        "dicționar analogic, dicționar ideografic"@ro ;
     skos:definition "a reference work arranged by the meaning or concept leading to the lexical unit (word or phrase), a dictionary presenting language as expressions of semantically linked concepts (ideas, meanings); also called semantic dictionary (e.g. reverse dictionary, word-finding dictionary, Roget-style thesaurus).",
         "reference work that lists words grouped together according to similarity of meaning" ;
     skos:inScheme lexmeta:AccessStructureTypeScheme .
@@ -5989,6 +6362,7 @@ lexmeta:register a skos:Concept ;
         "Hizkuntza-erregistro"@eu,
         "rekisteri"@fi,
         "registre de langue"@fr,
+        "rexistro"@gl,
         "משלב"@he,
         "regiszter"@hu,
         "málsnið"@is,
@@ -6011,6 +6385,7 @@ lexmeta:register a skos:Concept ;
         "registro linguistico"@it,
         "registru"@ro,
         "registru de limbă"@ro,
+        "уровень языка"@ru,
         "функционални стил"@sr ;
     skos:broader lexmeta:usageInformation ;
     skos:closeMatch <http://www.lexinfo.net/ontology/3.0/lexinfo#Register> ;
@@ -6035,6 +6410,7 @@ lexmeta:slangDictionary a skos:Concept ;
         "diccionario de argot"@es,
         "slängisõnastik"@et,
         "argot hiztegi"@eu,
+        "dicionario de argot"@gl,
         "szlengszótár"@hu,
         "slangurorðabók"@is,
         "dizionario di slang"@it,
@@ -6043,12 +6419,14 @@ lexmeta:slangDictionary a skos:Concept ;
         "dicionário de gírias"@pt,
         "dicționar de argou"@ro,
         "словарь сленга"@ru,
+        "речник сленга"@sr,
         "Словник сленгу"@uk ;
     lexmeta:wikibaseEntity wikidata:Q3808854,
         lexbib:Q14602 ;
     skos:altLabel "Slang-Wörtberbuch"@de,
         "Wörterbuch der Umgangssprache"@de,
-        "colloquial language dictionary"@en ;
+        "colloquial language dictionary"@en,
+        "речник жаргона"@sr ;
     skos:broader lexmeta:varietyOrientedDictionary ;
     skos:definition "reference book containing an alphabetical list of slang" ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
@@ -6066,6 +6444,7 @@ lexmeta:style a skos:Concept ;
         "estilo"@eu,
         "tyyli"@fi,
         "style"@fr,
+        "estilo"@gl,
         "stílus"@hu,
         "stílmerking"@is,
         "stile"@it,
@@ -6095,15 +6474,21 @@ lexmeta:subentry a skos:Concept ;
         "subentrada"@es,
         "allmärksõna"@et,
         "azpi-sarrera"@eu,
+        "subentrada"@gl,
+        "alcímszó"@hu,
         "undirfletta"@is,
         "subentry"@it,
-        "paantraštinis žodis"@lt ;
+        "paantraštinis žodis"@lt,
+        "пододредница"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14484 ;
     skos:altLabel "underopslagsord"@da,
         "sub-entry"@en ;
     skos:broader lexmeta:entryLayoutFeature ;
     skos:definition "a listed or defined derivative of a lexical unit, one of the numbered senses of a headword within a dictionary entry; a derivative, idiom, etc. listed or defined within or following a dictionary entry; compare main entry." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
+
+dcat:DatasetSeries a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q64 .
 
 lexmeta:bilingualDictionary a ms:LingualityType,
         skos:Concept ;
@@ -6143,10 +6528,13 @@ lexmeta:cognitiveFunction a skos:Concept ;
         "función cognitiva"@es,
         "kognitiivne funktsioon"@et,
         "funtzio kognitibo"@eu,
+        "función cognitiva"@gl,
         "kognitív funkció"@hu,
         "funzione cognitiva"@it,
         "kognityvinė funkcija"@lt,
+        "спознајна функција"@mk,
         "funcție cognitivă"@ro,
+        "когнитивная функция"@ru,
         "когнитивна функција"@sr ;
     lexmeta:wikibaseEntity wikidata:Q13434561,
         lexbib:Q14385 ;
@@ -6154,8 +6542,10 @@ lexmeta:cognitiveFunction a skos:Concept ;
         "cognición"@es,
         "conocimiento"@es,
         "noesis"@es,
+        "спознание"@mk,
         "cogniție"@ro,
         "înțelegere"@ro,
+        "изучение и запоминание слов"@ru,
         "спознајна функција"@sr ;
     skos:inScheme lexmeta:DictionaryFunctionTypeScheme .
 
@@ -6181,12 +6571,19 @@ lexmeta:domainIndication a skos:Concept ;
         "marca de especialidad"@es,
         "valdkond"@et,
         "arloaren adierazle"@eu,
+        "marca de especialidade"@gl,
         "sviðsmerking"@is,
         "indicazione di dominio"@it,
-        "srities nurodymas"@lt ;
+        "srities nurodymas"@lt,
+        "domeniu"@ro,
+        "указание сферы"@ru,
+        "индикација домена"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14447 ;
     skos:altLabel "marca de dominio"@es,
-        "valdkonna märgend"@et ;
+        "valdkonna märgend"@et,
+        "marca de dominio"@gl,
+        "categorie"@ro,
+        "указание области"@ru ;
     skos:broader lexmeta:semanticInformation ;
     skos:exactMatch ms:domain1 ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -6199,17 +6596,22 @@ lexmeta:etymologicalInformation a skos:Concept ;
         "información etimológica"@es,
         "etümoloogiline info"@et,
         "argibide etimologiko"@eu,
+        "información etimolóxica"@gl,
         "etimológiai információ"@hu,
         "orðsifjar"@is,
         "informazione etimologica"@it,
         "etimologinė informacija"@lt,
+        "etymologische informatie"@nl,
         "informacja etymologiczna"@pl,
-        "informație etimologică"@ro ;
+        "informație etimologică"@ro,
+        "этимологическая информация"@ru,
+        "етимолошке информације"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14354 ;
     skos:altLabel "informació etimològica"@ca,
         "etymologiske oplysninger"@da,
         "Herkunftsinformation"@de,
-        "päritoluinfo"@et ;
+        "päritoluinfo"@et,
+        "этимология"@ru ;
     skos:broader lexmeta:formalInformation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -6221,16 +6623,21 @@ lexmeta:offlineDictionary a ms:DatasetDistributionForm ;
         "diccionario offline"@es,
         "CD-ROMil sõnastik"@et,
         "off-line hiztegi"@eu,
+        "dicionario offline"@gl,
         "papíralapú szótár"@hu,
         "orðabók í tölvu"@is,
         "dizionario offline"@it,
         "interneto prieigos nereikalaujantis elektroninis žodynas"@lt,
         "słownik offline"@pl,
-        "dicionário offline"@pt ;
+        "dicionário offline"@pt,
+        "dicționar electronic ce poate fi accesat în absența conexiunii la internet"@ro,
+        "печатный словарь"@ru,
+        "офлајн речник"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14304 ;
     skos:altLabel "Wörterbuch"@de,
         "diccionario sin conexión"@es,
-        "vocabolario offline"@it ;
+        "vocabolario offline"@it,
+        "dicționar offline"@ro ;
     skos:broader lexmeta:electronicDictionary ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme,
         ms:DatasetDistributionForm .
@@ -6241,6 +6648,7 @@ lexmeta:onlineDictionary a ms:DatasetDistributionForm,
         "internetový slovník"@cs,
         "netordbog"@da,
         "Online-Wörterbuch"@de,
+        "διαδικτυακό λεξικό"@el,
         "online dictionary"@en,
         "diccionario en línea"@es,
         "veebisõnastik"@et,
@@ -6248,7 +6656,7 @@ lexmeta:onlineDictionary a ms:DatasetDistributionForm,
         "verkkosanakirja"@fi,
         "dictionnaire en ligne"@fr,
         "foclóir ar líne"@ga,
-        "dicionario en liña"@gl,
+        "dicionario online"@gl,
         "מילון מקוון"@he,
         "online szótár"@hu,
         "veforðabók"@is,
@@ -6267,9 +6675,11 @@ lexmeta:onlineDictionary a ms:DatasetDistributionForm,
     lexmeta:wikibaseEntity wikidata:Q3327521,
         lexbib:Q14305 ;
     skos:altLabel "onlineordbog"@da,
+        "λεξικό διαθέσιμο στο διαδίκτυο"@el,
         "elektrooniline sõnaraamat"@et,
         "elektrooniline sõnastik"@et,
         "sareko hiztegi"@eu,
+        "dicionario en liña"@gl,
         "stafræn orðabók"@is,
         "vocabolario online"@it,
         "dicionário online"@pt,
@@ -6291,6 +6701,7 @@ lexmeta:phraseme a skos:Concept ;
         "frasema"@eu,
         "Unité phraséologique"@fr,
         "frásaeim"@ga,
+        "frasema"@gl,
         "פראזמה"@he,
         "frazéma"@hu,
         "polirematica"@it,
@@ -6331,7 +6742,7 @@ lexmeta:pronunciation a skos:Concept ;
         "ääntäminen"@fi,
         "prononciation"@fr,
         "Fuaimniú"@ga,
-        "pronunciación"@gl,
+        "pronuncia"@gl,
         "הגייה"@he,
         "kiejtés"@hu,
         "framburður"@is,
@@ -6360,6 +6771,7 @@ lexmeta:pronunciation a skos:Concept ;
         "phonetics"@en,
         "ortología"@es,
         "fonetika"@eu,
+        "pronunciación"@gl,
         "ortoepija, tarimas"@lt,
         "pronunție"@ro,
         "фонетическая транскрипция"@ru ;
@@ -6375,10 +6787,13 @@ lexmeta:registerLabel a skos:Concept ;
         "marca de registro"@es,
         "register"@et,
         "erregistro-adierazle"@eu,
+        "marca de rexistro"@gl,
         "málsniðsmerking"@is,
         "etichetta di registro"@it,
         "registro pavadinimas; registro kategorija; registro kategorijos pavadinimas"@lt,
-        "kwalifikator stylistyczny"@pl ;
+        "kwalifikator stylistyczny"@pl,
+        "языковая помета"@ru,
+        "ознака регистра"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14585 ;
     skos:altLabel "stilmarkør"@da ;
     skos:broader lexmeta:register ;
@@ -6392,6 +6807,7 @@ lexmeta:standardDictionary a skos:Concept ;
         "diccionario estándar"@es,
         "õigekeelsussõnaraamat"@et,
         "estandarraren hiztegi"@eu,
+        "dicionario normativo"@gl,
         "sztenderd szótár"@hu,
         "almenn orðabók"@is,
         "dizionario standard"@it,
@@ -6402,6 +6818,7 @@ lexmeta:standardDictionary a skos:Concept ;
     skos:altLabel "almenordbog"@da,
         "håndordbog"@da,
         "preskriptiivne sõnastik"@et,
+        "dicionario prescritivo"@gl,
         "vocabolario standard"@it,
         "standartinės kalbos žodynas"@lt ;
     skos:broader lexmeta:generalDictionary ;
@@ -6415,6 +6832,7 @@ lexmeta:syntacticInformation a skos:Concept ;
         "información sintáctica"@es,
         "süntaktiline info"@et,
         "argibide sintaktiko"@eu,
+        "información sintáctica"@gl,
         "szintaktikai információ"@hu,
         "setningarupplýsingar"@is,
         "informazione sintattica"@it,
@@ -6446,6 +6864,7 @@ lexmeta:wordDivision a skos:Concept ;
         "división de palabras"@es,
         "poolitamine"@et,
         "hitz banaketa"@eu,
+        "división de palabras"@gl,
         "orðskipting"@is,
         "divisione di parole"@it,
         "žodžių kėlimas"@lt,
@@ -6462,6 +6881,8 @@ lexmeta:wordDivision a skos:Concept ;
 
 ms:DatasetDistribution a owl:Class ;
     lexmeta:wikibaseEntity lexbib:Q24 ;
+    rdfs:subClassOf bibo:Document,
+        frbr:Manifestation ;
     skos:definition "Any form with which a dataset is distributed, such as a downloadable form in a specific format (e.g., spreadsheet, plain text, etc.) or an API with which it can be accessed" .
 
 lexmeta:AccessStructureTypeScheme a skos:ConceptScheme ;
@@ -6500,6 +6921,7 @@ lexmeta:dictionaryEntry a skos:Concept ;
         "sarrera"@eu,
         "article de dictionnaire"@fr,
         "iontráil i bhfoclóir"@ga,
+        "artigo de dicionario"@gl,
         "ערך מילוני"@he,
         "szócikk"@hu,
         "uppflettiorð"@is,
@@ -6529,6 +6951,7 @@ lexmeta:dictionaryEntry a skos:Concept ;
         "entrada"@es,
         "artikkel"@et,
         "hiztegi-sarrera"@eu,
+        "entrada de dicionario"@gl,
         "fletta"@is,
         "orðabókarfærsla"@is,
         "intrare de dicționar"@ro,
@@ -6547,6 +6970,7 @@ lexmeta:paperDictionary a ms:DatasetDistributionForm,
         "diccionario en papel"@es,
         "pabersõnastik"@et,
         "paperezko hiztegi"@eu,
+        "dicionario impreso"@gl,
         "papíralapú szótár"@hu,
         "prentuð orðabók"@is,
         "dizionario cartaceo"@it,
@@ -6562,6 +6986,7 @@ lexmeta:paperDictionary a ms:DatasetDistributionForm,
         "diccionario de papel"@es,
         "pabersõnaraamat"@et,
         "hiztegi inprimatu"@eu,
+        "dicionario en papel"@gl,
         "pappírsorðabók"@is,
         "słownik tradycyjny"@pl ;
     skos:definition "Value for data distribution medium, used for language resources that are delivered in paper format" ;
@@ -6583,6 +7008,7 @@ lexmeta:prescriptiveDictionary a skos:Concept ;
         "diccionario normativo"@es,
         "normiv sõnaraamat"@et,
         "hiztegi preskriptibo"@eu,
+        "dicionario prescritivo"@gl,
         "előíró szótár"@hu,
         "leiðbeinandi orðabók"@is,
         "dizionario prescrittivo"@it,
@@ -6603,6 +7029,7 @@ lexmeta:prescriptiveDictionary a skos:Concept ;
         "preskriptiivne sõnaraamat"@et,
         "preskriptiivne sõnastik"@et,
         "hiztegi normatibo"@eu,
+        "dicionario normativo"@gl,
         "vísandi orðabók"@is,
         "dizionario normativo"@it,
         "słownik preskryptywny"@pl,
@@ -6624,6 +7051,7 @@ lexmeta:spelling a skos:Concept ;
         "idazkera"@eu,
         "kirjoitusasu"@fi,
         "compétences orthographiques"@fr,
+        "soletreo"@gl,
         "כתיב"@he,
         "helyesírás"@hu,
         "stafsetning"@is,
@@ -6649,6 +7077,7 @@ lexmeta:spelling a skos:Concept ;
         "õigekiri"@et,
         "õigekirjutus"@et,
         "ortografia"@eu,
+        "soletreación"@gl,
         "ritháttur"@is,
         "spelling"@it,
         "ortografija"@lt,
@@ -6665,11 +7094,14 @@ lexmeta:syntagmaticInformation a skos:Concept ;
         "información sintagmática"@es,
         "süntagmaatiline info"@et,
         "argibide sintagmatiko"@eu,
+        "información sintagmática"@gl,
+        "szintagmatikai információ"@hu,
         "setningarlegar upplýsingar"@is,
         "informazione sintagmatica"@it,
         "sintagminė informacija"@lt,
         "informacja syntagmatyczna"@pl,
-        "informații sintagmatice"@ro ;
+        "informații sintagmatice"@ro,
+        "синтагматске информације"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14426 ;
     skos:altLabel "combinatòria"@ca ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -6687,6 +7119,7 @@ lexmeta:wordFormation a skos:Concept ;
         "hitz eraketa"@eu,
         "sananmuodostus"@fi,
         "formation des mots"@fr,
+        "formación de palabras"@gl,
         "szóalkotás"@hu,
         "orðmyndun"@is,
         "formazione delle parole"@it,
@@ -6737,6 +7170,7 @@ lexmeta:communicativeFunction a skos:Concept ;
         "función comunicativa"@es,
         "suhtlusfunktsioon"@et,
         "funtzio komunikatibo"@eu,
+        "función comunicativa"@gl,
         "samskiptavirkni"@is,
         "funzione comunicativa"@it,
         "komunikacinė funkcija"@lt,
@@ -6770,6 +7204,7 @@ lexmeta:electronicDictionary a ms:DatasetDistributionForm,
         "sähköinen sanakirja"@fi,
         "Dictionnaire électronique"@fr,
         "foclóir leictreonach"@ga,
+        "dicionario electrónico"@gl,
         "מילון אלקטרוני"@he,
         "Elektronički rječnik"@hr,
         "elektronikus szótár"@hu,
@@ -6791,6 +7226,8 @@ lexmeta:electronicDictionary a ms:DatasetDistributionForm,
         "e-dictionaries"@en,
         "e-dictionary"@en,
         "elektrooniline sõnastik"@et,
+        "dicionario en liña"@gl,
+        "e-dicionario"@gl,
         "dicționar digital"@ro ;
     skos:definition "a reference work that is compiled with the use of computers and is presented in computerized form, including online dictionaries, dictionaries on media such as DVD, spelling checkers and thesauri in word processors, and dictionary databases; any machine-readable version of a dictionary.",
         "dictionary whose data exists in digital form and can be accessed through a number of different media" .
@@ -6804,13 +7241,16 @@ lexmeta:multimedia a skos:Concept ;
         "multimedia"@es,
         "multimeedia"@et,
         "multimedia"@eu,
+        "multimedia"@gl,
         "multimédia"@hu,
         "margmiðlun"@is,
         "multimedia"@it,
         "įvairialypė terpė"@lt,
         "multimedia"@pl,
         "multimedia"@ro,
-        "večpredstavnost"@sl ;
+        "мультимедиа"@ru,
+        "večpredstavnost"@sl,
+        "мултимедија"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14444 ;
     skos:altLabel "multimodal"@ca,
         "mulitmedia"@da,
@@ -6819,6 +7259,7 @@ lexmeta:multimedia a skos:Concept ;
         "multi-media"@it,
         "multimedija, įvairialypė informacija, įvairialypė įranga"@lt,
         "sistem multimedia"@ro,
+        "мультимедийная система"@ru,
         "multimedija"@sl ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
@@ -6872,6 +7313,7 @@ lexmeta:generalDictionary a skos:Concept ;
         "diccionario general"@es,
         "üldkeele sõnastik"@et,
         "hiztegi orokor"@eu,
+        "dicionario xeral"@gl,
         "מילון כללי"@he,
         "általános szótár"@hu,
         "almenn orðabók"@is,
@@ -6903,15 +7345,22 @@ lexmeta:polysemyIndication a skos:Concept ;
         "marca de polisémia"@es,
         "polüseemia eristus"@et,
         "polisemia-argibide"@eu,
+        "marca de polisemia"@gl,
         "skipting í merkingarliði"@is,
         "indicazione polisemantica"@it,
-        "reikšmių skyrimas"@lt ;
+        "reikšmių skyrimas"@lt,
+        "indicație polisemantică"@ro,
+        "указатель полисемии"@ru,
+        "диференцијација значења"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14428 ;
     skos:altLabel "sense discrimination"@en,
         "indocación de polisemia"@es,
         "polüseemia tähis"@et,
         "adieren bereizkuntza"@eu,
-        "skipting í liði"@is ;
+        "skipting í liði"@is,
+        "indicație polisemică"@ro,
+        "указатель многозначности"@ru,
+        "индикација полисемије"@sr ;
     skos:broader lexmeta:semanticInformation ;
     skos:definition "the division of meanings within a dictionary entry, the treatment of polysemy (multiple meanings) through rationalization, discrimination and display in dictionary entries; also called meaning discrimination." ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -6927,7 +7376,7 @@ lexmeta:specializedDictionary a skos:Concept ;
         "hiztegi berezitu"@eu,
         "erikoissanakirja"@fi,
         "dictionnaire thématique"@fr,
-        "dicionario temático"@gl,
+        "dicionario especializado"@gl,
         "מילון נושאי"@he,
         "sérhæfð orðabók"@is,
         "dizionario specializzato"@it,
@@ -6949,7 +7398,8 @@ lexmeta:specializedDictionary a skos:Concept ;
         "Spezialwörterbuch"@de,
         "specialised dictionary"@en,
         "diccionario especializado"@es,
-        "oskussõnastik"@et ;
+        "oskussõnastik"@et,
+        "dicionario de especialidade"@gl ;
     skos:broader lexmeta:dictionaryScope ;
     skos:definition "any reference work restricted to a subset of language or for a specific target audience, for example, law dictionary, dictionary of early American English." ;
     skos:inScheme lexmeta:DictionaryScopeTypeScheme .
@@ -6968,9 +7418,13 @@ lexmeta:formalInformation a skos:Concept ;
         "información formal"@es,
         "vormiinfo"@et,
         "forma-argibide"@eu,
+        "información formal"@gl,
         "formupplýsingar"@is,
         "informazione formale"@it,
-        "formalioji informacija"@lt ;
+        "formalioji informacija"@lt,
+        "informații fonetice și gramaticale oferite pentru cuvântul-titlu"@ro,
+        "формальная информация"@ru,
+        "формалне информације"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14399 ;
     skos:altLabel "formelle oplysninger"@da ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -6984,6 +7438,7 @@ lexmeta:wordCombination a skos:Concept ;
         "combinación de palabras"@es,
         "sõnaühend"@et,
         "hitz konbinazio"@eu,
+        "combinación de palabras"@gl,
         "szóösszetétel"@hu,
         "orðasamband"@is,
         "combinazione di parole"@it,
@@ -6998,6 +7453,7 @@ lexmeta:wordCombination a skos:Concept ;
     skos:altLabel "combinació de paraules"@ca,
         "fraseologi"@da,
         "coocurrencia"@es,
+        "coocorrencia"@gl,
         "orðastæða"@is,
         "sintagme"@ro,
         "îmbinări stabile de cuvinte"@ro,
@@ -7006,7 +7462,8 @@ lexmeta:wordCombination a skos:Concept ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
 lexmeta:entryLayoutFeature a skos:Concept ;
-    rdfs:label "entry layout feature"@en ;
+    rdfs:label "entry layout feature"@en,
+        "cuerpo del diccionario"@es ;
     lexmeta:wikibaseEntity lexbib:Q24081 ;
     skos:altLabel "dictionary entry part"@en ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -7113,14 +7570,14 @@ lexmeta:definition a skos:Concept ;
         "definice"@cs,
         "definition"@da,
         "Definition"@de,
-        "Ορισμός"@el,
+        "Ερμήνευμα"@el,
         "definition"@en,
         "definición"@es,
         "definitsioon"@et,
         "definizio"@eu,
         "määritelmä"@fi,
         "définition"@fr,
-        "Definición"@gl,
+        "definición"@gl,
         "הגדרה"@he,
         "definicija"@hr,
         "definíció"@hu,
@@ -7144,6 +7601,7 @@ lexmeta:definition a skos:Concept ;
     lexmeta:wikibaseEntity wikidata:Q101072,
         lexbib:Q14392 ;
     skos:altLabel "Begriffserklärung"@de,
+        "λεξικογραφικός ορισμός"@el,
         "definiens"@en,
         "definiciones"@es,
         "määratlus"@et,
@@ -7159,15 +7617,13 @@ lexmeta:definition a skos:Concept ;
     skos:exactMatch ms:definition ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-frbr:Manifestation a owl:Class ;
-    lexmeta:wikibaseEntity lexbib:Q3 ;
-    rdfs:subClassOf frbr:Endeavour ;
-    skos:exactMatch bibo:Document .
-
 ms:DatasetDistributionForm a owl:Class ;
     lexmeta:wikibaseEntity lexbib:Q43 ;
     skos:hasTopConcept lexmeta:electronicDictionary,
         lexmeta:paperDictionary .
+
+bibo:Document a owl:Class ;
+    lexmeta:wikibaseEntity lexbib:Q3 .
 
 lexmeta:LemmaTypeScheme a skos:ConceptScheme ;
     rdfs:label "Lemma Type"@en ;
@@ -7187,21 +7643,26 @@ lexmeta:morphologicalInformation a skos:Concept ;
 lexmeta:semanticInformation a skos:Concept ;
     rdfs:label "semàntica"@ca,
         "betydningsangivelse"@da,
+        "σημασιολογική πληροφορία"@el,
         "semantic information"@en,
         "información semántica"@es,
         "semantiline info"@et,
         "argibide semantiko"@eu,
+        "información semántica"@gl,
         "szemantikai információ"@hu,
         "merkingarupplýsingar"@is,
         "informazione semantica"@it,
         "semantinė informacija"@lt,
         "informacja semantyczna"@pl,
         "informație semantică"@ro,
+        "семантическая информация о слове в словаре"@ru,
         "семантичке информације"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14393 ;
     skos:altLabel "informació semàntica"@ca,
         "semantisk information"@da,
-        "semantiline tüüp"@et ;
+        "semantiline tüüp"@et,
+        "значение слова в словаре"@ru,
+        "определение слова в словаре"@ru ;
     skos:definition "A type of content included in a language resource pertaining to the semantic level" ;
     skos:exactMatch ms:SemanticType ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
@@ -7220,7 +7681,7 @@ lexmeta:informationTypeOrientedDictionary a skos:Concept ;
 
 ms:LexicalConceptualResource a owl:Class ;
     lexmeta:wikibaseEntity lexbib:Q4 ;
-    rdfs:subClassOf frbr:Endeavour ;
+    rdfs:subClassOf frbr:Expression ;
     skos:definition "A resource organised on the basis of lexical or conceptual entries (lexical items, terms, concepts, etc.) with their supplementary information (e.g., grammatical, semantic, statistical information, etc.)" .
 
 lexmeta:DictionaryScopeTypeScheme a skos:ConceptScheme ;
