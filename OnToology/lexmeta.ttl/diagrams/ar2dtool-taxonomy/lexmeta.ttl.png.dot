@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ms:LexicalConceptualResource" "frbr:Work" "frbr:Manifestation" "frbr:Endeavour" ; /*classes style*/
+	"frbr:Manifestation" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+	"ms:LexicalConceptualResource" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+	"rdfs:subClassOf" -> "lexbib:P4" [ label = "lexmeta:wikibaseEntity" ];
+	"rdfs:subClassOf" -> "wikidata:P279" [ label = "lexmeta:wikibaseEntity" ];
+	"rdfs:subClassOf" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"frbr:Work" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+
+}
