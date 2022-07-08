@@ -128,7 +128,7 @@ bibo:volume a owl:DatatypeProperty ;
     rdfs:domain bibo:Document ;
     skos:definition "A volume number" .
 
-<http://w3id.org/meta-share/lexmeta/> a owl:Ontology ;
+<http://w3id.org/meta-share/lexmeta> a owl:Ontology ;
     dc:abstract "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en ;
     dc:description "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en ;
     dc:title "LexMeta ontology"@en ;
