@@ -1,17 +1,17 @@
-<http://w3id.org/meta-share/lexmeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/meta-share/lexmeta> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/meta-share/lexmeta/0.0.1> .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/elements/1.1/abstract> "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/elements/1.1/description> "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/elements/1.1/title> "LexMeta ontology"@en .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/contributor> "Christiane Klaes" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/contributor> "Katerina Gkirtzou" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/creator> "David Lindemann" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/creator> "Penny Labropoulou" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/modified> "2022-07-07T19:48:50" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/ontology/bibo/status> "Draft" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lexmeta" .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/meta-share/lexmeta/> .
+<http://w3id.org/meta-share/lexmeta/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/meta-share/lexmeta/> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/meta-share/lexmeta/0.0.1> .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/elements/1.1/abstract> "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/elements/1.1/description> "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/elements/1.1/title> "LexMeta ontology"@en .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/contributor> "Christiane Klaes" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/contributor> "Katerina Gkirtzou" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/creator> "David Lindemann" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/creator> "Penny Labropoulou" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/dc/terms/modified> "2022-07-07T19:48:50" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/ontology/bibo/status> "Draft" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lexmeta" .
+<http://w3id.org/meta-share/lexmeta/> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/meta-share/lexmeta/> .
 # 
 # 
 # #################################################################
