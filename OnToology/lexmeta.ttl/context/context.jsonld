@@ -4,6 +4,9 @@
       "@id" : "http://w3id.org/meta-share/meta-share/isCombinedWith",
       "@type" : "@id"
     },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    },
     "resourceCreator" : {
       "@id" : "http://w3id.org/meta-share/meta-share/resourceCreator",
       "@type" : "@id"
@@ -26,8 +29,11 @@
       "@id" : "http://w3id.org/meta-share/meta-share/isContinuedBy",
       "@type" : "@id"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "isSimilarTo" : {
-      "@id" : "http://w3id.org/meta-share/meta-share/ms:isSimilarTo",
+      "@id" : "http://w3id.org/meta-share/meta-share/isSimilarTo",
       "@type" : "@id"
     },
     "accessLocation" : {
@@ -50,6 +56,9 @@
     },
     "pages" : {
       "@id" : "http://purl.org/ontology/bibo/pages"
+    },
+    "DatasetSeries" : {
+      "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
     },
     "hasVersion" : {
       "@id" : "http://w3id.org/meta-share/meta-share/hasVersion",
@@ -97,6 +106,9 @@
       "@id" : "http://w3id.org/meta-share/meta-share/hasOriginalSource",
       "@type" : "@id"
     },
+    "LCRSeries" : {
+      "@id" : "http://w3id.org/meta-share/lexmeta/LCRSeries"
+    },
     "LexicalConceptualResource" : {
       "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
     },
@@ -107,6 +119,9 @@
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
+    },
+    "Expression" : {
+      "@id" : "http://purl.org/vocab/frbr/core#Expression"
     },
     "LinguisticSystem" : {
       "@id" : "http://purl.org/dc/terms/LinguisticSystem"
@@ -157,6 +172,9 @@
       "@id" : "http://w3id.org/meta-share/lexmeta/wikibaseEntity",
       "@type" : "@id"
     },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
     "Work" : {
       "@id" : "http://purl.org/vocab/frbr/core#Work"
     },
@@ -166,6 +184,9 @@
     "subject" : {
       "@id" : "http://purl.org/dc/terms/subject",
       "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "Place" : {
       "@id" : "https://schema.org/Place"
@@ -204,6 +225,9 @@
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
     },
     "oclcnum" : {
       "@id" : "http://purl.org/ontology/bibo/oclcnum"
@@ -256,6 +280,9 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
+    "Document" : {
+      "@id" : "http://purl.org/ontology/bibo/Document"
+    },
     "language" : {
       "@id" : "http://purl.org/dc/terms/language",
       "@type" : "@id"
@@ -263,6 +290,9 @@
     "lingualityType" : {
       "@id" : "http://w3id.org/meta-share/meta-share/lingualityType",
       "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
     },
     "metalanguage" : {
       "@id" : "http://w3id.org/meta-share/meta-share/metalanguage",
@@ -285,6 +315,12 @@
     "inScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
     },
     "dictionaryAccessType" : {
       "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryAccessType",
