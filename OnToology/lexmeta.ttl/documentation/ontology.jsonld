@@ -1,18 +1,15 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid12"
+      "@id" : "_:genid3"
     } ]
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryScopeTypeScheme"
@@ -21,17 +18,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid16"
+      "@id" : "_:genid15"
     } ]
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"
@@ -40,27 +37,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid20"
+      "@id" : "_:genid19"
     } ]
   } ]
 }, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid4"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/LemmaTypeScheme"
@@ -69,17 +56,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid24"
+      "@id" : "_:genid23"
     } ]
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme"
@@ -88,17 +75,17 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid28"
+      "@id" : "_:genid27"
     } ]
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme"
@@ -107,7 +94,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme"
@@ -116,23 +103,33 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid8"
+      "@id" : "_:genid7"
     } ]
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryFunctionTypeScheme"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid11"
+    } ]
   } ]
 }, {
   "@id" : "http://iflastandards.info/ns/fr/frbr/frbrer/P3057",
@@ -143,11 +140,20 @@
     "@id" : "https://lexbib.elex.is/entity/P10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://schema.org/Place"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/LinguisticSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -156,6 +162,9 @@
   }, {
     "@id" : "https://lexbib.elex.is/entity/Q8"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -179,7 +188,7 @@
     "@id" : "https://lexbib.elex.is/entity/P15"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/isPartOf",
@@ -188,7 +197,7 @@
     "@id" : "https://lexbib.elex.is/entity/P9"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/language",
@@ -202,6 +211,12 @@
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
@@ -210,7 +225,7 @@
     "@id" : "https://lexbib.elex.is/entity/P35"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/Actor"
@@ -224,7 +239,7 @@
     "@id" : "https://lexbib.elex.is/entity/P27"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -249,6 +264,12 @@
     "@id" : "https://lexbib.elex.is/entity/Q6"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/Q3"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/bibo/cites",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
@@ -257,10 +278,10 @@
     "@id" : "https://lexbib.elex.is/entity/P147"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bibo/doi",
@@ -279,7 +300,7 @@
     "@id" : "https://lexbib.elex.is/entity/P13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
@@ -317,7 +338,7 @@
     "@id" : "https://lexbib.elex.is/entity/P23"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An issue number"
@@ -339,7 +360,7 @@
     "@id" : "https://lexbib.elex.is/entity/P24"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties."
@@ -351,7 +372,7 @@
     "@id" : "https://lexbib.elex.is/entity/P36"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/bibo/Conference"
@@ -368,7 +389,7 @@
     "@id" : "https://lexbib.elex.is/entity/P25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
@@ -386,6 +407,9 @@
     "@value" : "The abbreviation of a title"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/ontology/bibo/volume",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
@@ -394,7 +418,7 @@
     "@id" : "https://lexbib.elex.is/entity/P22"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A volume number"
@@ -406,25 +430,80 @@
     "@id" : "https://lexbib.elex.is/entity/Q59"
   } ]
 }, {
-  "@id" : "http://purl.org/vocab/frbr/core#Manifestation",
+  "@id" : "http://purl.org/vocab/frbr/core#Expression",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
-    "@id" : "https://lexbib.elex.is/entity/Q3"
+    "@id" : "https://lexbib.elex.is/entity/Q61"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/frbr/core#Manifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/Q62"
   } ],
-  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "http://purl.org/ontology/bibo/Document"
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Work",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
-    "@id" : "https://lexbib.elex.is/entity/Q41"
+    "@id" : "https://lexbib.elex.is/entity/Q63"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/meta-share/lexmeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/abstract" : [ {
+    "@language" : "en",
+    "@value" : "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "LexMeta ontology"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Christiane Klaes"
+  }, {
+    "@value" : "Katerina Gkirtzou"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "David Lindemann"
+  }, {
+    "@value" : "Penny Labropoulou"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-07-07T19:48:50"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "Draft"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "lexmeta"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://w3id.org/meta-share/lexmeta/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://w3id.org/meta-share/lexmeta/0.0.1"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/AccessStructureTypeScheme",
@@ -526,6 +605,21 @@
     "@id" : "http://w3id.org/meta-share/lexmeta/outsideMatter"
   }, {
     "@id" : "http://w3id.org/meta-share/lexmeta/pronunciationKey"
+  } ]
+}, {
+  "@id" : "http://w3id.org/meta-share/lexmeta/LCRSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/Q41"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Work"
+  }, {
+    "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/LemmaTypeScheme",
@@ -744,6 +838,9 @@
     "@language" : "en",
     "@value" : "analogical dictionary"
   }, {
+    "@language" : "hu",
+    "@value" : "analogikus szótár"
+  }, {
     "@language" : "lt",
     "@value" : "analoginis žodynas"
   }, {
@@ -762,6 +859,9 @@
     "@language" : "pt",
     "@value" : "dicionário analógico"
   }, {
+    "@language" : "ro",
+    "@value" : "dicționar ideografic"
+  }, {
     "@language" : "it",
     "@value" : "dizionario analogico"
   }, {
@@ -774,8 +874,14 @@
     "@language" : "pl",
     "@value" : "słownik analogiczny"
   }, {
+    "@language" : "el",
+    "@value" : "αναλογικό λεξικό"
+  }, {
     "@language" : "sr",
     "@value" : "аналошки речник"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарь словосочетаний, синонимов и трудных слов"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -783,6 +889,12 @@
   }, {
     "@language" : "ca",
     "@value" : "diccionari de col·locacions"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar analogic"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарь аналогий"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/informationTypeOrientedDictionary"
@@ -829,6 +941,9 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "hu",
+    "@value" : "analitikus definíció"
+  }, {
     "@language" : "lt",
     "@value" : "analitinė apibrėžtis"
   }, {
@@ -841,6 +956,9 @@
     "@language" : "de",
     "@value" : "analytische Definition"
   }, {
+    "@language" : "nl",
+    "@value" : "analytische definitie"
+  }, {
     "@language" : "da",
     "@value" : "analytisk definition"
   }, {
@@ -851,6 +969,9 @@
     "@value" : "definició analítica"
   }, {
     "@language" : "es",
+    "@value" : "definición analítica"
+  }, {
+    "@language" : "gl",
     "@value" : "definición analítica"
   }, {
     "@language" : "pl",
@@ -868,10 +989,22 @@
     "@language" : "is",
     "@value" : "fræðileg skilgreining"
   }, {
+    "@language" : "el",
+    "@value" : "αναλυτικός ορισμός"
+  }, {
+    "@language" : "mk",
+    "@value" : "аналитичка дефиниција"
+  }, {
     "@language" : "sr",
     "@value" : "аналитичка дефиниција"
+  }, {
+    "@language" : "ru",
+    "@value" : "родовидовое определение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "definición lóxica"
+  }, {
     "@language" : "it",
     "@value" : "definizione logica"
   }, {
@@ -889,6 +1022,9 @@
   }, {
     "@language" : "da",
     "@value" : "logisk definition"
+  }, {
+    "@language" : "ru",
+    "@value" : "аналитическая дефиниция"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -926,8 +1062,14 @@
     "@language" : "pl",
     "@value" : "antydatowanie"
   }, {
+    "@language" : "hu",
+    "@value" : "első adat megtalálása"
+  }, {
     "@language" : "eu",
     "@value" : "lehen lekukotasun"
+  }, {
+    "@language" : "gl",
+    "@value" : "primeira datación"
   }, {
     "@language" : "ca",
     "@value" : "primer testimoni"
@@ -940,6 +1082,9 @@
   }, {
     "@language" : "et",
     "@value" : "varaseim esitus"
+  }, {
+    "@language" : "ru",
+    "@value" : "антидатинг"
   }, {
     "@language" : "sr",
     "@value" : "антидатирање"
@@ -954,11 +1099,20 @@
     "@language" : "lt",
     "@value" : "istorinis paliudijimas"
   }, {
+    "@language" : "gl",
+    "@value" : "primeiro testimonio"
+  }, {
     "@language" : "ca",
     "@value" : "primera documentació"
   }, {
     "@language" : "ca",
     "@value" : "testimoni més antic"
+  }, {
+    "@language" : "sr",
+    "@value" : "антедатирање"
+  }, {
+    "@language" : "ru",
+    "@value" : "доказательства появления слова или фразы до дати, указанной в историческом словаре"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/formalInformation"
@@ -1179,6 +1333,9 @@
     "@language" : "en",
     "@value" : "argument structure"
   }, {
+    "@language" : "nl",
+    "@value" : "argumentstructuur"
+  }, {
     "@language" : "da",
     "@value" : "argumentstruktur"
   }, {
@@ -1200,6 +1357,9 @@
     "@language" : "es",
     "@value" : "estructura argumental"
   }, {
+    "@language" : "ro",
+    "@value" : "forma logică"
+  }, {
     "@language" : "is",
     "@value" : "rökliðir"
   }, {
@@ -1209,12 +1369,18 @@
     "@language" : "el",
     "@value" : "δομή ορισμάτων"
   }, {
+    "@language" : "ru",
+    "@value" : "аргументная структура"
+  }, {
     "@language" : "sr",
     "@value" : "аргументска структура"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
     "@value" : "marco predicativo"
+  }, {
+    "@language" : "ro",
+    "@value" : "structură verbală"
   }, {
     "@language" : "es",
     "@value" : "valencia"
@@ -1224,6 +1390,9 @@
   }, {
     "@language" : "el",
     "@value" : "ορισματική δομή"
+  }, {
+    "@language" : "ru",
+    "@value" : "место, которое может занимать имя существительное в высказывании (в порождающей грамматике)"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/syntagmaticInformation"
@@ -1371,6 +1540,9 @@
     "@language" : "es",
     "@value" : "audio"
   }, {
+    "@language" : "gl",
+    "@value" : "audio"
+  }, {
     "@language" : "it",
     "@value" : "audio"
   }, {
@@ -1455,6 +1627,9 @@
   }, {
     "@language" : "da",
     "@value" : "lyd"
+  }, {
+    "@language" : "gl",
+    "@value" : "rexistro sonoro"
   }, {
     "@language" : "ru",
     "@value" : "звук, звуковой"
@@ -1812,6 +1987,9 @@
     "@language" : "es",
     "@value" : "diccionario bilingualizado"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario bilingualizado"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar bilingv"
   }, {
@@ -1833,8 +2011,17 @@
     "@language" : "is",
     "@value" : "tvímála orðabók"
   }, {
+    "@language" : "el",
+    "@value" : "διγλωσσοποιημένο λεξικό"
+  }, {
     "@language" : "sr",
     "@value" : "билингвализовани речник"
+  }, {
+    "@language" : "mk",
+    "@value" : "двојазичен речник"
+  }, {
+    "@language" : "ru",
+    "@value" : "двуязычный словарь для учебных целей"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/bilingualDictionary"
@@ -2534,6 +2721,9 @@
     "@language" : "es",
     "@value" : "cita"
   }, {
+    "@language" : "gl",
+    "@value" : "cita"
+  }, {
     "@language" : "cs",
     "@value" : "citace"
   }, {
@@ -2619,6 +2809,9 @@
     "@language" : "nl",
     "@value" : "allegatie"
   }, {
+    "@language" : "da",
+    "@value" : "belæg"
+  }, {
     "@language" : "es",
     "@value" : "cita literal"
   }, {
@@ -2629,6 +2822,9 @@
     "@value" : "citació"
   }, {
     "@language" : "es",
+    "@value" : "citación"
+  }, {
+    "@language" : "gl",
     "@value" : "citación"
   }, {
     "@language" : "da",
@@ -2698,11 +2894,23 @@
     "@language" : "ca",
     "@value" : "nom científic"
   }, {
+    "@language" : "gl",
+    "@value" : "nome científico"
+  }, {
     "@language" : "et",
     "@value" : "semantiline tüüp"
   }, {
     "@language" : "hu",
     "@value" : "tudományos név"
+  }, {
+    "@language" : "sr",
+    "@value" : "класификациона ознака"
+  }, {
+    "@language" : "mk",
+    "@value" : "класификациска ознака"
+  }, {
+    "@language" : "ru",
+    "@value" : "помета"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ro",
@@ -2725,6 +2933,12 @@
   }, {
     "@language" : "da",
     "@value" : "videnskabelig klassifikation"
+  }, {
+    "@language" : "ru",
+    "@value" : "классифицирующая помета"
+  }, {
+    "@language" : "mk",
+    "@value" : "ознака за класификација"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -2785,6 +2999,9 @@
     "@language" : "es",
     "@value" : "función cognitiva"
   }, {
+    "@language" : "gl",
+    "@value" : "función cognitiva"
+  }, {
     "@language" : "ro",
     "@value" : "funcție cognitivă"
   }, {
@@ -2814,6 +3031,12 @@
   }, {
     "@language" : "sr",
     "@value" : "когнитивна функција"
+  }, {
+    "@language" : "ru",
+    "@value" : "когнитивная функция"
+  }, {
+    "@language" : "mk",
+    "@value" : "спознајна функција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ca",
@@ -2834,6 +3057,12 @@
     "@language" : "ro",
     "@value" : "înțelegere"
   }, {
+    "@language" : "ru",
+    "@value" : "изучение и запоминание слов"
+  }, {
+    "@language" : "mk",
+    "@value" : "спознание"
+  }, {
     "@language" : "sr",
     "@value" : "спознајна функција"
   } ],
@@ -2850,6 +3079,9 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "collaboratief woordenboek"
+  }, {
     "@language" : "en",
     "@value" : "collaborative dictionary"
   }, {
@@ -2861,6 +3093,12 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario colaborativo"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario colaborativo"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar colectiv"
   }, {
     "@language" : "it",
     "@value" : "dizionario collaborativo"
@@ -2877,11 +3115,23 @@
     "@language" : "et",
     "@value" : "koosloomesõnastik"
   }, {
+    "@language" : "hu",
+    "@value" : "közösségi szótár"
+  }, {
     "@language" : "is",
     "@value" : "samstarfsorðabók"
   }, {
+    "@language" : "el",
+    "@value" : "συλλογικό λεξικό"
+  }, {
+    "@language" : "mk",
+    "@value" : "колаборативен речник"
+  }, {
     "@language" : "sr",
     "@value" : "колаборативни речник"
+  }, {
+    "@language" : "ru",
+    "@value" : "коллаборативный словарь"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "eu",
@@ -2889,6 +3139,9 @@
   }, {
     "@language" : "da",
     "@value" : "brugergenereret ordbog"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario semi-colaborativo, dicionario institucional-colaborativo"
   }, {
     "@language" : "et",
     "@value" : "rahvahankesõnastik"
@@ -2898,6 +3151,15 @@
   }, {
     "@language" : "et",
     "@value" : "ühisloomesõnastik"
+  }, {
+    "@language" : "el",
+    "@value" : "συνεργατικό λεξικό"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарь, содержание которого создано пользователями"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарь, созданный объединённой группой"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/LexicographicalProcessTypeScheme"
@@ -2924,6 +3186,9 @@
     "@language" : "es",
     "@value" : "diccionario universitario"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario escolar"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar pentru elevi"
   }, {
@@ -2948,6 +3213,12 @@
     "@language" : "lt",
     "@value" : "studijuojančiojo žodynas"
   }, {
+    "@language" : "el",
+    "@value" : "λεξικό εκμάθησης γλώσσας"
+  }, {
+    "@language" : "ru",
+    "@value" : "учебный словарь"
+  }, {
     "@language" : "sr",
     "@value" : "школски речник"
   } ],
@@ -2963,6 +3234,12 @@
   }, {
     "@language" : "et",
     "@value" : "õpilase sõnaraamat"
+  }, {
+    "@language" : "el",
+    "@value" : "κολεγιακό λεξικό"
+  }, {
+    "@language" : "ru",
+    "@value" : "учебный словарь для учеников школы"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/userGroupOrientedDictionary"
@@ -3101,6 +3378,9 @@
     "@language" : "de",
     "@value" : "Kollokator"
   }, {
+    "@language" : "gl",
+    "@value" : "base"
+  }, {
     "@language" : "en",
     "@value" : "collocator"
   }, {
@@ -3131,18 +3411,30 @@
     "@language" : "is",
     "@value" : "stoðliður"
   }, {
+    "@language" : "ro",
+    "@value" : "termen care participă la formarea unei colocații"
+  }, {
     "@language" : "sr",
     "@value" : "колокатор"
+  }, {
+    "@language" : "ru",
+    "@value" : "слово, которое часто или регулярно сочетается с другим словом"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
     "@value" : "colocado"
+  }, {
+    "@language" : "ro",
+    "@value" : "colocator"
   }, {
     "@language" : "ca",
     "@value" : "combinatòria"
   }, {
     "@language" : "ca",
     "@value" : "concorrent"
+  }, {
+    "@language" : "ru",
+    "@value" : "коллокатор"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/collocation"
@@ -3178,6 +3470,9 @@
     "@value" : "colocvial"
   }, {
     "@language" : "es",
+    "@value" : "coloquial"
+  }, {
+    "@language" : "gl",
     "@value" : "coloquial"
   }, {
     "@language" : "ca",
@@ -3290,6 +3585,9 @@
     "@language" : "es",
     "@value" : "función comunicativa"
   }, {
+    "@language" : "gl",
+    "@value" : "función comunicativa"
+  }, {
     "@language" : "ro",
     "@value" : "funcția comunicativă"
   }, {
@@ -3361,6 +3659,12 @@
     "@language" : "es",
     "@value" : "ejemplo competente"
   }, {
+    "@language" : "gl",
+    "@value" : "exemplo inventado"
+  }, {
+    "@language" : "ro",
+    "@value" : "exemplu de competență"
+  }, {
     "@language" : "eu",
     "@value" : "konpetentzia adibide"
   }, {
@@ -3375,6 +3679,9 @@
   }, {
     "@language" : "lt",
     "@value" : "žodynininko sugalvotas žodžio vartosenos pavyzdys"
+  }, {
+    "@language" : "sr",
+    "@value" : "пример компетенције"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
@@ -3382,6 +3689,12 @@
   }, {
     "@language" : "it",
     "@value" : "esempio di competenza"
+  }, {
+    "@language" : "gl",
+    "@value" : "exemplo de competencia"
+  }, {
+    "@language" : "ro",
+    "@value" : "exemplu demonstrativ"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/example"
@@ -3523,9 +3836,6 @@
     "@language" : "de",
     "@value" : "Kompositum"
   }, {
-    "@language" : "gl",
-    "@value" : "Palabra composta"
-  }, {
     "@language" : "sl",
     "@value" : "Tvorjenka"
   }, {
@@ -3552,6 +3862,9 @@
   }, {
     "@language" : "fr",
     "@value" : "mot composé"
+  }, {
+    "@language" : "gl",
+    "@value" : "palabra composta"
   }, {
     "@language" : "it",
     "@value" : "parola composta"
@@ -3613,6 +3926,9 @@
   }, {
     "@language" : "de",
     "@value" : "Wortzusammensetzung"
+  }, {
+    "@language" : "gl",
+    "@value" : "composto"
   }, {
     "@language" : "it",
     "@value" : "composto"
@@ -3685,9 +4001,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Connotación"
-  }, {
     "@language" : "fi",
     "@value" : "Konnotaatio"
   }, {
@@ -3710,6 +4023,9 @@
     "@value" : "connotació"
   }, {
     "@language" : "es",
+    "@value" : "connotación"
+  }, {
+    "@language" : "gl",
     "@value" : "connotación"
   }, {
     "@language" : "nl",
@@ -3972,6 +4288,12 @@
     "@language" : "ca",
     "@value" : "concorrent"
   }, {
+    "@language" : "gl",
+    "@value" : "coocorrente"
+  }, {
+    "@language" : "ro",
+    "@value" : "coocurent"
+  }, {
     "@language" : "en",
     "@value" : "coocurrent"
   }, {
@@ -3989,10 +4311,16 @@
   }, {
     "@language" : "et",
     "@value" : "koosesinev üksus"
+  }, {
+    "@language" : "sr",
+    "@value" : "коокурентан"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
     "@value" : "gemeinsam auftretend"
+  }, {
+    "@language" : "ro",
+    "@value" : "simultan"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/wordCombination"
@@ -4020,6 +4348,9 @@
   }, {
     "@language" : "ca",
     "@value" : "comptable"
+  }, {
+    "@language" : "gl",
+    "@value" : "contabilidade"
   }, {
     "@language" : "es",
     "@value" : "contable"
@@ -4235,11 +4566,17 @@
     "@language" : "it",
     "@value" : "lessico"
   }, {
+    "@language" : "ro",
+    "@value" : "număr limitat de cuvinte folosit pentru definirea cuvintelor într-un dicționar"
+  }, {
     "@language" : "is",
     "@value" : "skýringarorðaforði"
   }, {
     "@language" : "pl",
     "@value" : "słownictwo definiujące"
+  }, {
+    "@language" : "gl",
+    "@value" : "vocabulario controlado"
   }, {
     "@language" : "es",
     "@value" : "vocabulario definidor"
@@ -4247,8 +4584,11 @@
     "@language" : "el",
     "@value" : "ορίζον λεξιλόγιο"
   }, {
+    "@language" : "sr",
+    "@value" : "дефиницијски вокабулар"
+  }, {
     "@language" : "ru",
-    "@value" : "определяющая лексика"
+    "@value" : "ограниченный набор слов, используемый для определения всех других слов в словаре"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ca",
@@ -4259,6 +4599,9 @@
   }, {
     "@language" : "en",
     "@value" : "limited defining vocabulary"
+  }, {
+    "@language" : "gl",
+    "@value" : "vocabulario definitorio"
   }, {
     "@language" : "el",
     "@value" : "λεξιλόγιο αναφοράς"
@@ -4286,9 +4629,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Definición"
-  }, {
     "@language" : "de",
     "@value" : "Definition"
   }, {
@@ -4308,6 +4648,9 @@
     "@value" : "definició"
   }, {
     "@language" : "es",
+    "@value" : "definición"
+  }, {
+    "@language" : "gl",
     "@value" : "definición"
   }, {
     "@language" : "pl",
@@ -4365,7 +4708,7 @@
     "@value" : "skýring"
   }, {
     "@language" : "el",
-    "@value" : "Ορισμός"
+    "@value" : "Ερμήνευμα"
   }, {
     "@language" : "bg",
     "@value" : "Дефиниция"
@@ -4415,6 +4758,9 @@
   }, {
     "@language" : "hu",
     "@value" : "értelmezés"
+  }, {
+    "@language" : "el",
+    "@value" : "λεξικογραφικός ορισμός"
   }, {
     "@language" : "ru",
     "@value" : "дефиниция"
@@ -4476,9 +4822,6 @@
     "@language" : "cs",
     "@value" : "Denotace"
   }, {
-    "@language" : "gl",
-    "@value" : "Denotación"
-  }, {
     "@language" : "pl",
     "@value" : "Denotacja"
   }, {
@@ -4501,6 +4844,9 @@
     "@value" : "denotació"
   }, {
     "@language" : "es",
+    "@value" : "denotación"
+  }, {
+    "@language" : "gl",
     "@value" : "denotación"
   }, {
     "@language" : "nl",
@@ -4723,6 +5069,9 @@
     "@language" : "ru",
     "@value" : "словопроизводство"
   } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/meta-share/lexmeta/morphologicalInformation"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "in linguistics, the process of forming a new word on the basis of an existing one"
   } ],
@@ -4762,6 +5111,9 @@
   }, {
     "@language" : "en",
     "@value" : "derivative"
+  }, {
+    "@language" : "gl",
+    "@value" : "derivativo"
   }, {
     "@language" : "it",
     "@value" : "derivato"
@@ -4880,6 +5232,9 @@
     "@language" : "es",
     "@value" : "designatum"
   }, {
+    "@language" : "gl",
+    "@value" : "designatum"
+  }, {
     "@language" : "it",
     "@value" : "designatum"
   }, {
@@ -4889,10 +5244,16 @@
     "@language" : "hu",
     "@value" : "jelentés"
   }, {
+    "@language" : "ru",
+    "@value" : "десигнат"
+  }, {
     "@language" : "sr",
     "@value" : "десигнатум"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "designado"
+  }, {
     "@language" : "lt",
     "@value" : "designatas"
   }, {
@@ -4904,6 +5265,9 @@
   }, {
     "@language" : "et",
     "@value" : "tähistatav"
+  }, {
+    "@language" : "ru",
+    "@value" : "означаемое"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -5057,6 +5421,9 @@
     "@value" : "signe diacrític"
   }, {
     "@language" : "es",
+    "@value" : "signo diacrítico"
+  }, {
+    "@language" : "gl",
     "@value" : "signo diacrítico"
   }, {
     "@language" : "pl",
@@ -5337,6 +5704,9 @@
     "@language" : "en",
     "@value" : "dialect label"
   }, {
+    "@language" : "nl",
+    "@value" : "dialectlabel"
+  }, {
     "@language" : "da",
     "@value" : "dialektmarkør"
   }, {
@@ -5355,6 +5725,9 @@
     "@language" : "ca",
     "@value" : "marca de varietat"
   }, {
+    "@language" : "gl",
+    "@value" : "marca dialectal"
+  }, {
     "@language" : "et",
     "@value" : "murdesõna"
   }, {
@@ -5363,6 +5736,12 @@
   }, {
     "@language" : "ro",
     "@value" : "trăsătură dialectală"
+  }, {
+    "@language" : "ru",
+    "@value" : "диалектная помета"
+  }, {
+    "@language" : "sr",
+    "@value" : "ознака дијалекта"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "pl",
@@ -5376,6 +5755,9 @@
   }, {
     "@language" : "es",
     "@value" : "marca dialectal"
+  }, {
+    "@language" : "sr",
+    "@value" : "дијалекатски квалификатор"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/dialect"
@@ -5400,7 +5782,7 @@
     "@value" : "dictionary access type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryAccessibleThroughInterface",
@@ -5448,8 +5830,11 @@
     "@language" : "ca",
     "@value" : "aplicació"
   }, {
+    "@language" : "gl",
+    "@value" : "aplicación de dicionario"
+  }, {
     "@language" : "es",
-    "@value" : "aplicación de diccionario"
+    "@value" : "aplicación del diccionario"
   }, {
     "@language" : "pl",
     "@value" : "aplikacja słownikowa"
@@ -5459,6 +5844,9 @@
   }, {
     "@language" : "en",
     "@value" : "dictionary app"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar electronic"
   }, {
     "@language" : "eu",
     "@value" : "hiztegi-aplikazio"
@@ -5475,8 +5863,20 @@
     "@language" : "et",
     "@value" : "sõnastikuäpp"
   }, {
+    "@language" : "nl",
+    "@value" : "woordenboekapp"
+  }, {
     "@language" : "lt",
     "@value" : "žodyno programėlė"
+  }, {
+    "@language" : "el",
+    "@value" : "λεξικογραφική εφαρμογή"
+  }, {
+    "@language" : "sr",
+    "@value" : "речничка апликација"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарное приложение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
@@ -5490,6 +5890,9 @@
   }, {
     "@language" : "es",
     "@value" : "app de diccionario"
+  }, {
+    "@language" : "es",
+    "@value" : "app del diccionario"
   }, {
     "@language" : "et",
     "@value" : "e-sõnastik"
@@ -5548,6 +5951,9 @@
   }, {
     "@language" : "fr",
     "@value" : "article de dictionnaire"
+  }, {
+    "@language" : "gl",
+    "@value" : "artigo de dicionario"
   }, {
     "@language" : "en",
     "@value" : "dictionary entry"
@@ -5646,6 +6052,9 @@
     "@language" : "ca",
     "@value" : "entrada de diccionari"
   }, {
+    "@language" : "gl",
+    "@value" : "entrada de dicionario"
+  }, {
     "@language" : "en",
     "@value" : "entry"
   }, {
@@ -5698,7 +6107,7 @@
     "@value" : "dictionary function type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryOfASemanticDomain",
@@ -5907,6 +6316,9 @@
     "@language" : "es",
     "@value" : "portal de diccionarios"
   }, {
+    "@language" : "gl",
+    "@value" : "portal de dicionarios"
+  }, {
     "@language" : "it",
     "@value" : "portale web"
   }, {
@@ -5921,8 +6333,17 @@
   }, {
     "@language" : "el",
     "@value" : "Λεξικογραφική δικτυακή πύλη"
+  }, {
+    "@language" : "ru",
+    "@value" : "веб-сайт или веб-страница, предоставляющая доступ к словарю"
+  }, {
+    "@language" : "sr",
+    "@value" : "лексикографски портал"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "dicionario de dicionarios"
+  }, {
     "@language" : "et",
     "@value" : "keeleportaal"
   }, {
@@ -5986,7 +6407,7 @@
     "@value" : "dictionary scope type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryTextPart",
@@ -6002,7 +6423,7 @@
     "@value" : "dictionary text part"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid13"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/differentia",
@@ -6041,6 +6462,9 @@
     "@language" : "eu",
     "@value" : "differentia specifica"
   }, {
+    "@language" : "gl",
+    "@value" : "differentia specifica"
+  }, {
     "@language" : "et",
     "@value" : "eristav tunnus"
   }, {
@@ -6049,6 +6473,12 @@
   }, {
     "@language" : "hu",
     "@value" : "megkülönböztető tulajdonság"
+  }, {
+    "@language" : "sr",
+    "@value" : "диференција"
+  }, {
+    "@language" : "ru",
+    "@value" : "отличительное свойство"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -6056,6 +6486,9 @@
   }, {
     "@language" : "es",
     "@value" : "diferencia"
+  }, {
+    "@language" : "gl",
+    "@value" : "diferenza específica"
   }, {
     "@language" : "ro",
     "@value" : "diferențiere"
@@ -6074,6 +6507,9 @@
   }, {
     "@language" : "ca",
     "@value" : "tret distintiu"
+  }, {
+    "@language" : "ru",
+    "@value" : "отличительный признак вида или класса"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -6218,11 +6654,20 @@
     "@language" : "es",
     "@value" : "sentido recto"
   }, {
+    "@language" : "gl",
+    "@value" : "significado literal"
+  }, {
     "@language" : "ca",
     "@value" : "significat recte"
   }, {
     "@language" : "lt",
     "@value" : "tiesioginė reikšmė"
+  }, {
+    "@language" : "sr",
+    "@value" : "основно значење"
+  }, {
+    "@language" : "ru",
+    "@value" : "прямое значение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -6242,6 +6687,9 @@
   }, {
     "@language" : "ca",
     "@value" : "significat literal"
+  }, {
+    "@language" : "sr",
+    "@value" : "непосредно значење"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -6293,6 +6741,9 @@
     "@language" : "en",
     "@value" : "domain indication"
   }, {
+    "@language" : "ro",
+    "@value" : "domeniu"
+  }, {
     "@language" : "da",
     "@value" : "domæneangivelse"
   }, {
@@ -6305,6 +6756,9 @@
     "@language" : "es",
     "@value" : "marca de especialidad"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de especialidade"
+  }, {
     "@language" : "lt",
     "@value" : "srities nurodymas"
   }, {
@@ -6313,13 +6767,28 @@
   }, {
     "@language" : "et",
     "@value" : "valdkond"
+  }, {
+    "@language" : "sr",
+    "@value" : "индикација домена"
+  }, {
+    "@language" : "ru",
+    "@value" : "указание сферы"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "categorie"
+  }, {
     "@language" : "es",
+    "@value" : "marca de dominio"
+  }, {
+    "@language" : "gl",
     "@value" : "marca de dominio"
   }, {
     "@language" : "et",
     "@value" : "valdkonna märgend"
+  }, {
+    "@language" : "ru",
+    "@value" : "указание области"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -6408,6 +6877,9 @@
     "@language" : "es",
     "@value" : "diccionario electrónico"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario electrónico"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar electronic"
   }, {
@@ -6469,6 +6941,9 @@
     "@language" : "ca",
     "@value" : "diccionari digital"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario en liña"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar digital"
   }, {
@@ -6477,6 +6952,9 @@
   }, {
     "@language" : "de",
     "@value" : "e-Wörterbuch"
+  }, {
+    "@language" : "gl",
+    "@value" : "e-dicionario"
   }, {
     "@language" : "en",
     "@value" : "e-dictionaries"
@@ -6629,6 +7107,9 @@
     "@language" : "es",
     "@value" : "definición enciclopédica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición enciclopédica"
+  }, {
     "@language" : "pl",
     "@value" : "definicja encyklopedyczna"
   }, {
@@ -6650,6 +7131,9 @@
     "@language" : "en",
     "@value" : "encyclopedic definition"
   }, {
+    "@language" : "nl",
+    "@value" : "encyclopedische definitie"
+  }, {
     "@language" : "da",
     "@value" : "encyklopædisk definition"
   }, {
@@ -6659,8 +7143,14 @@
     "@language" : "de",
     "@value" : "enzyklopädische Definition"
   }, {
+    "@language" : "el",
+    "@value" : "εγκυκλοπαιδικός ορισμός"
+  }, {
     "@language" : "sr",
     "@value" : "енциклопедијска дефиниција"
+  }, {
+    "@language" : "ru",
+    "@value" : "энциклопедическое определение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "is",
@@ -6668,6 +7158,9 @@
   }, {
     "@language" : "lt",
     "@value" : "enciklopedinė apibrėžtis"
+  }, {
+    "@language" : "ru",
+    "@value" : "энциклопедическая дефиниция"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -6691,6 +7184,9 @@
     "@language" : "da",
     "@value" : "afsnit i ordbogsartikel"
   }, {
+    "@language" : "ro",
+    "@value" : "articol lexicografic"
+  }, {
     "@language" : "it",
     "@value" : "blocco di entrate"
   }, {
@@ -6699,6 +7195,9 @@
   }, {
     "@language" : "ca",
     "@value" : "contingut"
+  }, {
+    "@language" : "gl",
+    "@value" : "entrada"
   }, {
     "@language" : "en",
     "@value" : "entry block"
@@ -6714,8 +7213,14 @@
   }, {
     "@language" : "lt",
     "@value" : "žodyninis straipsnis"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарная статья"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "articol de dicționar"
+  }, {
     "@language" : "it",
     "@value" : "entry block"
   } ],
@@ -6738,6 +7243,9 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "cuerpo del diccionario"
+  }, {
     "@language" : "en",
     "@value" : "entry layout feature"
   } ],
@@ -6779,6 +7287,12 @@
     "@language" : "da",
     "@value" : "indgang til ordbogsartikel"
   }, {
+    "@language" : "gl",
+    "@value" : "información sobre o lema"
+  }, {
+    "@language" : "ro",
+    "@value" : "informații de uz (fonetice, morfologice, gramaticale)"
+  }, {
     "@language" : "et",
     "@value" : "kirje rida"
   }, {
@@ -6787,6 +7301,13 @@
   }, {
     "@language" : "lt",
     "@value" : "žodžio informacija, pateikiama prieš apibrėžtį"
+  }, {
+    "@language" : "ru",
+    "@value" : "заглавное слово, сопровождаемое  орфоэпической информацией, грамматической информацией, пометой"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ru",
+    "@value" : "заглавное слово и вся информация о нем до определения"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/entryLayoutFeature"
@@ -6958,6 +7479,9 @@
     "@language" : "de",
     "@value" : "etymologische Information"
   }, {
+    "@language" : "nl",
+    "@value" : "etymologische informatie"
+  }, {
     "@language" : "da",
     "@value" : "etymologisk information"
   }, {
@@ -6966,6 +7490,9 @@
   }, {
     "@language" : "es",
     "@value" : "información etimológica"
+  }, {
+    "@language" : "gl",
+    "@value" : "información etimolóxica"
   }, {
     "@language" : "pl",
     "@value" : "informacja etymologiczna"
@@ -6978,6 +7505,12 @@
   }, {
     "@language" : "is",
     "@value" : "orðsifjar"
+  }, {
+    "@language" : "sr",
+    "@value" : "етимолошке информације"
+  }, {
+    "@language" : "ru",
+    "@value" : "этимологическая информация"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
@@ -6991,6 +7524,9 @@
   }, {
     "@language" : "et",
     "@value" : "päritoluinfo"
+  }, {
+    "@language" : "ru",
+    "@value" : "этимология"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/formalInformation"
@@ -7315,6 +7851,9 @@
     "@language" : "ca",
     "@value" : "exemple"
   }, {
+    "@language" : "gl",
+    "@value" : "exemplo de uso"
+  }, {
     "@language" : "it",
     "@value" : "frase d'esempio"
   }, {
@@ -7338,6 +7877,9 @@
   }, {
     "@language" : "sl",
     "@value" : "zgled"
+  }, {
+    "@language" : "el",
+    "@value" : "παράδειγμα"
   }, {
     "@language" : "ru",
     "@value" : "иллюстративное предложение"
@@ -7366,6 +7908,9 @@
   }, {
     "@language" : "sl",
     "@value" : "stavčni zgled"
+  }, {
+    "@language" : "el",
+    "@value" : "παράδειγμα χρήσης"
   }, {
     "@language" : "ru",
     "@value" : "пример в виде предложения"
@@ -7440,6 +7985,9 @@
     "@language" : "es",
     "@value" : "fascículo"
   }, {
+    "@language" : "gl",
+    "@value" : "fascículo"
+  }, {
     "@language" : "eu",
     "@value" : "faszikulu"
   }, {
@@ -7451,6 +7999,12 @@
   }, {
     "@language" : "et",
     "@value" : "vihik"
+  }, {
+    "@language" : "ru",
+    "@value" : "отдельный выпуск (какого-либо издания)"
+  }, {
+    "@language" : "sr",
+    "@value" : "свеска"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -7458,6 +8012,9 @@
   }, {
     "@language" : "et",
     "@value" : "köide"
+  }, {
+    "@language" : "sr",
+    "@value" : "свезак"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/paperDictionary"
@@ -7502,6 +8059,9 @@
     "@language" : "es",
     "@value" : "marca de especialidad"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de especialidade"
+  }, {
     "@language" : "is",
     "@value" : "sviðsmerking"
   }, {
@@ -7510,6 +8070,9 @@
   }, {
     "@language" : "et",
     "@value" : "valdkond"
+  }, {
+    "@language" : "el",
+    "@value" : "ένδειξη θεματικού πεδίου"
   }, {
     "@language" : "sr",
     "@value" : "ознака области"
@@ -7566,10 +8129,10 @@
     "@language" : "eu",
     "@value" : "arte figuratibo"
   }, {
-    "@language" : "gl",
-    "@value" : "arte figurativo"
-  }, {
     "@language" : "es",
+    "@value" : "figurado"
+  }, {
+    "@language" : "gl",
     "@value" : "figurado"
   }, {
     "@language" : "pt",
@@ -7577,9 +8140,6 @@
   }, {
     "@language" : "ro",
     "@value" : "figurat"
-  }, {
-    "@language" : "nl",
-    "@value" : "figuratieve kunst"
   }, {
     "@language" : "fi",
     "@value" : "figuratiivinen taide"
@@ -7614,6 +8174,9 @@
     "@language" : "pl",
     "@value" : "figuratywizm"
   }, {
+    "@language" : "nl",
+    "@value" : "figuurlijk"
+  }, {
     "@language" : "lt",
     "@value" : "perkeltinis; vaizdingas"
   }, {
@@ -7623,11 +8186,11 @@
     "@language" : "is",
     "@value" : "yfirfærð merking"
   }, {
-    "@language" : "sr",
-    "@value" : "Фигуративна уметност"
-  }, {
     "@language" : "ru",
-    "@value" : "фигуративизм"
+    "@value" : "переносное значение"
+  }, {
+    "@language" : "sr",
+    "@value" : "фигуративан"
   }, {
     "@language" : "mk",
     "@value" : "фигуративна уметност"
@@ -7663,11 +8226,17 @@
     "@language" : "lt",
     "@value" : "perkeltinės reikšmės"
   }, {
+    "@language" : "gl",
+    "@value" : "sentido figurado"
+  }, {
     "@language" : "ca",
     "@value" : "sentit figurat"
   }, {
     "@language" : "it",
     "@value" : "traslato"
+  }, {
+    "@language" : "ru",
+    "@value" : "метафорическое значение"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -7687,9 +8256,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Frase feita"
-  }, {
     "@language" : "de",
     "@value" : "Redensart"
   }, {
@@ -7704,6 +8270,9 @@
   }, {
     "@language" : "ro",
     "@value" : "expresie"
+  }, {
+    "@language" : "gl",
+    "@value" : "expresión fixa"
   }, {
     "@language" : "fr",
     "@value" : "expression figée"
@@ -7853,14 +8422,26 @@
     "@language" : "es",
     "@value" : "información formal"
   }, {
+    "@language" : "gl",
+    "@value" : "información formal"
+  }, {
     "@language" : "it",
     "@value" : "informazione formale"
+  }, {
+    "@language" : "ro",
+    "@value" : "informații fonetice și gramaticale oferite pentru cuvântul-titlu"
   }, {
     "@language" : "ca",
     "@value" : "marques lingüístiques"
   }, {
     "@language" : "et",
     "@value" : "vormiinfo"
+  }, {
+    "@language" : "sr",
+    "@value" : "формалне информације"
+  }, {
+    "@language" : "ru",
+    "@value" : "формальная информация"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -7888,6 +8469,9 @@
     "@language" : "es",
     "@value" : "definición formulaica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición formulaica"
+  }, {
     "@language" : "et",
     "@value" : "definitsioon"
   }, {
@@ -7897,18 +8481,36 @@
     "@language" : "it",
     "@value" : "definizione troncata"
   }, {
+    "@language" : "ro",
+    "@value" : "definiție trunchiată"
+  }, {
     "@language" : "en",
     "@value" : "formulaic definition"
   }, {
     "@language" : "is",
     "@value" : "mynsturskýring"
+  }, {
+    "@language" : "el",
+    "@value" : "τυποποιημένος ορισμός"
+  }, {
+    "@language" : "ru",
+    "@value" : "стандартное определение"
+  }, {
+    "@language" : "sr",
+    "@value" : "типска дефиниција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "et",
     "@value" : "definitsioonimall"
   }, {
+    "@language" : "ro",
+    "@value" : "definiție standard"
+  }, {
     "@language" : "is",
     "@value" : "formúluskýring"
+  }, {
+    "@language" : "ru",
+    "@value" : "определение, составленное по определенному шаблону"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -7947,6 +8549,9 @@
     "@value" : "dažnumas"
   }, {
     "@language" : "es",
+    "@value" : "frecuencia"
+  }, {
+    "@language" : "gl",
     "@value" : "frecuencia"
   }, {
     "@language" : "ro",
@@ -8223,7 +8828,7 @@
     "@value" : "suku"
   }, {
     "@language" : "gl",
-    "@value" : "xénero gramatical"
+    "@value" : "xénero"
   }, {
     "@language" : "el",
     "@value" : "γένος"
@@ -8318,6 +8923,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario general"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario xeral"
   }, {
     "@language" : "ro",
     "@value" : "dicționar general"
@@ -8494,10 +9102,10 @@
     "@language" : "be",
     "@value" : "геаграфія"
   }, {
-    "@language" : "bg",
-    "@value" : "география"
-  }, {
     "@language" : "ru",
+    "@value" : "географическая помета"
+  }, {
+    "@language" : "bg",
     "@value" : "география"
   }, {
     "@language" : "mk",
@@ -8533,6 +9141,12 @@
   }, {
     "@language" : "sl",
     "@value" : "zemljepis"
+  }, {
+    "@language" : "ru",
+    "@value" : "региональная помета"
+  }, {
+    "@language" : "ru",
+    "@value" : "территориальная помета"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/usageInformation"
@@ -8552,9 +9166,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Glosa"
-  }, {
     "@language" : "sv",
     "@value" : "Glosa"
   }, {
@@ -8574,6 +9185,9 @@
     "@value" : "glosa"
   }, {
     "@language" : "eu",
+    "@value" : "glosa"
+  }, {
+    "@language" : "gl",
     "@value" : "glosa"
   }, {
     "@language" : "lt",
@@ -8885,6 +9499,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario histórico"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario histórico"
   }, {
     "@language" : "fr",
     "@value" : "dictionnaire historique"
@@ -9232,11 +9849,17 @@
     "@language" : "de",
     "@value" : "Worttrennung"
   }, {
+    "@language" : "nl",
+    "@value" : "afbreking"
+  }, {
     "@language" : "sv",
     "@value" : "avstavning"
   }, {
     "@language" : "fr",
     "@value" : "césure"
+  }, {
+    "@language" : "ro",
+    "@value" : "despărțirea în silabe"
   }, {
     "@language" : "es",
     "@value" : "división de palabras"
@@ -9271,6 +9894,9 @@
     "@language" : "pl",
     "@value" : "podział przy przenoszeniu"
   }, {
+    "@language" : "gl",
+    "@value" : "separación con trazos"
+  }, {
     "@language" : "et",
     "@value" : "silbitus"
   }, {
@@ -9284,7 +9910,10 @@
     "@value" : "žodžių rašyba su brūkšneliu"
   }, {
     "@language" : "ru",
-    "@value" : "перенос"
+    "@value" : "перенос (слов в тексте)"
+  }, {
+    "@language" : "sr",
+    "@value" : "подела речи на крају реда"
   }, {
     "@language" : "uk",
     "@value" : "правила переносу слів на письмі"
@@ -9296,17 +9925,26 @@
     "@language" : "de",
     "@value" : "Trennung"
   }, {
+    "@language" : "gl",
+    "@value" : "división de palabras a final de liña"
+  }, {
     "@language" : "es",
     "@value" : "división de palabras a final de renglón"
   }, {
     "@language" : "is",
     "@value" : "línuskipting"
   }, {
+    "@language" : "ro",
+    "@value" : "silabisire"
+  }, {
     "@language" : "et",
     "@value" : "silbitamine"
   }, {
     "@language" : "it",
     "@value" : "unione tramite trattino"
+  }, {
+    "@language" : "ru",
+    "@value" : "использование дефиса"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/wordDivision"
@@ -9863,6 +10501,9 @@
     "@language" : "da",
     "@value" : "henvisningsartikel"
   }, {
+    "@language" : "ro",
+    "@value" : "index"
+  }, {
     "@language" : "en",
     "@value" : "index entry"
   }, {
@@ -9872,11 +10513,23 @@
     "@language" : "lt",
     "@value" : "lemos variantas"
   }, {
+    "@language" : "gl",
+    "@value" : "remisión"
+  }, {
     "@language" : "et",
     "@value" : "sõnaloend"
   }, {
+    "@language" : "hu",
+    "@value" : "utaló szócikk"
+  }, {
     "@language" : "it",
     "@value" : "voce di indice"
+  }, {
+    "@language" : "sr",
+    "@value" : "индексна одредница"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарная статья с указательной дефиницией"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "it",
@@ -9888,11 +10541,20 @@
     "@language" : "et",
     "@value" : "lemmaloend"
   }, {
+    "@language" : "ro",
+    "@value" : "liste de cuvinte"
+  }, {
     "@language" : "et",
     "@value" : "märksõnaloend"
   }, {
     "@language" : "es",
     "@value" : "variante de lema"
+  }, {
+    "@language" : "gl",
+    "@value" : "índice de subentrada"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарная статья, заглавное слово которой является вариантом и перекрестной ссылкой на полностью определенное заглавное слово в словаре"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryEntry"
@@ -10114,6 +10776,12 @@
     "@language" : "pl",
     "@value" : "morfologia fleksyjna"
   }, {
+    "@language" : "ro",
+    "@value" : "morfologie flexionară"
+  }, {
+    "@language" : "gl",
+    "@value" : "morfoloxía flexiva"
+  }, {
     "@language" : "et",
     "@value" : "muutemorfoloogia"
   }, {
@@ -10122,6 +10790,9 @@
   }, {
     "@language" : "sr",
     "@value" : "флективна морфологија"
+  }, {
+    "@language" : "ru",
+    "@value" : "флективная морфология"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -10176,6 +10847,9 @@
     "@language" : "es",
     "@value" : "cultismo superfluo"
   }, {
+    "@language" : "gl",
+    "@value" : "cultismo superfluo"
+  }, {
     "@language" : "it",
     "@value" : "inkhorn"
   }, {
@@ -10188,18 +10862,33 @@
     "@language" : "da",
     "@value" : "overflødigt ord"
   }, {
+    "@language" : "lt",
+    "@value" : "pretenzingas tarptautinis žodis"
+  }, {
     "@language" : "et",
     "@value" : "raamatusõna"
   }, {
-    "@language" : "lt",
-    "@value" : "tarptautinis žodis"
+    "@language" : "ro",
+    "@value" : "termen pedantic"
+  }, {
+    "@language" : "ru",
+    "@value" : "термин из чернильницы"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "cuvânt erudit"
+  }, {
+    "@language" : "gl",
+    "@value" : "pedantería"
+  }, {
     "@language" : "lt",
     "@value" : "pretenzingas žodis"
   }, {
     "@language" : "et",
     "@value" : "raamatulik sõna"
+  }, {
+    "@language" : "ru",
+    "@value" : "трудное слово, обычно образованное от латинских или греческих корней, и считающееся ненужным или чрезмерно претенциозным"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/loanword"
@@ -10229,17 +10918,32 @@
     "@language" : "es",
     "@value" : "definición intensiva"
   }, {
+    "@language" : "gl",
+    "@value" : "definición intensiva"
+  }, {
     "@language" : "eu",
     "@value" : "definizio intentzional"
   }, {
     "@language" : "it",
     "@value" : "definizione intenzionale"
   }, {
+    "@language" : "ro",
+    "@value" : "definiție intensională"
+  }, {
     "@language" : "en",
     "@value" : "intentional definition"
   }, {
     "@language" : "et",
     "@value" : "intentsionaalne definitsioon"
+  }, {
+    "@language" : "el",
+    "@value" : "εντασιακός ορισμός"
+  }, {
+    "@language" : "sr",
+    "@value" : "интензионална дефиниција"
+  }, {
+    "@language" : "ru",
+    "@value" : "интенциональная дефиниция"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ca",
@@ -10247,6 +10951,9 @@
   }, {
     "@language" : "es",
     "@value" : "intensión"
+  }, {
+    "@language" : "ru",
+    "@value" : "тип определения с использованием формулы, которая указывает атрибуты или характеристики понятия по отношению к его гиперониму (родовому термину), например, сосна — это «разновидность вечнозеленого дерева»."
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -10524,6 +11231,12 @@
     "@language" : "es",
     "@value" : "producción"
   }, {
+    "@language" : "ro",
+    "@value" : "producerea limbajului"
+  }, {
+    "@language" : "gl",
+    "@value" : "produción lingüística"
+  }, {
     "@language" : "it",
     "@value" : "produzione del linguaggio"
   }, {
@@ -10531,9 +11244,18 @@
     "@value" : "sprogproduktion"
   }, {
     "@language" : "el",
-    "@value" : "παραγωγή γλώσσας"
+    "@value" : "γλωσσική παραγωγή"
+  }, {
+    "@language" : "ru",
+    "@value" : "воспроизводство речи"
+  }, {
+    "@language" : "sr",
+    "@value" : "језичка продукција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "expresión"
+  }, {
     "@language" : "ca",
     "@value" : "producció lingüística"
   }, {
@@ -10542,6 +11264,15 @@
   }, {
     "@language" : "da",
     "@value" : "produktion"
+  }, {
+    "@language" : "el",
+    "@value" : "παραγωγή γλώσσας"
+  }, {
+    "@language" : "sr",
+    "@value" : "продукција језика"
+  }, {
+    "@language" : "ru",
+    "@value" : "устная или письменная речь"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/communicativeFunction"
@@ -10586,6 +11317,12 @@
     "@language" : "es",
     "@value" : "recepción"
   }, {
+    "@language" : "gl",
+    "@value" : "recepción lingüística"
+  }, {
+    "@language" : "ro",
+    "@value" : "receptarea limbajului"
+  }, {
     "@language" : "it",
     "@value" : "ricezione del linguaggio"
   }, {
@@ -10593,9 +11330,18 @@
     "@value" : "sprogreception"
   }, {
     "@language" : "el",
-    "@value" : "κατανόηση γλώσσας"
+    "@value" : "πρόσληψη γλώσσας"
+  }, {
+    "@language" : "ru",
+    "@value" : "восприятие речи"
+  }, {
+    "@language" : "sr",
+    "@value" : "језичка рецепција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "comprensión"
+  }, {
     "@language" : "is",
     "@value" : "málviðtaka"
   }, {
@@ -10610,6 +11356,15 @@
   }, {
     "@language" : "da",
     "@value" : "sprogforståelse"
+  }, {
+    "@language" : "el",
+    "@value" : "κατανόηση γλώσσας"
+  }, {
+    "@language" : "ru",
+    "@value" : "навыки аудирования и чтения"
+  }, {
+    "@language" : "sr",
+    "@value" : "рецепција језика"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/communicativeFunction"
@@ -10637,6 +11392,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario escolar"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario de aprendizaxe"
   }, {
     "@language" : "ro",
     "@value" : "dicționar pentru studenți străini"
@@ -10671,6 +11429,9 @@
     "@language" : "et",
     "@value" : "õppesõnastik"
   }, {
+    "@language" : "el",
+    "@value" : "λεξικό εκμάθησης γλώσσας"
+  }, {
     "@language" : "ru",
     "@value" : "учебный словарь"
   }, {
@@ -10698,6 +11459,9 @@
   }, {
     "@language" : "en",
     "@value" : "learners' dictionary"
+  }, {
+    "@language" : "el",
+    "@value" : "λεξικό μαθητή"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/userGroupOrientedDictionary"
@@ -10720,9 +11484,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Forma canónica"
-  }, {
     "@language" : "ga",
     "@value" : "Leama"
   }, {
@@ -10741,20 +11502,26 @@
     "@language" : "hu",
     "@value" : "címszó"
   }, {
-    "@language" : "ca",
-    "@value" : "entrada"
-  }, {
-    "@language" : "es",
-    "@value" : "entrada"
-  }, {
     "@language" : "is",
     "@value" : "flettimynd"
+  }, {
+    "@language" : "it",
+    "@value" : "forma canonica"
   }, {
     "@language" : "pl",
     "@value" : "forma podstawowa"
   }, {
     "@language" : "eu",
     "@value" : "hiztegi-sarrera"
+  }, {
+    "@language" : "ca",
+    "@value" : "lema"
+  }, {
+    "@language" : "es",
+    "@value" : "lema"
+  }, {
+    "@language" : "gl",
+    "@value" : "lema"
   }, {
     "@language" : "lt",
     "@value" : "lema"
@@ -10768,16 +11535,10 @@
     "@language" : "cs",
     "@value" : "lemma"
   }, {
-    "@language" : "da",
-    "@value" : "lemma"
-  }, {
     "@language" : "en",
     "@value" : "lemma"
   }, {
     "@language" : "et",
-    "@value" : "lemma"
-  }, {
-    "@language" : "it",
     "@value" : "lemma"
   }, {
     "@language" : "lv",
@@ -10795,23 +11556,26 @@
     "@language" : "ro",
     "@value" : "lemă"
   }, {
+    "@language" : "da",
+    "@value" : "opslagsform"
+  }, {
     "@language" : "sk",
     "@value" : "slovníková forma"
   }, {
     "@language" : "el",
     "@value" : "λήμμα"
   }, {
-    "@language" : "mk",
-    "@value" : "лема"
+    "@language" : "ru",
+    "@value" : "каноническая форма"
   }, {
     "@language" : "sr",
+    "@value" : "канонски облик"
+  }, {
+    "@language" : "mk",
     "@value" : "лема"
   }, {
     "@language" : "uk",
     "@value" : "лема"
-  }, {
-    "@language" : "ru",
-    "@value" : "лемма"
   }, {
     "@language" : "he",
     "@value" : "צורה מילונית"
@@ -10822,6 +11586,9 @@
   }, {
     "@language" : "de",
     "@value" : "Grundform"
+  }, {
+    "@language" : "de",
+    "@value" : "Kanonische Form"
   }, {
     "@language" : "sl",
     "@value" : "Lema"
@@ -10838,17 +11605,26 @@
     "@language" : "en",
     "@value" : "canonical form"
   }, {
+    "@language" : "gl",
+    "@value" : "entrada"
+  }, {
     "@language" : "en",
     "@value" : "entry word"
   }, {
     "@language" : "is",
     "@value" : "fletta"
   }, {
+    "@language" : "gl",
+    "@value" : "forma canónica"
+  }, {
     "@language" : "ca",
     "@value" : "forma de citació"
   }, {
     "@language" : "es",
     "@value" : "forma de citación"
+  }, {
+    "@language" : "es",
+    "@value" : "forma de diccionario"
   }, {
     "@language" : "pl",
     "@value" : "forma podstawowa"
@@ -10859,13 +11635,16 @@
     "@language" : "en",
     "@value" : "headword"
   }, {
+    "@language" : "eu",
+    "@value" : "hiztegi sarrera"
+  }, {
+    "@language" : "da",
+    "@value" : "kanonisk form"
+  }, {
     "@language" : "ca",
     "@value" : "lema"
   }, {
     "@language" : "es",
-    "@value" : "lema"
-  }, {
-    "@language" : "eu",
     "@value" : "lema"
   }, {
     "@language" : "hu",
@@ -10886,14 +11665,20 @@
     "@language" : "lt",
     "@value" : "pagrindinė žodžio forma"
   }, {
-    "@language" : "eu",
-    "@value" : "sarrera"
+    "@language" : "el",
+    "@value" : "λέξη εισόδου"
   }, {
     "@language" : "ru",
     "@value" : "входное слово"
   }, {
     "@language" : "ru",
     "@value" : "каноническая форма слова"
+  }, {
+    "@language" : "ru",
+    "@value" : "лемма"
+  }, {
+    "@language" : "ru",
+    "@value" : "основная форма входного слова"
   }, {
     "@language" : "sr",
     "@value" : "основни облик"
@@ -11022,7 +11807,7 @@
     "@value" : "lemma type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid18"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -11063,6 +11848,9 @@
     "@language" : "es",
     "@value" : "definición lexicográfica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición lexicográfica"
+  }, {
     "@language" : "pl",
     "@value" : "definicja słownikowa"
   }, {
@@ -11091,7 +11879,10 @@
     "@value" : "orðabókarskýring"
   }, {
     "@language" : "el",
-    "@value" : "λεξικογραφικός ορισμός"
+    "@value" : "Ερμήνευμα"
+  }, {
+    "@language" : "ru",
+    "@value" : "лексикографическое определение"
   }, {
     "@language" : "sr",
     "@value" : "лексикографска дефиниција"
@@ -11108,6 +11899,12 @@
   }, {
     "@language" : "is",
     "@value" : "skýring"
+  }, {
+    "@language" : "el",
+    "@value" : "λεξικογραφικός ορισμός"
+  }, {
+    "@language" : "ru",
+    "@value" : "лексикографическая дефиниция"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -11132,7 +11929,7 @@
     "@value" : "lexicographical process type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta/loanword",
@@ -11170,8 +11967,8 @@
     "@language" : "lv",
     "@value" : "aizguvums"
   }, {
-    "@language" : "es",
-    "@value" : "calco"
+    "@language" : "nl",
+    "@value" : "bastaardwoord"
   }, {
     "@language" : "fr",
     "@value" : "emprunt lexical"
@@ -11187,9 +11984,6 @@
   }, {
     "@language" : "fi",
     "@value" : "lainasana"
-  }, {
-    "@language" : "nl",
-    "@value" : "leenwoord"
   }, {
     "@language" : "en",
     "@value" : "loanword"
@@ -11210,10 +12004,13 @@
     "@value" : "manlleu"
   }, {
     "@language" : "it",
-    "@value" : "prestito linguistico"
+    "@value" : "prestito"
   }, {
     "@language" : "sl",
     "@value" : "prevzeta beseda"
+  }, {
+    "@language" : "es",
+    "@value" : "préstamo"
   }, {
     "@language" : "lt",
     "@value" : "skolinys"
@@ -11255,8 +12052,17 @@
     "@language" : "de",
     "@value" : "Fremdwort"
   }, {
+    "@language" : "de",
+    "@value" : "Lehnwort"
+  }, {
     "@language" : "en",
     "@value" : "borrowing"
+  }, {
+    "@language" : "es",
+    "@value" : "calco"
+  }, {
+    "@language" : "gl",
+    "@value" : "calco"
   }, {
     "@language" : "ro",
     "@value" : "cuvânt de împrumut"
@@ -11270,8 +12076,14 @@
     "@language" : "da",
     "@value" : "fremmedord"
   }, {
+    "@language" : "da",
+    "@value" : "indlån"
+  }, {
     "@language" : "sl",
     "@value" : "izposojenka"
+  }, {
+    "@language" : "nl",
+    "@value" : "krediet"
   }, {
     "@language" : "en",
     "@value" : "loan-word"
@@ -11288,6 +12100,9 @@
     "@language" : "it",
     "@value" : "prestito lessicale"
   }, {
+    "@language" : "it",
+    "@value" : "prestito linguistico"
+  }, {
     "@language" : "ca",
     "@value" : "préstec"
   }, {
@@ -11302,6 +12117,9 @@
   }, {
     "@language" : "sr",
     "@value" : "позајмљена реч"
+  }, {
+    "@language" : "sr",
+    "@value" : "позајмљивање"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/etymologicalInformation"
@@ -11393,6 +12211,9 @@
     "@language" : "es",
     "@value" : "definición lógica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición lóxica"
+  }, {
     "@language" : "pl",
     "@value" : "definicja logiczna"
   }, {
@@ -11405,6 +12226,9 @@
     "@language" : "it",
     "@value" : "definizione logica"
   }, {
+    "@language" : "ro",
+    "@value" : "definiție analitică"
+  }, {
     "@language" : "is",
     "@value" : "fræðileg skilgreining"
   }, {
@@ -11416,6 +12240,15 @@
   }, {
     "@language" : "da",
     "@value" : "logisk definition"
+  }, {
+    "@language" : "el",
+    "@value" : "λογικός ορισμός"
+  }, {
+    "@language" : "ru",
+    "@value" : "логическая дефиниция"
+  }, {
+    "@language" : "sr",
+    "@value" : "логичка дефиниција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "lt",
@@ -11504,6 +12337,9 @@
     "@language" : "es",
     "@value" : "entrada"
   }, {
+    "@language" : "gl",
+    "@value" : "entrada"
+  }, {
     "@language" : "pl",
     "@value" : "hasło główne"
   }, {
@@ -11550,6 +12386,9 @@
     "@language" : "ro",
     "@value" : "intrare cuvânt"
   }, {
+    "@language" : "gl",
+    "@value" : "lema"
+  }, {
     "@language" : "da",
     "@value" : "opslagsord"
   }, {
@@ -11583,6 +12422,9 @@
   }, {
     "@language" : "ca",
     "@value" : "desambiguació"
+  }, {
+    "@language" : "gl",
+    "@value" : "desambiguación de significado"
   }, {
     "@language" : "es",
     "@value" : "discriminación de sentidos"
@@ -11739,7 +12581,7 @@
     "@value" : "microstructure feature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/linguisticInformation"
@@ -11814,6 +12656,9 @@
     "@language" : "es",
     "@value" : "diccionario monolingüe"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario monolingüe"
+  }, {
     "@language" : "fr",
     "@value" : "dictionnaire explicatif"
   }, {
@@ -11866,7 +12711,7 @@
     "@value" : "ükskeelne sõnastik"
   }, {
     "@language" : "el",
-    "@value" : "ερμηνευτικό λεξικό"
+    "@value" : "μονόγλωσσο λεξικό"
   }, {
     "@language" : "uk",
     "@value" : "тлумачний словник"
@@ -12104,14 +12949,8 @@
     "@language" : "de",
     "@value" : "Mehrwortausdruck"
   }, {
-    "@language" : "it",
-    "@value" : "espressione polirematica"
-  }, {
-    "@language" : "ro",
-    "@value" : "expresie compusă din două sau mai multe cuvinte"
-  }, {
-    "@language" : "es",
-    "@value" : "expresión pluriverbal"
+    "@language" : "lt",
+    "@value" : "daugiažodis pavadinimas"
   }, {
     "@language" : "fr",
     "@value" : "expression à mots multiples"
@@ -12123,7 +12962,7 @@
     "@value" : "fleiryrtur"
   }, {
     "@language" : "da",
-    "@value" : "flerordsudtryk"
+    "@value" : "flerordsforbindelse"
   }, {
     "@language" : "sv",
     "@value" : "flerordsuttryck"
@@ -12143,20 +12982,29 @@
     "@language" : "nl",
     "@value" : "mutliwoorduitdrukking"
   }, {
-    "@language" : "lt",
-    "@value" : "pastovusis žodžių junginys"
+    "@language" : "it",
+    "@value" : "polirematica"
+  }, {
+    "@language" : "ro",
+    "@value" : "sintagmă"
   }, {
     "@language" : "hu",
     "@value" : "többszavas kifejezés"
+  }, {
+    "@language" : "es",
+    "@value" : "unidad pluriverbal"
+  }, {
+    "@language" : "gl",
+    "@value" : "unidade pluriverbal"
   }, {
     "@language" : "ca",
     "@value" : "unitat pluriverbal"
   }, {
     "@language" : "el",
-    "@value" : "πολυλεκτικό"
+    "@value" : "πολυλεκτικό σύνθετο"
   }, {
     "@language" : "sr",
-    "@value" : "вишечлани израз"
+    "@value" : "вишечлана лексичка јединица"
   }, {
     "@language" : "ru",
     "@value" : "лексическая единица, состоящая из нескольких слов"
@@ -12164,6 +13012,9 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
     "@value" : "Mehrwortlexem"
+  }, {
+    "@language" : "ro",
+    "@value" : "construcție fixă"
   }, {
     "@language" : "it",
     "@value" : "espressione di gruppi di parole"
@@ -12179,6 +13030,9 @@
   }, {
     "@language" : "da",
     "@value" : "flerordsforbindelse"
+  }, {
+    "@language" : "da",
+    "@value" : "flerordsudtryk"
   }, {
     "@language" : "eu",
     "@value" : "hitz anitzeko"
@@ -12198,6 +13052,9 @@
     "@language" : "en",
     "@value" : "multi-word unit"
   }, {
+    "@language" : "es",
+    "@value" : "multipalabra"
+  }, {
     "@language" : "en",
     "@value" : "multiword"
   }, {
@@ -12216,6 +13073,9 @@
     "@language" : "lt",
     "@value" : "pastovusis junginys"
   }, {
+    "@language" : "ca",
+    "@value" : "polilèxic"
+  }, {
     "@language" : "it",
     "@value" : "polirematica"
   }, {
@@ -12225,8 +13085,14 @@
     "@language" : "lt",
     "@value" : "samplaika"
   }, {
+    "@language" : "es",
+    "@value" : "unidad poliléxica"
+  }, {
     "@language" : "ca",
     "@value" : "unitat polilèxica"
+  }, {
+    "@language" : "el",
+    "@value" : "πολυλεκτικό"
   }, {
     "@language" : "el",
     "@value" : "πολυλεκτικό σύνθετο"
@@ -12284,7 +13150,7 @@
     "@value" : "diccionario multilingüe"
   }, {
     "@language" : "gl",
-    "@value" : "dicionario bilingüe"
+    "@value" : "dicionario multilingüe"
   }, {
     "@language" : "pt",
     "@value" : "dicionário de tradução"
@@ -12452,6 +13318,9 @@
     "@language" : "eu",
     "@value" : "multimedia"
   }, {
+    "@language" : "gl",
+    "@value" : "multimedia"
+  }, {
     "@language" : "it",
     "@value" : "multimedia"
   }, {
@@ -12481,6 +13350,12 @@
   }, {
     "@language" : "el",
     "@value" : "πολυμέσα"
+  }, {
+    "@language" : "sr",
+    "@value" : "мултимедија"
+  }, {
+    "@language" : "ru",
+    "@value" : "мультимедиа"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -12506,6 +13381,9 @@
   }, {
     "@language" : "ro",
     "@value" : "sistem multimedia"
+  }, {
+    "@language" : "ru",
+    "@value" : "мультимедийная система"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme"
@@ -12715,6 +13593,9 @@
     "@language" : "es",
     "@value" : "anidamiento"
   }, {
+    "@language" : "gl",
+    "@value" : "aniñamento"
+  }, {
     "@language" : "ro",
     "@value" : "cuiburi"
   }, {
@@ -12744,6 +13625,15 @@
   }, {
     "@language" : "is",
     "@value" : "undirskipan"
+  }, {
+    "@language" : "el",
+    "@value" : "εγκιβωτισμός"
+  }, {
+    "@language" : "ru",
+    "@value" : "гнездовой принцип организации микростуркутры"
+  }, {
+    "@language" : "sr",
+    "@value" : "груписање речи у гнезда"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "et",
@@ -12757,6 +13647,12 @@
   }, {
     "@language" : "da",
     "@value" : "redestruktur"
+  }, {
+    "@language" : "ru",
+    "@value" : "кластерная микроструктура"
+  }, {
+    "@language" : "sr",
+    "@value" : "образовање лексичких гнезда"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/entryLayoutFeature"
@@ -13061,8 +13957,14 @@
     "@language" : "es",
     "@value" : "diccionario offline"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario offline"
+  }, {
     "@language" : "pt",
     "@value" : "dicionário offline"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar electronic ce poate fi accesat în absența conexiunii la internet"
   }, {
     "@language" : "it",
     "@value" : "dizionario offline"
@@ -13087,6 +13989,12 @@
   }, {
     "@language" : "pl",
     "@value" : "słownik offline"
+  }, {
+    "@language" : "sr",
+    "@value" : "офлајн речник"
+  }, {
+    "@language" : "ru",
+    "@value" : "печатный словарь"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
@@ -13094,6 +14002,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario sin conexión"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar offline"
   }, {
     "@language" : "it",
     "@value" : "vocabolario offline"
@@ -13130,7 +14041,7 @@
     "@value" : "diccionario en línea"
   }, {
     "@language" : "gl",
-    "@value" : "dicionario en liña"
+    "@value" : "dicionario online"
   }, {
     "@language" : "pt",
     "@value" : "dicionário em linha"
@@ -13186,6 +14097,9 @@
     "@language" : "fi",
     "@value" : "verkkosanakirja"
   }, {
+    "@language" : "el",
+    "@value" : "διαδικτυακό λεξικό"
+  }, {
     "@language" : "ru",
     "@value" : "онлайн-словарь"
   }, {
@@ -13202,6 +14116,9 @@
     "@value" : "מילון מקוון"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "dicionario en liña"
+  }, {
     "@language" : "pt",
     "@value" : "dicionário online"
   }, {
@@ -13225,6 +14142,9 @@
   }, {
     "@language" : "it",
     "@value" : "vocabolario online"
+  }, {
+    "@language" : "el",
+    "@value" : "λεξικό διαθέσιμο στο διαδίκτυο"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/electronicDictionary"
@@ -13269,7 +14189,10 @@
     "@value" : "diccionario onomasiológico"
   }, {
     "@language" : "gl",
-    "@value" : "dicionario de sinónimos"
+    "@value" : "dicionario onomasiolóxico"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar onomasiologic"
   }, {
     "@language" : "it",
     "@value" : "dizionario onomasiologico"
@@ -13332,18 +14255,18 @@
     "@value" : "thésaurus lexicographique"
   }, {
     "@language" : "el",
-    "@value" : "Θησαυρός"
+    "@value" : "εννοιολογικό λεξικό"
   }, {
     "@language" : "bg",
     "@value" : "Тезаурус"
+  }, {
+    "@language" : "ru",
+    "@value" : "ономасиологический словарь"
   }, {
     "@language" : "sr",
     "@value" : "ономасиолошки речник"
   }, {
     "@language" : "mk",
-    "@value" : "тезаурус"
-  }, {
-    "@language" : "ru",
     "@value" : "тезаурус"
   }, {
     "@language" : "uk",
@@ -13353,6 +14276,9 @@
     "@value" : "אגרון"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "dicționar analogic, dicționar ideografic"
+  }, {
     "@language" : "is",
     "@value" : "hugtakaorðabók"
   }, {
@@ -13364,6 +14290,9 @@
   }, {
     "@language" : "it",
     "@value" : "vocabolario onomasiologico"
+  }, {
+    "@language" : "el",
+    "@value" : "ονομαστικό λεξικό"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "a reference work arranged by the meaning or concept leading to the lexical unit (word or phrase), a dictionary presenting language as expressions of semantically linked concepts (ideas, meanings); also called semantic dictionary (e.g. reverse dictionary, word-finding dictionary, Roget-style thesaurus)."
@@ -13389,6 +14318,12 @@
     "@language" : "es",
     "@value" : "diccionario onomástico"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario de onomástica"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar onomastic"
+  }, {
     "@language" : "it",
     "@value" : "dizionario onomastico"
   }, {
@@ -13413,12 +14348,18 @@
     "@language" : "lt",
     "@value" : "tikrinių vardų žodynas"
   }, {
+    "@language" : "ru",
+    "@value" : "ономастический словарь"
+  }, {
     "@language" : "sr",
     "@value" : "ономастички речник"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
     "@value" : "diccionario de onomástica"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario onomástico"
   }, {
     "@language" : "en",
     "@value" : "dictionary of named entities"
@@ -13776,9 +14717,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "ro",
-    "@value" : "Definiție ostensivă"
-  }, {
     "@language" : "nl",
     "@value" : "Ostension"
   }, {
@@ -13794,6 +14732,9 @@
     "@language" : "es",
     "@value" : "definición ostensiva"
   }, {
+    "@language" : "gl",
+    "@value" : "definición ostensiva"
+  }, {
     "@language" : "pl",
     "@value" : "definicja ostensywna"
   }, {
@@ -13802,6 +14743,9 @@
   }, {
     "@language" : "it",
     "@value" : "definizione ostensiva"
+  }, {
+    "@language" : "ro",
+    "@value" : "definiție ostensivă"
   }, {
     "@language" : "fr",
     "@value" : "définition ostensive"
@@ -13818,11 +14762,17 @@
     "@language" : "en",
     "@value" : "ostensive definition"
   }, {
-    "@language" : "ru",
-    "@value" : "Остенсивное определение"
+    "@language" : "lt",
+    "@value" : "prototipinė definicija"
+  }, {
+    "@language" : "el",
+    "@value" : "δεικτικός ορισμός"
   }, {
     "@language" : "sr",
     "@value" : "остензивна дефиниција"
+  }, {
+    "@language" : "ru",
+    "@value" : "остенсивное определение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "de",
@@ -13839,6 +14789,9 @@
   }, {
     "@language" : "et",
     "@value" : "ostensiivneve määratlus"
+  }, {
+    "@language" : "ru",
+    "@value" : "остенсивная дефиниция"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -13925,6 +14878,9 @@
     "@language" : "es",
     "@value" : "diccionario en papel"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario impreso"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar tipărit"
   }, {
@@ -13967,6 +14923,9 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
     "@value" : "diccionario de papel"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario en papel"
   }, {
     "@language" : "eu",
     "@value" : "hiztegi inprimatu"
@@ -14557,6 +15516,9 @@
     "@language" : "eu",
     "@value" : "frasema"
   }, {
+    "@language" : "gl",
+    "@value" : "frasema"
+  }, {
     "@language" : "nl",
     "@value" : "fraseologisme"
   }, {
@@ -14669,6 +15631,9 @@
   }, {
     "@language" : "es",
     "@value" : "información fraseológica"
+  }, {
+    "@language" : "gl",
+    "@value" : "información fraseolóxica"
   }, {
     "@language" : "it",
     "@value" : "informazione fraseologica"
@@ -14845,8 +15810,17 @@
     "@language" : "es",
     "@value" : "diccionario electónico de bolsillo"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario electrónico de peto"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar electronic de buzunar"
+  }, {
     "@language" : "it",
     "@value" : "dizionario elettronico portatile"
+  }, {
+    "@language" : "hu",
+    "@value" : "elektronikus zsebszótár"
   }, {
     "@language" : "lt",
     "@value" : "elektroninis kišeninis žodynas"
@@ -14865,6 +15839,12 @@
   }, {
     "@language" : "el",
     "@value" : "ηλεκτρονικό λεξικό τσέπης"
+  }, {
+    "@language" : "ru",
+    "@value" : "карманный электронный словарь"
+  }, {
+    "@language" : "sr",
+    "@value" : "џепни електронски речник"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -14872,6 +15852,9 @@
   }, {
     "@language" : "ca",
     "@value" : "diccionari electrònic portàtil"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario electrónico de bolso"
   }, {
     "@language" : "en",
     "@value" : "ped"
@@ -14901,6 +15884,12 @@
     "@language" : "it",
     "@value" : "indicazione polisemantica"
   }, {
+    "@language" : "ro",
+    "@value" : "indicație polisemantică"
+  }, {
+    "@language" : "gl",
+    "@value" : "marca de polisemia"
+  }, {
     "@language" : "ca",
     "@value" : "marca de polisèmia"
   }, {
@@ -14921,10 +15910,19 @@
   }, {
     "@language" : "is",
     "@value" : "skipting í merkingarliði"
+  }, {
+    "@language" : "sr",
+    "@value" : "диференцијација значења"
+  }, {
+    "@language" : "ru",
+    "@value" : "указатель полисемии"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "eu",
     "@value" : "adieren bereizkuntza"
+  }, {
+    "@language" : "ro",
+    "@value" : "indicație polisemică"
   }, {
     "@language" : "es",
     "@value" : "indocación de polisemia"
@@ -14937,6 +15935,12 @@
   }, {
     "@language" : "is",
     "@value" : "skipting í liði"
+  }, {
+    "@language" : "sr",
+    "@value" : "индикација полисемије"
+  }, {
+    "@language" : "ru",
+    "@value" : "указатель многозначности"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/semanticInformation"
@@ -15040,6 +16044,9 @@
     "@language" : "es",
     "@value" : "diccionario normativo"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario prescritivo"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar normativ"
   }, {
@@ -15088,6 +16095,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario prescriptivo"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario normativo"
   }, {
     "@language" : "ro",
     "@value" : "dicționar ortografic, ortoepic și morfologic"
@@ -15152,6 +16162,9 @@
     "@language" : "es",
     "@value" : "diccionario escolar"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario escolar"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar pentru elevi"
   }, {
@@ -15178,8 +16191,17 @@
   }, {
     "@language" : "hu",
     "@value" : "általános iskolai szótár"
+  }, {
+    "@language" : "sr",
+    "@value" : "речник за основну школу"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарь для начальной школы"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "dicionario escolar para educación primaria"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar școlar"
   } ],
@@ -15237,6 +16259,9 @@
     "@language" : "fr",
     "@value" : "prononciation"
   }, {
+    "@language" : "gl",
+    "@value" : "pronuncia"
+  }, {
     "@language" : "it",
     "@value" : "pronuncia"
   }, {
@@ -15244,9 +16269,6 @@
     "@value" : "pronunciació"
   }, {
     "@language" : "es",
-    "@value" : "pronunciación"
-  }, {
-    "@language" : "gl",
     "@value" : "pronunciación"
   }, {
     "@language" : "en",
@@ -15318,6 +16340,9 @@
   }, {
     "@language" : "en",
     "@value" : "phonetics"
+  }, {
+    "@language" : "gl",
+    "@value" : "pronunciación"
   }, {
     "@language" : "ro",
     "@value" : "pronunție"
@@ -15701,6 +16726,9 @@
     "@language" : "es",
     "@value" : "cita"
   }, {
+    "@language" : "gl",
+    "@value" : "cita"
+  }, {
     "@language" : "nl",
     "@value" : "citaat"
   }, {
@@ -15790,6 +16818,9 @@
     "@value" : "cita literal"
   }, {
     "@language" : "es",
+    "@value" : "citación"
+  }, {
+    "@language" : "gl",
     "@value" : "citación"
   }, {
     "@language" : "ro",
@@ -16031,6 +17062,9 @@
     "@language" : "fi",
     "@value" : "rekisteri"
   }, {
+    "@language" : "gl",
+    "@value" : "rexistro"
+  }, {
     "@language" : "da",
     "@value" : "stilleje"
   }, {
@@ -16067,6 +17101,9 @@
   }, {
     "@language" : "ca",
     "@value" : "varietat social"
+  }, {
+    "@language" : "ru",
+    "@value" : "уровень языка"
   }, {
     "@language" : "sr",
     "@value" : "функционални стил"
@@ -16113,6 +17150,9 @@
     "@language" : "es",
     "@value" : "marca de registro"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de rexistro"
+  }, {
     "@language" : "is",
     "@value" : "málsniðsmerking"
   }, {
@@ -16127,6 +17167,12 @@
   }, {
     "@language" : "da",
     "@value" : "sprogbrugsmarkør"
+  }, {
+    "@language" : "sr",
+    "@value" : "ознака регистра"
+  }, {
+    "@language" : "ru",
+    "@value" : "языковая помета"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -16206,6 +17252,9 @@
     "@language" : "is",
     "@value" : "stafsetningarframburður"
   }, {
+    "@language" : "gl",
+    "@value" : "transcrición intuitiva"
+  }, {
     "@language" : "ca",
     "@value" : "transcripció indicativa"
   }, {
@@ -16214,6 +17263,9 @@
   }, {
     "@language" : "mk",
     "@value" : "изговорен препис"
+  }, {
+    "@language" : "ru",
+    "@value" : "схематическое написание слова, чтобы передать его произношение"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "et",
@@ -16224,6 +17276,9 @@
   }, {
     "@language" : "en",
     "@value" : "respelling"
+  }, {
+    "@language" : "gl",
+    "@value" : "transcrición indicativa"
   }, {
     "@language" : "ro",
     "@value" : "transcriere fonetică"
@@ -16272,6 +17327,9 @@
     "@language" : "es",
     "@value" : "diccionario inverso"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario inverso"
+  }, {
     "@language" : "fr",
     "@value" : "dictionnaire inverse"
   }, {
@@ -16305,6 +17363,9 @@
     "@language" : "uk",
     "@value" : "Інверсійний словник"
   }, {
+    "@language" : "sr",
+    "@value" : "обратни речник"
+  }, {
     "@language" : "ru",
     "@value" : "обратный словарь"
   } ],
@@ -16314,6 +17375,9 @@
   }, {
     "@language" : "is",
     "@value" : "seinni liða orðabók"
+  }, {
+    "@language" : "sr",
+    "@value" : "инверзни речник"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/informationTypeOrientedDictionary"
@@ -16402,6 +17466,9 @@
     "@language" : "it",
     "@value" : "radice della parola"
   }, {
+    "@language" : "gl",
+    "@value" : "raíz"
+  }, {
     "@language" : "pl",
     "@value" : "rdzeń (wyrazu)"
   }, {
@@ -16432,8 +17499,11 @@
     "@language" : "be",
     "@value" : "аснова слова"
   }, {
+    "@language" : "sr",
+    "@value" : "корен речи"
+  }, {
     "@language" : "ru",
-    "@value" : "основа слова"
+    "@value" : "корень"
   }, {
     "@language" : "uk",
     "@value" : "основа слова"
@@ -16449,6 +17519,9 @@
     "@value" : "base"
   }, {
     "@language" : "es",
+    "@value" : "radical"
+  }, {
+    "@language" : "gl",
     "@value" : "radical"
   }, {
     "@language" : "it",
@@ -16474,6 +17547,12 @@
   }, {
     "@language" : "lt",
     "@value" : "šakninis žodis"
+  }, {
+    "@language" : "sr",
+    "@value" : "корен"
+  }, {
+    "@language" : "ru",
+    "@value" : "корневая морфема"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/wordFormation"
@@ -16729,6 +17808,9 @@
     "@language" : "es",
     "@value" : "información semántica"
   }, {
+    "@language" : "gl",
+    "@value" : "información semántica"
+  }, {
     "@language" : "pl",
     "@value" : "informacja semantyczna"
   }, {
@@ -16756,6 +17838,12 @@
     "@language" : "hu",
     "@value" : "szemantikai információ"
   }, {
+    "@language" : "el",
+    "@value" : "σημασιολογική πληροφορία"
+  }, {
+    "@language" : "ru",
+    "@value" : "семантическая информация о слове в словаре"
+  }, {
     "@language" : "sr",
     "@value" : "семантичке информације"
   } ],
@@ -16768,6 +17856,12 @@
   }, {
     "@language" : "da",
     "@value" : "semantisk information"
+  }, {
+    "@language" : "ru",
+    "@value" : "значение слова в словаре"
+  }, {
+    "@language" : "ru",
+    "@value" : "определение слова в словаре"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A type of content included in a language resource pertaining to the semantic level"
@@ -16936,11 +18030,17 @@
     "@language" : "ro",
     "@value" : "filiația sensurilor"
   }, {
+    "@language" : "hu",
+    "@value" : "jelentések sorrendje"
+  }, {
     "@language" : "ca",
     "@value" : "ordenació dels significats"
   }, {
     "@language" : "es",
     "@value" : "ordenación de sentidos"
+  }, {
+    "@language" : "gl",
+    "@value" : "ordenación de significados"
   }, {
     "@language" : "it",
     "@value" : "ordine di senso"
@@ -16956,6 +18056,12 @@
   }, {
     "@language" : "et",
     "@value" : "tähendusjaotus"
+  }, {
+    "@language" : "sr",
+    "@value" : "редослед значења"
+  }, {
+    "@language" : "ru",
+    "@value" : "система организации значений полисемантического слова в словаре"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -17035,6 +18141,9 @@
     "@language" : "es",
     "@value" : "marca"
   }, {
+    "@language" : "gl",
+    "@value" : "marca"
+  }, {
     "@language" : "it",
     "@value" : "segnaletica"
   }, {
@@ -17049,8 +18158,14 @@
   }, {
     "@language" : "lt",
     "@value" : "teksto kūrimas"
+  }, {
+    "@language" : "ru",
+    "@value" : "колонтитул"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "marcador discursivo"
+  }, {
     "@language" : "et",
     "@value" : "tähendusvihje"
   }, {
@@ -17174,6 +18289,9 @@
     "@language" : "lv",
     "@value" : "vienkāršruna"
   }, {
+    "@language" : "gl",
+    "@value" : "xerga"
+  }, {
     "@language" : "el",
     "@value" : "αργκό"
   }, {
@@ -17205,6 +18323,9 @@
     "@language" : "de",
     "@value" : "Slang"
   }, {
+    "@language" : "gl",
+    "@value" : "argot"
+  }, {
     "@language" : "it",
     "@value" : "gergo"
   }, {
@@ -17216,6 +18337,9 @@
   }, {
     "@language" : "sl",
     "@value" : "slang"
+  }, {
+    "@language" : "ru",
+    "@value" : "жаргонное слово"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/registerLabel"
@@ -17251,6 +18375,9 @@
   }, {
     "@language" : "es",
     "@value" : "diccionario de argot"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario de argot"
   }, {
     "@language" : "pt",
     "@value" : "dicionário de gírias"
@@ -17291,6 +18418,9 @@
     "@language" : "uk",
     "@value" : "Словник сленгу"
   }, {
+    "@language" : "sr",
+    "@value" : "речник сленга"
+  }, {
     "@language" : "ru",
     "@value" : "словарь сленга"
   } ],
@@ -17303,6 +18433,9 @@
   }, {
     "@language" : "en",
     "@value" : "colloquial language dictionary"
+  }, {
+    "@language" : "sr",
+    "@value" : "речник жаргона"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/varietyOrientedDictionary"
@@ -17335,7 +18468,7 @@
     "@value" : "diccionario de especialidad"
   }, {
     "@language" : "gl",
-    "@value" : "dicionario temático"
+    "@value" : "dicionario especializado"
   }, {
     "@language" : "pt",
     "@value" : "dicionário temático"
@@ -17410,6 +18543,9 @@
     "@language" : "es",
     "@value" : "diccionario especializado"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario de especialidade"
+  }, {
     "@language" : "da",
     "@value" : "fagordbog"
   }, {
@@ -17450,6 +18586,9 @@
     "@language" : "es",
     "@value" : "sentido especializado"
   }, {
+    "@language" : "gl",
+    "@value" : "significado especializado"
+  }, {
     "@language" : "ca",
     "@value" : "significat terminològic"
   }, {
@@ -17470,6 +18609,9 @@
   }, {
     "@language" : "is",
     "@value" : "þrengd merking"
+  }, {
+    "@language" : "sr",
+    "@value" : "специјализовано значење"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ro",
@@ -17480,6 +18622,9 @@
   }, {
     "@language" : "ca",
     "@value" : "sentit especialitzat"
+  }, {
+    "@language" : "gl",
+    "@value" : "significado terminolóxico"
   }, {
     "@language" : "is",
     "@value" : "sérhæfð merking"
@@ -17540,6 +18685,9 @@
   }, {
     "@language" : "lt",
     "@value" : "rašyba"
+  }, {
+    "@language" : "gl",
+    "@value" : "soletreo"
   }, {
     "@language" : "en",
     "@value" : "spelling"
@@ -17611,6 +18759,9 @@
     "@language" : "ro",
     "@value" : "scriere"
   }, {
+    "@language" : "gl",
+    "@value" : "soletreación"
+  }, {
     "@language" : "it",
     "@value" : "spelling"
   }, {
@@ -17670,6 +18821,9 @@
   }, {
     "@language" : "it",
     "@value" : "variante ortografica"
+  }, {
+    "@language" : "gl",
+    "@value" : "variante ortográfica"
   }, {
     "@language" : "ro",
     "@value" : "variantă ortografică"
@@ -17764,6 +18918,9 @@
     "@language" : "es",
     "@value" : "diccionario estándar"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario normativo"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar explicativ"
   }, {
@@ -17791,6 +18948,9 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
     "@value" : "almenordbog"
+  }, {
+    "@language" : "gl",
+    "@value" : "dicionario prescritivo"
   }, {
     "@language" : "da",
     "@value" : "håndordbog"
@@ -17841,6 +19001,9 @@
     "@language" : "es",
     "@value" : "ortografía estándar"
   }, {
+    "@language" : "gl",
+    "@value" : "ortografía normativa"
+  }, {
     "@language" : "en",
     "@value" : "standard spelling"
   }, {
@@ -17849,6 +19012,9 @@
   }, {
     "@language" : "lt",
     "@value" : "standartinė rašyba"
+  }, {
+    "@language" : "sr",
+    "@value" : "стандардно писање"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -17856,6 +19022,12 @@
   }, {
     "@language" : "et",
     "@value" : "normikeel"
+  }, {
+    "@language" : "gl",
+    "@value" : "ortografía estándar"
+  }, {
+    "@language" : "sr",
+    "@value" : "стандардна ортографија"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/spelling"
@@ -17879,8 +19051,14 @@
     "@language" : "it",
     "@value" : "etichetta sullo stato"
   }, {
+    "@language" : "ro",
+    "@value" : "informații de uz"
+  }, {
     "@language" : "ca",
     "@value" : "marca d'ús"
+  }, {
+    "@language" : "gl",
+    "@value" : "marca de rexistro"
   }, {
     "@language" : "es",
     "@value" : "marca de uso"
@@ -17899,10 +19077,16 @@
   }, {
     "@language" : "lt",
     "@value" : "vartosenos statusas"
+  }, {
+    "@language" : "sr",
+    "@value" : "нормативни квалификатор"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "lt",
     "@value" : "vartosenos vertinimas; statuso pavadinimas; vertinimo laipsnis"
+  }, {
+    "@language" : "sr",
+    "@value" : "ознака нормативног статуса"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/usageInformation"
@@ -17935,6 +19119,9 @@
     "@value" : "estilo"
   }, {
     "@language" : "eu",
+    "@value" : "estilo"
+  }, {
+    "@language" : "gl",
     "@value" : "estilo"
   }, {
     "@language" : "pt",
@@ -18044,6 +19231,9 @@
     "@language" : "ca",
     "@value" : "marca d'estil"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de estilo"
+  }, {
     "@language" : "da",
     "@value" : "sprogbrugsmarkør"
   }, {
@@ -18131,6 +19321,9 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "hu",
+    "@value" : "alcímszó"
+  }, {
     "@language" : "et",
     "@value" : "allmärksõna"
   }, {
@@ -18146,6 +19339,9 @@
     "@language" : "es",
     "@value" : "subentrada"
   }, {
+    "@language" : "gl",
+    "@value" : "subentrada"
+  }, {
     "@language" : "en",
     "@value" : "subentry"
   }, {
@@ -18157,6 +19353,9 @@
   }, {
     "@language" : "is",
     "@value" : "undirfletta"
+  }, {
+    "@language" : "sr",
+    "@value" : "пододредница"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -18256,6 +19455,9 @@
     "@language" : "es",
     "@value" : "marca de especialidad"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de especialidade"
+  }, {
     "@language" : "is",
     "@value" : "merkingarflokkur"
   }, {
@@ -18286,6 +19488,9 @@
     "@language" : "uk",
     "@value" : "ключове слово"
   }, {
+    "@language" : "sr",
+    "@value" : "ознака области"
+  }, {
     "@language" : "he",
     "@value" : "מילת מפתח"
   } ],
@@ -18307,6 +19512,9 @@
   }, {
     "@language" : "sl",
     "@value" : "področni kvalifikator"
+  }, {
+    "@language" : "sr",
+    "@value" : "квалификатор области"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/domainIndication"
@@ -18331,6 +19539,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "ca",
     "@value" : "accepció"
+  }, {
+    "@language" : "gl",
+    "@value" : "acepción"
   }, {
     "@language" : "hu",
     "@value" : "aljelentés"
@@ -18361,6 +19572,9 @@
   }, {
     "@language" : "is",
     "@value" : "undirmerking"
+  }, {
+    "@language" : "sr",
+    "@value" : "подзначење"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ro",
@@ -18368,6 +19582,9 @@
   }, {
     "@language" : "en",
     "@value" : "sub-sense"
+  }, {
+    "@language" : "gl",
+    "@value" : "subacepción"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/polysemyIndication"
@@ -18440,6 +19657,9 @@
     "@language" : "pt",
     "@value" : "separação silábica"
   }, {
+    "@language" : "gl",
+    "@value" : "silabación"
+  }, {
     "@language" : "es",
     "@value" : "silabeo"
   }, {
@@ -18493,6 +19713,9 @@
     "@value" : "orddeling"
   }, {
     "@language" : "es",
+    "@value" : "separación silábica"
+  }, {
+    "@language" : "gl",
     "@value" : "separación silábica"
   }, {
     "@language" : "ro",
@@ -18750,6 +19973,9 @@
     "@language" : "es",
     "@value" : "información sintáctica"
   }, {
+    "@language" : "gl",
+    "@value" : "información sintáctica"
+  }, {
     "@language" : "pl",
     "@value" : "informacja składniowa"
   }, {
@@ -18821,6 +20047,9 @@
     "@language" : "es",
     "@value" : "información sintagmática"
   }, {
+    "@language" : "gl",
+    "@value" : "información sintagmática"
+  }, {
     "@language" : "pl",
     "@value" : "informacja syntagmatyczna"
   }, {
@@ -18842,8 +20071,14 @@
     "@language" : "da",
     "@value" : "syntagmatisk information"
   }, {
+    "@language" : "hu",
+    "@value" : "szintagmatikai információ"
+  }, {
     "@language" : "et",
     "@value" : "süntagmaatiline info"
+  }, {
+    "@language" : "sr",
+    "@value" : "синтагматске информације"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ca",
@@ -18870,6 +20105,9 @@
     "@language" : "ca",
     "@value" : "definició sintètica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición ostensiva"
+  }, {
     "@language" : "es",
     "@value" : "definición sintética"
   }, {
@@ -18882,6 +20120,9 @@
     "@language" : "ro",
     "@value" : "definiție enciclopedică"
   }, {
+    "@language" : "lt",
+    "@value" : "prototipinė definicija"
+  }, {
     "@language" : "cs",
     "@value" : "syntetická definice"
   }, {
@@ -18891,11 +20132,20 @@
     "@language" : "en",
     "@value" : "synthetic definition"
   }, {
+    "@language" : "hu",
+    "@value" : "szintetikus definíció"
+  }, {
     "@language" : "et",
     "@value" : "sünteetiline definitsioon"
   }, {
     "@language" : "is",
     "@value" : "tengjandi skilgreining"
+  }, {
+    "@language" : "el",
+    "@value" : "δεικτικός ορισμός"
+  }, {
+    "@language" : "sr",
+    "@value" : "синтетичка дефиниција"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -19066,6 +20316,9 @@
     "@language" : "es",
     "@value" : "diccionario terminológico"
   }, {
+    "@language" : "gl",
+    "@value" : "dicionario terminolóxico"
+  }, {
     "@language" : "ro",
     "@value" : "dicționar de terminologie"
   }, {
@@ -19155,6 +20408,9 @@
     "@language" : "es",
     "@value" : "producción de textos"
   }, {
+    "@language" : "gl",
+    "@value" : "produción textual"
+  }, {
     "@language" : "it",
     "@value" : "produzione del testo"
   }, {
@@ -19164,6 +20420,12 @@
     "@language" : "et",
     "@value" : "teksti loomine"
   }, {
+    "@language" : "lt",
+    "@value" : "teksto generavimas"
+  }, {
+    "@language" : "nl",
+    "@value" : "tekstproductie"
+  }, {
     "@language" : "da",
     "@value" : "tekstproduktion"
   }, {
@@ -19172,6 +20434,12 @@
   }, {
     "@language" : "en",
     "@value" : "text production"
+  }, {
+    "@language" : "el",
+    "@value" : "παραγωγή κειμένου"
+  }, {
+    "@language" : "sr",
+    "@value" : "продукција текста"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ro",
@@ -19179,6 +20447,9 @@
   }, {
     "@language" : "ro",
     "@value" : "producere de text"
+  }, {
+    "@language" : "gl",
+    "@value" : "produción de textos"
   }, {
     "@language" : "et",
     "@value" : "teksti moodustamine"
@@ -19227,6 +20498,9 @@
     "@language" : "es",
     "@value" : "recepción de textos"
   }, {
+    "@language" : "gl",
+    "@value" : "recepción textual"
+  }, {
     "@language" : "ro",
     "@value" : "receptarea textului"
   }, {
@@ -19247,13 +20521,25 @@
   }, {
     "@language" : "en",
     "@value" : "text reception"
+  }, {
+    "@language" : "el",
+    "@value" : "πρόσληψη κειμένου"
+  }, {
+    "@language" : "sr",
+    "@value" : "рецепција текста"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "recepción de textos"
+  }, {
     "@language" : "ro",
     "@value" : "receptare"
   }, {
     "@language" : "et",
     "@value" : "teksti mõistmine"
+  }, {
+    "@language" : "el",
+    "@value" : "κατανόηση κειμένου"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/languageReception"
@@ -19285,6 +20571,9 @@
     "@language" : "sq",
     "@value" : "Përkthimi"
   }, {
+    "@language" : "de",
+    "@value" : "Textübersetzung"
+  }, {
     "@language" : "ga",
     "@value" : "aistriúchán"
   }, {
@@ -19312,6 +20601,12 @@
     "@language" : "cs",
     "@value" : "překlad"
   }, {
+    "@language" : "lt",
+    "@value" : "teksto vertimas"
+  }, {
+    "@language" : "nl",
+    "@value" : "tekstvertaling"
+  }, {
     "@language" : "en",
     "@value" : "text translation"
   }, {
@@ -19325,13 +20620,13 @@
     "@value" : "traducere"
   }, {
     "@language" : "gl",
-    "@value" : "tradución"
+    "@value" : "tradución de textos"
   }, {
     "@language" : "fr",
     "@value" : "traduction"
   }, {
     "@language" : "it",
-    "@value" : "traduzione"
+    "@value" : "traduzione di un testo"
   }, {
     "@language" : "pt",
     "@value" : "tradução"
@@ -19339,20 +20634,11 @@
     "@language" : "lv",
     "@value" : "tulkošana"
   }, {
+    "@language" : "et",
+    "@value" : "tõlkimine"
+  }, {
     "@language" : "pl",
     "@value" : "tłumaczenie"
-  }, {
-    "@language" : "et",
-    "@value" : "vaste"
-  }, {
-    "@language" : "nl",
-    "@value" : "vertaling"
-  }, {
-    "@language" : "lt",
-    "@value" : "vertimas"
-  }, {
-    "@language" : "de",
-    "@value" : "Übersetzung"
   }, {
     "@language" : "sv",
     "@value" : "översättning"
@@ -19361,7 +20647,7 @@
     "@value" : "þýðing"
   }, {
     "@language" : "el",
-    "@value" : "μετάφραση"
+    "@value" : "μετάφραση κειμένου"
   }, {
     "@language" : "bg",
     "@value" : "Превод"
@@ -19379,7 +20665,7 @@
     "@value" : "преведување"
   }, {
     "@language" : "sr",
-    "@value" : "превод"
+    "@value" : "превод текста"
   }, {
     "@language" : "he",
     "@value" : "תרגום"
@@ -19396,6 +20682,9 @@
   }, {
     "@language" : "pl",
     "@value" : "przekład"
+  }, {
+    "@language" : "et",
+    "@value" : "teksti tõlkimine"
   }, {
     "@language" : "da",
     "@value" : "tekstoversættelse"
@@ -19448,9 +20737,6 @@
     "@language" : "de",
     "@value" : "Thesaurus"
   }, {
-    "@language" : "eu",
-    "@value" : "Thesaurus"
-  }, {
     "@language" : "lb",
     "@value" : "Thesaurus"
   }, {
@@ -19460,11 +20746,20 @@
     "@language" : "da",
     "@value" : "begrebsordbog"
   }, {
+    "@language" : "ca",
+    "@value" : "diccionari de sinònims"
+  }, {
     "@language" : "es",
     "@value" : "diccionario de sinónimos"
   }, {
     "@language" : "gl",
-    "@value" : "dicionario de sinónimos"
+    "@value" : "dicionario temático"
+  }, {
+    "@language" : "ro",
+    "@value" : "dicționar tematic"
+  }, {
+    "@language" : "it",
+    "@value" : "dizionario tematico"
   }, {
     "@language" : "is",
     "@value" : "hugtakaorðabók"
@@ -19472,17 +20767,20 @@
     "@language" : "sv",
     "@value" : "synonymordbok"
   }, {
+    "@language" : "pl",
+    "@value" : "słownik tematyczny"
+  }, {
     "@language" : "ga",
     "@value" : "teasóras"
   }, {
-    "@language" : "it",
+    "@language" : "lt",
+    "@value" : "teminis žodynas"
+  }, {
+    "@language" : "eu",
     "@value" : "tesauro"
   }, {
     "@language" : "pt",
     "@value" : "tesauro"
-  }, {
-    "@language" : "ca",
-    "@value" : "tesaurus"
   }, {
     "@language" : "et",
     "@value" : "tesaurus"
@@ -19496,16 +20794,7 @@
     "@language" : "nn",
     "@value" : "tesaurus"
   }, {
-    "@language" : "ro",
-    "@value" : "tezaur"
-  }, {
-    "@language" : "lt",
-    "@value" : "tezauras"
-  }, {
     "@language" : "cs",
-    "@value" : "tezaurus"
-  }, {
-    "@language" : "pl",
     "@value" : "tezaurus"
   }, {
     "@language" : "hu",
@@ -19532,9 +20821,6 @@
     "@language" : "bg",
     "@value" : "Тезаурус"
   }, {
-    "@language" : "sr",
-    "@value" : "речник синонима"
-  }, {
     "@language" : "mk",
     "@value" : "тезаурус"
   }, {
@@ -19543,6 +20829,9 @@
   }, {
     "@language" : "uk",
     "@value" : "тезаурус"
+  }, {
+    "@language" : "sr",
+    "@value" : "тематски речник"
   }, {
     "@language" : "he",
     "@value" : "אגרון"
@@ -19586,6 +20875,12 @@
   }, {
     "@language" : "es",
     "@value" : "tesauro"
+  }, {
+    "@language" : "it",
+    "@value" : "tesauro"
+  }, {
+    "@language" : "ca",
+    "@value" : "tesaurus"
   }, {
     "@language" : "da",
     "@value" : "tesaurus"
@@ -19776,8 +21071,11 @@
     "@language" : "es",
     "@value" : "equivalente"
   }, {
+    "@language" : "gl",
+    "@value" : "equivalente de tradución"
+  }, {
     "@language" : "eu",
-    "@value" : "itzulpen-baliokide"
+    "@value" : "itzulpen-ordain"
   }, {
     "@language" : "is",
     "@value" : "jafnheiti"
@@ -19821,6 +21119,9 @@
   }, {
     "@language" : "ca",
     "@value" : "equivalent de traducció"
+  }, {
+    "@language" : "gl",
+    "@value" : "equivalente"
   }, {
     "@language" : "es",
     "@value" : "equivalente de traducción"
@@ -19914,6 +21215,9 @@
     "@language" : "es",
     "@value" : "definición prototípica"
   }, {
+    "@language" : "gl",
+    "@value" : "definición prototípica"
+  }, {
     "@language" : "da",
     "@value" : "definition ved hjælp af typiske eksempler"
   }, {
@@ -19931,6 +21235,9 @@
   }, {
     "@language" : "en",
     "@value" : "typifying definition"
+  }, {
+    "@language" : "sr",
+    "@value" : "типизирајућа дефиниција"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ro",
@@ -20022,6 +21329,9 @@
     "@language" : "es",
     "@value" : "marca de uso"
   }, {
+    "@language" : "gl",
+    "@value" : "marca de uso"
+  }, {
     "@language" : "da",
     "@value" : "sprogbrugsmarkør"
   }, {
@@ -20091,6 +21401,9 @@
   }, {
     "@language" : "ca",
     "@value" : "nota d'ús"
+  }, {
+    "@language" : "gl",
+    "@value" : "nota de uso"
   }, {
     "@language" : "da",
     "@value" : "sprogbrugsbemærkning"
@@ -20163,9 +21476,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Valencia"
-  }, {
     "@language" : "sv",
     "@value" : "Valens"
   }, {
@@ -20194,6 +21504,9 @@
     "@value" : "valence"
   }, {
     "@language" : "es",
+    "@value" : "valencia"
+  }, {
+    "@language" : "gl",
     "@value" : "valencia"
   }, {
     "@language" : "hu",
@@ -20225,6 +21538,9 @@
   }, {
     "@language" : "pl",
     "@value" : "walencja"
+  }, {
+    "@language" : "el",
+    "@value" : "σθένος"
   }, {
     "@language" : "mk",
     "@value" : "валентност"
@@ -20321,6 +21637,9 @@
     "@language" : "es",
     "@value" : "variante"
   }, {
+    "@language" : "gl",
+    "@value" : "variante"
+  }, {
     "@language" : "it",
     "@value" : "variante"
   }, {
@@ -20332,6 +21651,9 @@
   }, {
     "@language" : "pl",
     "@value" : "wariant"
+  }, {
+    "@language" : "el",
+    "@value" : "παραλλαγή"
   }, {
     "@language" : "sr",
     "@value" : "варијанта"
@@ -20397,6 +21719,9 @@
     "@language" : "ro",
     "@value" : "definiție"
   }, {
+    "@language" : "gl",
+    "@value" : "exemplo"
+  }, {
     "@language" : "lt",
     "@value" : "iliustracinis pavyzdys"
   }, {
@@ -20420,6 +21745,9 @@
   }, {
     "@language" : "en",
     "@value" : "verbal illustration"
+  }, {
+    "@language" : "sr",
+    "@value" : "пример"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -20428,11 +21756,17 @@
     "@language" : "da",
     "@value" : "citat"
   }, {
+    "@language" : "gl",
+    "@value" : "exemplo ilustrativo"
+  }, {
     "@language" : "ro",
     "@value" : "exemplu"
   }, {
     "@language" : "ro",
     "@value" : "ilustrație"
+  }, {
+    "@language" : "sr",
+    "@value" : "илустративни пример"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/definition"
@@ -20501,6 +21835,9 @@
     "@language" : "es",
     "@value" : "aprendizaje de léxico"
   }, {
+    "@language" : "gl",
+    "@value" : "aprendizaxe de vocabulario"
+  }, {
     "@language" : "ca",
     "@value" : "aprenentatge de lèxic"
   }, {
@@ -20516,11 +21853,17 @@
     "@language" : "en",
     "@value" : "vocabulary learning"
   }, {
+    "@language" : "ro",
+    "@value" : "învățarea vocabularului"
+  }, {
     "@language" : "lt",
     "@value" : "žodyno mokymasis"
   }, {
     "@language" : "el",
     "@value" : "εκμάθηση λεξιλογίου"
+  }, {
+    "@language" : "sr",
+    "@value" : "учење вокабулара"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "es",
@@ -20531,6 +21874,9 @@
   }, {
     "@language" : "da",
     "@value" : "glosetræning"
+  }, {
+    "@language" : "ro",
+    "@value" : "învățarea de cuvinte"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/cognitiveFunction"
@@ -20548,8 +21894,14 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "ro",
+    "@value" : "capacitatea de reținere a cuvintelor"
+  }, {
     "@language" : "eu",
     "@value" : "hiztegiaren erretentzio"
+  }, {
+    "@language" : "gl",
+    "@value" : "memorización de vocabulario"
   }, {
     "@language" : "da",
     "@value" : "opretholdelse af ordforråd"
@@ -20574,6 +21926,13 @@
   }, {
     "@language" : "lt",
     "@value" : "žodyno išlaikymas atmintyje"
+  }, {
+    "@language" : "sr",
+    "@value" : "ретенција вокабулара"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "gl",
+    "@value" : "retención de vocabulario"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/cognitiveFunction"
@@ -20879,6 +22238,9 @@
     "@language" : "es",
     "@value" : "combinación de palabras"
   }, {
+    "@language" : "gl",
+    "@value" : "combinación de palabras"
+  }, {
     "@language" : "it",
     "@value" : "combinazione di parole"
   }, {
@@ -20928,6 +22290,9 @@
     "@language" : "ca",
     "@value" : "combinació de paraules"
   }, {
+    "@language" : "gl",
+    "@value" : "coocorrencia"
+  }, {
     "@language" : "es",
     "@value" : "coocurrencia"
   }, {
@@ -20972,6 +22337,9 @@
     "@value" : "divisió de mots"
   }, {
     "@language" : "es",
+    "@value" : "división de palabras"
+  }, {
+    "@language" : "gl",
     "@value" : "división de palabras"
   }, {
     "@language" : "eu",
@@ -21083,6 +22451,9 @@
     "@language" : "es",
     "@value" : "formación de palabras"
   }, {
+    "@language" : "gl",
+    "@value" : "formación de palabras"
+  }, {
     "@language" : "fr",
     "@value" : "formation des mots"
   }, {
@@ -21180,9 +22551,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Acepción"
-  }, {
     "@language" : "de",
     "@value" : "Wortbedeutung"
   }, {
@@ -21218,6 +22586,9 @@
   }, {
     "@language" : "it",
     "@value" : "senso della parola"
+  }, {
+    "@language" : "gl",
+    "@value" : "significado"
   }, {
     "@language" : "hu",
     "@value" : "szójelentés"
@@ -21264,6 +22635,9 @@
   }, {
     "@language" : "de",
     "@value" : "Sinn"
+  }, {
+    "@language" : "gl",
+    "@value" : "acepción"
   }, {
     "@language" : "nl",
     "@value" : "betekenis"
@@ -21325,6 +22699,11 @@
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
     "@id" : "https://lexbib.elex.is/entity/Q24"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/bibo/Document"
+  }, {
+    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Any form with which a dataset is distributed, such as a downloadable form in a specific format (e.g., spreadsheet, plain text, etc.) or an API with which it can be accessed"
   } ]
@@ -21349,7 +22728,7 @@
     "@id" : "https://lexbib.elex.is/entity/Q4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A resource organised on the basis of lexical or conceptual entries (lexical items, terms, concepts, etc.) with their supplementary information (e.g., grammatical, semantic, statistical information, etc.)"
@@ -21401,7 +22780,7 @@
     "@id" : "https://lexbib.elex.is/entity/P91"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   }, {
     "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistribution"
   } ],
@@ -21626,6 +23005,21 @@
     "@value" : "Links to LR B that is a newer version of LR A (the one being described) and replaces it"
   } ]
 }, {
+  "@id" : "http://w3id.org/meta-share/meta-share/isSimilarTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/P136"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Links to LR B that bears resemblances to LR A (the one being described), e.g., they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools"
+  } ]
+}, {
   "@id" : "http://w3id.org/meta-share/meta-share/isVersionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
@@ -21687,21 +23081,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Specifies the language that is used as support for the resource (e.g., English for a grammar of French described in English or for a French dictionary with English definitions)"
-  } ]
-}, {
-  "@id" : "http://w3id.org/meta-share/meta-share/ms:isSimilarTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
-    "@id" : "https://lexbib.elex.is/entity/P136"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "Links to LR B that bears resemblances to LR A (the one being described), e.g., they have been built with the same theoretical principles or are the same with different formats or processed at the same level with different tools"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/meta-share/replaces",
@@ -21821,6 +23200,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
     "@id" : "https://lexbib.elex.is/entity/P89"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#DatasetSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/Q64"
   } ]
 }, {
   "@id" : "http://www.wikidata.org/entity/P123",
@@ -23319,6 +24704,18 @@
   "@id" : "https://lexbib.elex.is/entity/Q6",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://lexbib.elex.is/entity/Q61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://lexbib.elex.is/entity/Q62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://lexbib.elex.is/entity/Q63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://lexbib.elex.is/entity/Q64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://lexbib.elex.is/entity/Q8",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -23333,7 +24730,7 @@
     "@id" : "https://lexbib.elex.is/entity/P64"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/vocab/frbr/core#Manifestation"
+    "@id" : "http://purl.org/ontology/bibo/Document"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "The name defining a special edition of a document. Normally its a literal value composed of a version number and words."
