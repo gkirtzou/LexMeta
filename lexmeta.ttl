@@ -1,3 +1,4 @@
+@base <http://w3id.org/meta-share/lexmeta/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -126,23 +127,8 @@ bibo:volume a owl:DatatypeProperty ;
     rdfs:domain bibo:Document ;
     skos:definition "A volume number" .
 
-<http://w3id.org/meta-share/lexmeta> a owl:Ontology ;
-    dc:abstract "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en ;
-    dc:description "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en ;
-    dc:title "LexMeta ontology"@en ;
-    dct:contributor "Christiane Klaes",
-        "Katerina Gkirtzou" ;
-    dct:creator "David Lindemann",
-        "Penny Labropoulou" ;
-    dct:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    dct:modified "2022-07-07T19:48:50" ;
-    bibo:status "Draft" ;
-    vann:preferredNamespacePrefix "lexmeta" ;
-    vann:preferredNamespaceUri lexmeta: ;
-    owl:versionIRI lexmeta:0.0.1 .
-
 lexmeta:LCRSeries a owl:Class ;
-    rdfs:label "Work"@en ;
+    rdfs:label "LCR Series"@en ;
     lexmeta:wikibaseEntity lexbib:Q41 ;
     rdfs:subClassOf frbr:Work,
         dcat:DatasetSeries .
@@ -564,7 +550,7 @@ lexmeta:calque a skos:Concept ;
         "kalko"@eu,
         "calque"@fr,
         "lomaistriúchán iasachta"@ga,
-        "Calco léxico"@gl,
+        "calco léxico"@gl,
         "תרגום שאילה"@he,
         "Prevedenice"@hr,
         "tükörfordítás"@hu,
@@ -578,7 +564,7 @@ lexmeta:calque a skos:Concept ;
         "kalka"@pl,
         "calque"@pt,
         "calc"@ro,
-        "Калька"@ru,
+        "калька"@ru,
         "Kalk"@sk,
         "kalk"@sl,
         "калк"@sr,
@@ -592,8 +578,11 @@ lexmeta:calque a skos:Concept ;
         "loan translation"@en,
         "préstamo"@es,
         "kalka"@et,
+        "calco"@gl,
         "calco linguistico"@it,
-        "kalkė"@lt ;
+        "kalkė"@lt,
+        "calque"@nl,
+        "калькирование"@ru ;
     skos:broader lexmeta:etymologicalInformation ;
     skos:definition "an expression (compound, derivative, or phrase) introduced into one language by translating its constituent parts from another language; for example, superman (English) from German Übermensch.",
         "word or expression adopted from a foreign language by translation of its constituent morphemes" ;
@@ -1088,6 +1077,7 @@ lexmeta:context a skos:Concept ;
         "kontekst"@et,
         "konteksti"@fi,
         "contexte"@fr,
+        "contexto"@gl,
         "הקשר"@he,
         "szövegkörnyezet"@hu,
         "samhengi"@is,
@@ -1507,7 +1497,8 @@ lexmeta:dictionaryApp a ms:DatasetDistributionForm,
     skos:broader lexmeta:electronicDictionary ;
     skos:inScheme lexmeta:DatasetDistributionFormScheme .
 
-lexmeta:dictionaryBookPublication a ms:DatasetDistributionForm ;
+lexmeta:dictionaryBookPublication a ms:DatasetDistributionForm,
+        skos:Concept ;
     rdfs:label "dictionary book publication"@en ;
     lexmeta:wikibaseEntity lexbib:Q32770 ;
     skos:broader lexmeta:paperDictionary ;
@@ -1673,9 +1664,14 @@ lexmeta:directEntry a skos:Concept ;
         "entrada directa"@es,
         "lemmaloend"@et,
         "sarrera zuzen"@eu,
+        "entrada directa guiada polo primeiro constituínte"@gl,
         "direct entry"@it,
-        "abėcėlinis junginių rikiavimas"@lt ;
+        "abėcėlinis junginių rikiavimas"@lt,
+        "intrare"@ro,
+        "словарная статья, в которой входное слово представлено многословным выражением из которого во внимание берется только первый элемент"@ru,
+        "директни унос"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14326 ;
+    skos:altLabel "prima literă"@ro ;
     skos:broader lexmeta:dictionaryEntry ;
     skos:definition "the listing of a multiword expression under its first constituent, for example, autumnal equinox listed in letter A." ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
@@ -2582,6 +2578,7 @@ lexmeta:idiom a skos:Concept ;
         "idiomi"@fi,
         "idiotisme"@fr,
         "teilgean cainte"@ga,
+        "expresión idiomática"@gl,
         "ניב"@he,
         "idióma"@hu,
         "orðtak"@is,
@@ -2619,6 +2616,7 @@ lexmeta:idiom a skos:Concept ;
         "idioom"@et,
         "püsiväljend"@et,
         "esapide"@eu,
+        "frase feita"@gl,
         "orðatiltæki"@is,
         "idioma"@it,
         "locuzione"@it,
@@ -3479,10 +3477,6 @@ lexmeta:number a skos:Concept ;
     skos:exactMatch ms:number ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-lexmeta:numberOfEntries a owl:DatatypeProperty ;
-    rdfs:label "number of entries"@en ;
-    lexmeta:wikibaseEntity lexbib:P161 .
-
 lexmeta:onomasticDictionary a skos:Concept ;
     rdfs:label "diccionari d'onomàstica"@ca,
         "navneordbog"@da,
@@ -3763,6 +3757,7 @@ lexmeta:phoneticTranscription a skos:Concept ;
         "foneetiline transkriptsioon"@et,
         "transkripzio fonetiko"@eu,
         "alphabet phonétique"@fr,
+        "transcrición fonética"@gl,
         "אלפבית פונטי"@he,
         "fonetikus átírás"@hu,
         "hljóðritun"@is,
@@ -3774,7 +3769,7 @@ lexmeta:phoneticTranscription a skos:Concept ;
         "transkrypcja fonetyczna"@pl,
         "alfabeto fonético"@pt,
         "transcriere fonetică"@ro,
-        "фонетический алфавит"@ru,
+        "фонетическая транскрипция"@ru,
         "Alfabeti fonetik"@sq,
         "фонетска транскрипција"@sr,
         "fonetiskt alfabet"@sv,
@@ -3783,7 +3778,8 @@ lexmeta:phoneticTranscription a skos:Concept ;
         lexbib:Q24074 ;
     skos:altLabel "fonetisk transskription"@da,
         "phonetic alphabet"@en,
-        "alfabeto fonético"@es ;
+        "alfabeto fonético"@es,
+        "фонетический алфавит"@ru ;
     skos:broader lexmeta:pronunciation ;
     skos:definition "writing system for phonetic transcription" ;
     skos:exactMatch ms:transcription ;
@@ -3981,6 +3977,7 @@ lexmeta:proverb a skos:Concept ;
         "asetegusõna"@et,
         "atsotitz"@eu,
         "adage"@fr,
+        "proverbio"@gl,
         "málsháttur"@is,
         "proverbio"@it,
         "patarlė, priežodis"@lt,
@@ -4008,6 +4005,7 @@ lexmeta:proverb a skos:Concept ;
         "proverb"@et,
         "errefrau"@eu,
         "esaera zahar"@eu,
+        "dito"@gl,
         "orðskviður"@is,
         "detto"@it,
         "paremia (hist.)"@pl,
@@ -5427,7 +5425,8 @@ lexmeta:wikibaseEntity a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P2 ;
     rdfs:comment "Points to an equivalent entity described on wikidata or another wikibase."@en .
 
-lexmeta:wikisourceTranscription a ms:DatasetDistributionForm ;
+lexmeta:wikisourceTranscription a ms:DatasetDistributionForm,
+        skos:Concept ;
     rdfs:label "Wikisource transcription"@en ;
     lexmeta:wikibaseEntity lexbib:Q24187 ;
     skos:broader lexmeta:dictionaryAccessibleThroughInterface ;
@@ -5645,6 +5644,9 @@ ms:resourceProvider a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P157 ;
     rdfs:domain ms:LexicalConceptualResource .
 
+ms:size a owl:ObjectProperty ;
+    lexmeta:wikibaseEntity lexbib:P161 .
+
 ms:sourceLanguage a owl:ObjectProperty ;
     lexmeta:wikibaseEntity lexbib:P150 ;
     rdfs:domain ms:LexicalConceptualResource ;
@@ -5697,6 +5699,21 @@ frbr:Work a owl:Class ;
     lexmeta:wikibaseEntity lexbib:Q63 ;
     rdfs:subClassOf frbr:Endeavour .
 
+<http://w3id.org/meta-share/lexmeta/> a owl:Ontology ;
+    dc:abstract "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."@en ;
+    dc:description "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."@en ;
+    dc:title "LexMeta ontology"@en ;
+    dct:contributor "Christiane Klaes",
+        "Katerina Gkirtzou" ;
+    dct:creator "David Lindemann",
+        "Penny Labropoulou" ;
+    dct:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    dct:modified "2022-07-08T17:02:04" ;
+    bibo:status "Draft" ;
+    vann:preferredNamespacePrefix "lexmeta" ;
+    vann:preferredNamespaceUri <http://w3id.org/meta-share/lexmeta/> ;
+    owl:versionIRI lexmeta:0.0.1 .
+
 lexmeta:academicDictionary a skos:Concept ;
     rdfs:label "akademický slovník"@cs,
         "academic dictionary"@en,
@@ -5711,19 +5728,27 @@ lexmeta:backMatter a skos:Concept ;
     rdfs:label "seccions posteriors"@ca,
         "bagtekst"@da,
         "Nachspann"@de,
+        "οπισθόφυλλο"@el,
         "back matter"@en,
         "secciones posteriores"@es,
         "tagaosa"@et,
         "atzeko gehigarri"@eu,
+        "posfacio"@gl,
         "baktexti"@is,
         "postfazione"@it,
-        "atgal nesvarbu"@lt ;
+        "atgal nesvarbu"@lt,
+        "завршен дел"@mk,
+        "nawerk"@nl,
+        "materiale incluse la sfârșitul unei cărți"@ro,
+        "справочный аппарат словаря"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14383 ;
     skos:altLabel "seccions auxiliars"@ca,
         "secciones auxiliares"@es,
         "järelsõna"@et,
         "testo di chiusura"@it,
-        "baigiamoji medžiaga"@lt ;
+        "baigiamoji medžiaga"@lt,
+        "note"@ro,
+        "приложение"@ru ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
 
 lexmeta:collaborativeDictionary a skos:Concept ;
@@ -5893,15 +5918,24 @@ lexmeta:frontMatter a skos:Concept ;
     rdfs:label "preliminars"@ca,
         "fortekst"@da,
         "Titelei"@de,
+        "εισαγωγικό μέρος"@el,
         "front matter"@en,
         "preliminares"@es,
         "eessõna"@et,
         "aurreko gehigarri"@eu,
+        "prefacio"@gl,
         "prefazione"@it,
-        "įvadinė (žodyno, leidinio) dalis"@lt ;
+        "įvadinė (žodyno, leidinio) dalis"@lt,
+        "boek ontwerp"@nl,
+        "informații incluse la începutul cărții"@ro,
+        "вступительная часть печатного издания"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14401 ;
-    skos:altLabel "esiosa"@et,
-        "presentazione"@it ;
+    skos:altLabel "εισαγωγή"@el,
+        "esiosa"@et,
+        "presentazione"@it,
+        "prelims"@nl,
+        "coperta 2"@ro,
+        "титульные элементы книги"@ru ;
     skos:definition "the introductory material of a reference book prior to the wordlist, usually including a preface, explanatory notes, articles, pronunciation guide, abbreviations, and any other information on how to use the book; also called fore-matter." ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
 
@@ -5916,6 +5950,7 @@ lexmeta:guideWord a skos:Concept ;
         "võtmesõna"@et,
         "hitz gidari"@eu,
         "réclame"@fr,
+        "palabra guía"@gl,
         "שומר הדף"@he,
         "Custos (könyvészet)"@hu,
         "leiðsöguorð"@is,
@@ -5923,7 +5958,8 @@ lexmeta:guideWord a skos:Concept ;
         "puslapio antraštė"@lt,
         "custos"@nl,
         "Kustosz"@pl,
-        "кустода"@ru,
+        "Cuvântul principal care apare pe fiecare pagină de dicționar indicând primul cuvânt de pe pagină și ultimul."@ro,
+        "колонтитул"@ru,
         "kustod"@sv,
         "кустос (у друкарстві)"@uk ;
     lexmeta:wikibaseEntity wikidata:Q899632,
@@ -6161,13 +6197,16 @@ lexmeta:loanwordDictionary a skos:Concept ;
 lexmeta:middleMatter a skos:Concept ;
     rdfs:label "cos del diccionari"@ca,
         "mellemtekst"@da,
+        "μεσοδομή"@el,
         "middle matter"@en,
         "cuerpo del diccionario"@es,
         "keskosa"@et,
         "erdiko gehigarri"@eu,
+        "corpo do dicionario"@gl,
         "meginmál"@is,
         "appendice"@it,
-        "papildoma iliustracinė medžiaga"@lt ;
+        "papildoma  medžiaga"@lt,
+        "макроструктура"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14419 ;
     skos:altLabel "makroindskud"@da,
         "vaheosa"@et ;
@@ -6325,9 +6364,12 @@ lexmeta:outsideMatter a skos:Concept ;
         "portada"@es,
         "lisaosa"@et,
         "azaleko testu"@eu,
+        "paratexto"@gl,
         "viðtexti"@is,
-        "outside matter"@it ;
+        "outside matter"@it,
+        "внешняя структура"@ru ;
     lexmeta:wikibaseEntity lexbib:Q14425 ;
+    skos:altLabel "все структурные части словаря, которые находятся за пределами макроструктуры, т.е. титульные элементы, приложения, иллюстративные вставки"@ru ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
 
 lexmeta:pronunciationKey a skos:Concept ;
@@ -6337,12 +6379,18 @@ lexmeta:pronunciationKey a skos:Concept ;
         "transcripción fonética"@es,
         "hääldusmärgid"@et,
         "ahoskera-gida"@eu,
+        "guía de pronuncia"@gl,
         "skýringar við hljóðtákn"@is,
         "chiave di pronuncia"@it,
         "tarimas"@lt,
-        "klucz do wymowy"@pl ;
+        "klucz do wymowy"@pl,
+        "simboluri fonetice"@ro,
+        "ключ к произношению"@ru,
+        "кључ за изговор"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14479 ;
-    skos:altLabel "udtalevejledning"@da ;
+    skos:altLabel "udtalevejledning"@da,
+        "guía de pronunciación"@gl,
+        "alfabet fonetic"@ro ;
     skos:definition "a table that translates the symbols used to represent speech sounds and gives representative words containing those speech sounds." ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
 
@@ -6615,7 +6663,8 @@ lexmeta:etymologicalInformation a skos:Concept ;
     skos:broader lexmeta:formalInformation ;
     skos:inScheme lexmeta:MicrostructureFeatureScheme .
 
-lexmeta:offlineDictionary a ms:DatasetDistributionForm ;
+lexmeta:offlineDictionary a ms:DatasetDistributionForm,
+        skos:Concept ;
     rdfs:label "diccionari offline"@ca,
         "offlineordbog"@da,
         "Offline-Wörterbuch"@de,
@@ -6897,15 +6946,22 @@ lexmeta:centralList a skos:Concept ;
         "central list"@en,
         "lista central"@es,
         "sõnaloend"@et,
+        "lemario"@gl,
         "flettiorðalisti"@is,
         "lista centrale"@it,
-        "pagrindinis žodyno tekstas"@lt ;
+        "pagrindinis žodyno tekstas"@lt,
+        "централен список"@mk,
+        "lista principală"@ro,
+        "реестр входных слов"@ru,
+        "централни списак"@sr ;
     lexmeta:wikibaseEntity lexbib:Q14490 ;
     skos:altLabel "cos"@ca,
         "liste over opslagsord"@da,
         "ordliste"@da,
         "märksõnaloend"@et,
-        "flettulisti"@is ;
+        "flettulisti"@is,
+        "listă generală"@ro,
+        "макроструктура"@ru ;
     skos:inScheme lexmeta:DictionaryTextPartScheme .
 
 lexmeta:dictionaryEntry a skos:Concept ;
