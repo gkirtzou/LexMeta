@@ -5708,7 +5708,7 @@ frbr:Work a owl:Class ;
     dct:creator "David Lindemann",
         "Penny Labropoulou" ;
     dct:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    dct:modified "2022-07-08T17:02:04" ;
+    dct:modified "2022-07-08T17:05:09" ;
     bibo:status "Draft" ;
     vann:preferredNamespacePrefix "lexmeta" ;
     vann:preferredNamespaceUri <http://w3id.org/meta-share/lexmeta/> ;
