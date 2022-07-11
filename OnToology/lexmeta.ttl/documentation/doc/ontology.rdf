@@ -14,9 +14,9 @@
      xmlns:lexmeta="http://w3id.org/meta-share/lexmeta/">
     <owl:Ontology rdf:about="http://w3id.org/meta-share/lexmeta">
         <owl:versionIRI rdf:resource="http://w3id.org/meta-share/lexmeta/0.0.1"/>
-        <dc:abstract xml:lang="en">LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records.</dc:abstract>
         <dc:description xml:lang="en">LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues.</dc:description>
         <dc:title xml:lang="en">LexMeta ontology</dc:title>
+        <terms:abstract xml:lang="en">LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records.</terms:abstract>
         <terms:contributor>Christiane Klaes</terms:contributor>
         <terms:contributor>Katerina Gkirtzou</terms:contributor>
         <terms:creator>David Lindemann</terms:creator>
@@ -42,13 +42,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/abstract -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/description -->
 
 
@@ -60,6 +53,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
