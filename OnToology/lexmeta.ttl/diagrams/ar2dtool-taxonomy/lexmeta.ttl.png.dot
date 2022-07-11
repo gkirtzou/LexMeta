@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "frbr:Expression" "ms:LexicalConceptualResource" "bibo:Document" "dcat:DatasetSeries" "ms:DatasetDistribution" "frbr:Work" "frbr:Endeavour" "frbr:Manifestation" "lexmeta:LCRSeries" ; /*classes style*/
+	"frbr:Expression" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+	"frbr:Manifestation" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+	"lexmeta:LCRSeries" -> "dcat:DatasetSeries" [ label = "rdfs:subClassOf" ];
+	"lexmeta:LCRSeries" -> "frbr:Work" [ label = "rdfs:subClassOf" ];
+	"rdfs:subClassOf" -> "lexbib:P4" [ label = "lexmeta:wikibaseEntity" ];
+	"rdfs:subClassOf" -> "wikidata:P279" [ label = "lexmeta:wikibaseEntity" ];
+	"rdfs:subClassOf" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"frbr:Work" -> "frbr:Endeavour" [ label = "rdfs:subClassOf" ];
+	"ms:DatasetDistribution" -> "frbr:Manifestation" [ label = "rdfs:subClassOf" ];
+	"ms:DatasetDistribution" -> "bibo:Document" [ label = "rdfs:subClassOf" ];
+	"ms:LexicalConceptualResource" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
+
+}
