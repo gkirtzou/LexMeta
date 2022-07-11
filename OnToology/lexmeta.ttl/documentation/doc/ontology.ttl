@@ -16,7 +16,7 @@
                                       <http://purl.org/dc/terms/creator> "David Lindemann" ,
                                                                          "Penny Labropoulou" ;
                                       <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                      <http://purl.org/dc/terms/modified> "2022-07-07T19:48:50" ;
+                                      <http://purl.org/dc/terms/modified> "2022-07-08T17:05:09" ;
                                       <http://purl.org/ontology/bibo/status> "Draft" ;
                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "lexmeta" ;
                                       <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/meta-share/lexmeta/> .
@@ -374,6 +374,10 @@
                                                          rdfs:domain <http://w3id.org/meta-share/meta-share/LexicalConceptualResource> .
 
 
+###  http://w3id.org/meta-share/meta-share/size
+<http://w3id.org/meta-share/meta-share/size> rdf:type owl:ObjectProperty .
+
+
 ###  http://w3id.org/meta-share/meta-share/sourceLanguage
 <http://w3id.org/meta-share/meta-share/sourceLanguage> rdf:type owl:ObjectProperty ;
                                                        rdfs:domain <http://w3id.org/meta-share/meta-share/LexicalConceptualResource> ;
@@ -458,10 +462,6 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
 ###  http://purl.org/ontology/bibo/volume
 <http://purl.org/ontology/bibo/volume> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <http://purl.org/ontology/bibo/Document> .
-
-
-###  http://w3id.org/meta-share/lexmeta/numberOfEntries
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> rdf:type owl:DatatypeProperty .
 
 
 ###  http://w3id.org/meta-share/meta-share/accessLocation
@@ -1265,15 +1265,23 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                            "back matter"@en ,
                                                            "bagtekst"@da ,
                                                            "baktexti"@is ,
+                                                           "materiale incluse la sfârșitul unei cărți"@ro ,
+                                                           "nawerk"@nl ,
+                                                           "posfacio"@gl ,
                                                            "postfazione"@it ,
                                                            "secciones posteriores"@es ,
                                                            "seccions posteriors"@ca ,
-                                                           "tagaosa"@et ;
+                                                           "tagaosa"@et ,
+                                                           "οπισθόφυλλο"@el ,
+                                                           "завршен дел"@mk ,
+                                                           "справочный аппарат словаря"@ru ;
                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "baigiamoji medžiaga"@lt ,
                                                                                                "järelsõna"@et ,
+                                                                                               "note"@ro ,
                                                                                                "secciones auxiliares"@es ,
                                                                                                "seccions auxiliars"@ca ,
-                                                                                               "testo di chiusura"@it .
+                                                                                               "testo di chiusura"@it ,
+                                                                                               "приложение"@ru .
 
 
 ###  http://w3id.org/meta-share/lexmeta/basicVocabularyDictionary
@@ -1389,8 +1397,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme> ;
                                             <http://www.w3.org/2004/02/skos/core#definition> "an expression (compound, derivative, or phrase) introduced into one language by translating its constituent parts from another language; for example, superman (English) from German Übermensch." ,
                                                                                              "word or expression adopted from a foreign language by translation of its constituent morphemes" ;
-                                            rdfs:label "Calco léxico"@gl ,
-                                                       "Importord"@nn ,
+                                            rdfs:label "Importord"@nn ,
                                                        "Kalk"@cs ,
                                                        "Kalk"@sk ,
                                                        "Lehnübersetzung"@de ,
@@ -1399,6 +1406,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                        "calc"@ro ,
                                                        "calco"@es ,
                                                        "calco"@it ,
+                                                       "calco léxico"@gl ,
                                                        "calque"@en ,
                                                        "calque"@fr ,
                                                        "calque"@pt ,
@@ -1416,20 +1424,23 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                        "översättningslån"@sv ,
                                                        "μεταφραστικό δάνειο"@el ,
                                                        "Калка"@bg ,
-                                                       "Калька"@ru ,
                                                        "калк"@sr ,
                                                        "калька"@be ,
+                                                       "калька"@ru ,
                                                        "калька"@uk ,
                                                        "преведеница"@mk ,
                                                        "תרגום שאילה"@he ;
                                             <http://www.w3.org/2004/02/skos/core#altLabel> "calc lingüístic"@ca ,
+                                                                                           "calco"@gl ,
                                                                                            "calco linguistico"@it ,
+                                                                                           "calque"@nl ,
                                                                                            "kalka"@et ,
                                                                                            "kalke"@da ,
                                                                                            "kalkė"@lt ,
                                                                                            "loan translation"@en ,
                                                                                            "préstamo"@es ,
-                                                                                           "sproglig kalke"@da .
+                                                                                           "sproglig kalke"@da ,
+                                                                                           "калькирование"@ru .
 
 
 ###  http://w3id.org/meta-share/lexmeta/case
@@ -1552,16 +1563,23 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                  rdfs:label "central list"@en ,
                                                             "cos del diccionari"@ca ,
                                                             "flettiorðalisti"@is ,
+                                                            "lemario"@gl ,
                                                             "lemmaliste"@da ,
                                                             "lista central"@es ,
                                                             "lista centrale"@it ,
+                                                            "lista principală"@ro ,
                                                             "pagrindinis žodyno tekstas"@lt ,
-                                                            "sõnaloend"@et ;
+                                                            "sõnaloend"@et ,
+                                                            "реестр входных слов"@ru ,
+                                                            "централен список"@mk ,
+                                                            "централни списак"@sr ;
                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "cos"@ca ,
                                                                                                 "flettulisti"@is ,
                                                                                                 "liste over opslagsord"@da ,
+                                                                                                "listă generală"@ro ,
                                                                                                 "märksõnaloend"@et ,
-                                                                                                "ordliste"@da .
+                                                                                                "ordliste"@da ,
+                                                                                                "макроструктура"@ru .
 
 
 ###  http://w3id.org/meta-share/lexmeta/childrensDictionary
@@ -2119,6 +2137,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                         "context"@ro ,
                                                         "contexte"@fr ,
                                                         "contexto"@es ,
+                                                        "contexto"@gl ,
                                                         "contexto"@pt ,
                                                         "kontekst"@da ,
                                                         "kontekst"@et ,
@@ -2754,7 +2773,8 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
 
 ###  http://w3id.org/meta-share/lexmeta/dictionaryBookPublication
 <http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> rdf:type owl:NamedIndividual ,
-                                                                        <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ;
+                                                                        <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ,
+                                                                        <http://www.w3.org/2004/02/skos/core#Concept> ;
                                                                <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q32770> ;
                                                                <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/paperDictionary> ;
                                                                <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme> ;
@@ -3019,9 +3039,14 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                             "direct entry"@it ,
                                                             "entrada directa"@ca ,
                                                             "entrada directa"@es ,
+                                                            "entrada directa guiada polo primeiro constituínte"@gl ,
                                                             "flerordsudtryk alfabetiseret efter første led"@da ,
+                                                            "intrare"@ro ,
                                                             "lemmaloend"@et ,
-                                                            "sarrera zuzen"@eu .
+                                                            "sarrera zuzen"@eu ,
+                                                            "директни унос"@sr ,
+                                                            "словарная статья, в которой входное слово представлено многословным выражением из которого во внимание берется только первый элемент"@ru ;
+                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "prima literă"@ro .
 
 
 ###  http://w3id.org/meta-share/lexmeta/directSense
@@ -3795,15 +3820,24 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                  <http://www.w3.org/2004/02/skos/core#definition> "the introductory material of a reference book prior to the wordlist, usually including a preface, explanatory notes, articles, pronunciation guide, abbreviations, and any other information on how to use the book; also called fore-matter." ;
                                                  rdfs:label "Titelei"@de ,
                                                             "aurreko gehigarri"@eu ,
+                                                            "boek ontwerp"@nl ,
                                                             "eessõna"@et ,
                                                             "fortekst"@da ,
                                                             "front matter"@en ,
+                                                            "informații incluse la începutul cărții"@ro ,
+                                                            "prefacio"@gl ,
                                                             "prefazione"@it ,
                                                             "preliminares"@es ,
                                                             "preliminars"@ca ,
-                                                            "įvadinė (žodyno, leidinio) dalis"@lt ;
-                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "esiosa"@et ,
-                                                                                                "presentazione"@it .
+                                                            "įvadinė (žodyno, leidinio) dalis"@lt ,
+                                                            "εισαγωγικό μέρος"@el ,
+                                                            "вступительная часть печатного издания"@ru ;
+                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "coperta 2"@ro ,
+                                                                                                "esiosa"@et ,
+                                                                                                "prelims"@nl ,
+                                                                                                "presentazione"@it ,
+                                                                                                "εισαγωγή"@el ,
+                                                                                                "титульные элементы книги"@ru .
 
 
 ###  http://w3id.org/meta-share/lexmeta/gender
@@ -4027,6 +4061,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme> ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "a word or part of a word printed at the top or bottom of a reference book page to indicate what entries are included on that page. Also in learners’ dictionaries, the list of words at the beginning of a long entry to aid the user to find the sense required." ;
                                                rdfs:label "Custos (könyvészet)"@hu ,
+                                                          "Cuvântul principal care apare pe fiecare pagină de dicționar indicând primul cuvânt de pe pagină și ultimul."@ro ,
                                                           "Kustosz"@pl ,
                                                           "Leitwort"@de ,
                                                           "custos"@nl ,
@@ -4037,13 +4072,14 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                           "kustod"@sv ,
                                                           "kustoda"@cs ,
                                                           "leiðsöguorð"@is ,
+                                                          "palabra guía"@gl ,
                                                           "puslapio antraštė"@lt ,
                                                           "reclam"@ca ,
                                                           "reclamo"@es ,
                                                           "réclame"@fr ,
                                                           "võtmesõna"@et ,
+                                                          "колонтитул"@ru ,
                                                           "кустода"@be ,
-                                                          "кустода"@ru ,
                                                           "кустос (у друкарстві)"@uk ,
                                                           "שומר הדף"@he ;
                                                <http://www.w3.org/2004/02/skos/core#altLabel> "betydningsoverskrift"@da ,
@@ -4287,6 +4323,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                       "esamolde"@eu ,
                                                       "espressione idiomatica"@it ,
                                                       "expresión idiomática"@es ,
+                                                      "expresión idiomática"@gl ,
                                                       "expressão idiomática"@pt ,
                                                       "fraseologism"@et ,
                                                       "frazeoloģisms"@lv ,
@@ -4319,6 +4356,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                                                           "expressió idiomàtica"@ca ,
                                                                                           "fast udtryk"@da ,
                                                                                           "fast vending"@da ,
+                                                                                          "frase feita"@gl ,
                                                                                           "frase feta"@ca ,
                                                                                           "frase hecha"@es ,
                                                                                           "idioma"@it ,
@@ -5209,6 +5247,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                   <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q14419> ;
                                                   <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme> ;
                                                   rdfs:label "appendice"@it ,
+                                                             "corpo do dicionario"@gl ,
                                                              "cos del diccionari"@ca ,
                                                              "cuerpo del diccionario"@es ,
                                                              "erdiko gehigarri"@eu ,
@@ -5216,7 +5255,9 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                              "meginmál"@is ,
                                                              "mellemtekst"@da ,
                                                              "middle matter"@en ,
-                                                             "papildoma iliustracinė medžiaga"@lt ;
+                                                             "papildoma  medžiaga"@lt ,
+                                                             "μεσοδομή"@el ,
+                                                             "макроструктура"@ru ;
                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "makroindskud"@da ,
                                                                                                  "vaheosa"@et .
 
@@ -5686,14 +5727,10 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://w3id.org/meta-share/meta-share/number> .
 
 
-###  http://w3id.org/meta-share/lexmeta/numberOfEntries
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> rdf:type owl:NamedIndividual ;
-                                                     <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P161> .
-
-
 ###  http://w3id.org/meta-share/lexmeta/offlineDictionary
 <http://w3id.org/meta-share/lexmeta/offlineDictionary> rdf:type owl:NamedIndividual ,
-                                                                <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ;
+                                                                <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ,
+                                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
                                                        <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q14304> ;
                                                        <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/electronicDictionary> ;
                                                        <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme> ,
@@ -6015,8 +6052,11 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                               "omtekst"@da ,
                                                               "outside matter"@en ,
                                                               "outside matter"@it ,
+                                                              "paratexto"@gl ,
                                                               "portada"@es ,
-                                                              "viðtexti"@is .
+                                                              "viðtexti"@is ,
+                                                              "внешняя структура"@ru ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "все структурные части словаря, которые находятся за пределами макроструктуры, т.е. титульные элементы, приложения, иллюстративные вставки"@ru .
 
 
 ###  http://w3id.org/meta-share/lexmeta/overallDescriptiveDictionary
@@ -6205,6 +6245,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                                       "lydskrift"@da ,
                                                                       "phonetic transcription"@en ,
                                                                       "phonetische Transkription"@de ,
+                                                                      "transcrición fonética"@gl ,
                                                                       "transcriere fonetică"@ro ,
                                                                       "transcripció fonètica"@ca ,
                                                                       "transcripción fonética"@es ,
@@ -6212,14 +6253,15 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                                       "transkrypcja fonetyczna"@pl ,
                                                                       "trascrizione fonetica"@it ,
                                                                       "φωνητική μεταγραφή"@el ,
-                                                                      "фонетический алфавит"@ru ,
+                                                                      "фонетическая транскрипция"@ru ,
                                                                       "фонетична абетка"@uk ,
                                                                       "фонетична азбука"@bg ,
                                                                       "фонетска транскрипција"@sr ,
                                                                       "אלפבית פונטי"@he ;
                                                            <http://www.w3.org/2004/02/skos/core#altLabel> "alfabeto fonético"@es ,
                                                                                                           "fonetisk transskription"@da ,
-                                                                                                          "phonetic alphabet"@en ;
+                                                                                                          "phonetic alphabet"@en ,
+                                                                                                          "фонетический алфавит"@ru ;
                                                            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://w3id.org/meta-share/meta-share/transcription> .
 
 
@@ -6608,15 +6650,21 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                       <http://www.w3.org/2004/02/skos/core#definition> "a table that translates the symbols used to represent speech sounds and gives representative words containing those speech sounds." ;
                                                       rdfs:label "ahoskera-gida"@eu ,
                                                                  "chiave di pronuncia"@it ,
+                                                                 "guía de pronuncia"@gl ,
                                                                  "hääldusmärgid"@et ,
                                                                  "klucz do wymowy"@pl ,
                                                                  "lydskriftoversigt"@da ,
                                                                  "pronunciation key"@en ,
+                                                                 "simboluri fonetice"@ro ,
                                                                  "skýringar við hljóðtákn"@is ,
                                                                  "tarimas"@lt ,
                                                                  "transcripció fonètica"@ca ,
-                                                                 "transcripción fonética"@es ;
-                                                      <http://www.w3.org/2004/02/skos/core#altLabel> "udtalevejledning"@da .
+                                                                 "transcripción fonética"@es ,
+                                                                 "ключ к произношению"@ru ,
+                                                                 "кључ за изговор"@sr ;
+                                                      <http://www.w3.org/2004/02/skos/core#altLabel> "alfabet fonetic"@ro ,
+                                                                                                     "guía de pronunciación"@gl ,
+                                                                                                     "udtalevejledning"@da .
 
 
 ###  http://w3id.org/meta-share/lexmeta/proscriptiveDictionary
@@ -6649,6 +6697,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                         "patarlė, priežodis"@lt ,
                                                         "proverb"@en ,
                                                         "proverb"@ro ,
+                                                        "proverbio"@gl ,
                                                         "proverbio"@it ,
                                                         "przysłowie"@pl ,
                                                         "qawl"@mt ,
@@ -6665,6 +6714,7 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
                                                                                             "adage"@en ,
                                                                                             "detto"@it ,
                                                                                             "dita"@ca ,
+                                                                                            "dito"@gl ,
                                                                                             "errefrau"@eu ,
                                                                                             "esaera zahar"@eu ,
                                                                                             "orðskviður"@is ,
@@ -8697,7 +8747,8 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
 
 ###  http://w3id.org/meta-share/lexmeta/wikisourceTranscription
 <http://w3id.org/meta-share/lexmeta/wikisourceTranscription> rdf:type owl:NamedIndividual ,
-                                                                      <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ;
+                                                                      <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> ,
+                                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
                                                              <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q24187> ;
                                                              <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/dictionaryAccessibleThroughInterface> ;
                                                              <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme> ;
@@ -9115,6 +9166,11 @@ rdfs:subClassOf rdf:type owl:ObjectProperty .
 ###  http://w3id.org/meta-share/meta-share/resourceProvider
 <http://w3id.org/meta-share/meta-share/resourceProvider> rdf:type owl:NamedIndividual ;
                                                          <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P157> .
+
+
+###  http://w3id.org/meta-share/meta-share/size
+<http://w3id.org/meta-share/meta-share/size> rdf:type owl:NamedIndividual ;
+                                             <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P161> .
 
 
 ###  http://w3id.org/meta-share/meta-share/sourceLanguage
@@ -11180,7 +11236,7 @@ rdfs:subClassOf rdf:type owl:NamedIndividual ;
 #    Annotations
 #################################################################
 
-<http://w3id.org/meta-share/lexmeta/LCRSeries> rdfs:label "Work"@en .
+<http://w3id.org/meta-share/lexmeta/LCRSeries> rdfs:label "LCR Series"@en .
 
 
 <http://w3id.org/meta-share/lexmeta/dictionaryAccessType> rdfs:label "dictionary access type"@en .
@@ -11203,9 +11259,6 @@ rdfs:subClassOf rdf:type owl:NamedIndividual ;
 
 
 <http://w3id.org/meta-share/lexmeta/microstructureFeature> rdfs:label "microstructure feature"@en .
-
-
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> rdfs:label "number of entries"@en .
 
 
 <http://w3id.org/meta-share/lexmeta/wikibaseEntity> rdfs:comment "Points to an equivalent entity described on wikidata or another wikibase."@en ;

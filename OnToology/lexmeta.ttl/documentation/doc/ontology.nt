@@ -8,7 +8,7 @@
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/creator> "David Lindemann" .
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/creator> "Penny Labropoulou" .
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/modified> "2022-07-07T19:48:50" .
+<http://w3id.org/meta-share/lexmeta> <http://purl.org/dc/terms/modified> "2022-07-08T17:05:09" .
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/ontology/bibo/status> "Draft" .
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lexmeta" .
 <http://w3id.org/meta-share/lexmeta> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/meta-share/lexmeta/> .
@@ -359,6 +359,9 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/meta-share/resourceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/meta-share/meta-share/resourceProvider> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/meta-share/meta-share/LexicalConceptualResource> .
 # 
+# http://w3id.org/meta-share/meta-share/size
+<http://w3id.org/meta-share/meta-share/size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://w3id.org/meta-share/meta-share/sourceLanguage
 <http://w3id.org/meta-share/meta-share/sourceLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://w3id.org/meta-share/meta-share/sourceLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/meta-share/meta-share/LexicalConceptualResource> .
@@ -431,9 +434,6 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://purl.org/ontology/bibo/volume
 <http://purl.org/ontology/bibo/volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/ontology/bibo/volume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bibo/Document> .
-# 
-# http://w3id.org/meta-share/lexmeta/numberOfEntries
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://w3id.org/meta-share/meta-share/accessLocation
 <http://w3id.org/meta-share/meta-share/accessLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1267,15 +1267,23 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "back matter"@en .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "bagtekst"@da .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "baktexti"@is .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "materiale incluse la sfârșitul unei cărți"@ro .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "nawerk"@nl .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "posfacio"@gl .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "postfazione"@it .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "secciones posteriores"@es .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "seccions posteriors"@ca .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "tagaosa"@et .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "οπισθόφυλλο"@el .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "завршен дел"@mk .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2000/01/rdf-schema#label> "справочный аппарат словаря"@ru .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "baigiamoji medžiaga"@lt .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "järelsõna"@et .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "note"@ro .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "secciones auxiliares"@es .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "seccions auxiliars"@ca .
 <http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "testo di chiusura"@it .
+<http://w3id.org/meta-share/lexmeta/backMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "приложение"@ru .
 # 
 # http://w3id.org/meta-share/lexmeta/basicVocabularyDictionary
 <http://w3id.org/meta-share/lexmeta/basicVocabularyDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1396,7 +1404,6 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme> .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#definition> "an expression (compound, derivative, or phrase) introduced into one language by translating its constituent parts from another language; for example, superman (English) from German Übermensch." .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#definition> "word or expression adopted from a foreign language by translation of its constituent morphemes" .
-<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Calco léxico"@gl .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Importord"@nn .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Kalk"@cs .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Kalk"@sk .
@@ -1406,6 +1413,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calc"@ro .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calco"@es .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calco"@it .
+<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calco léxico"@gl .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calque"@en .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calque"@fr .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "calque"@pt .
@@ -1423,20 +1431,23 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "översättningslån"@sv .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "μεταφραστικό δάνειο"@el .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Калка"@bg .
-<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "Калька"@ru .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "калк"@sr .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "калька"@be .
+<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "калька"@ru .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "калька"@uk .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "преведеница"@mk .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2000/01/rdf-schema#label> "תרגום שאילה"@he .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "calc lingüístic"@ca .
+<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "calco"@gl .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "calco linguistico"@it .
+<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "calque"@nl .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "kalka"@et .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "kalke"@da .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "kalkė"@lt .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "loan translation"@en .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "préstamo"@es .
 <http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "sproglig kalke"@da .
+<http://w3id.org/meta-share/lexmeta/calque> <http://www.w3.org/2004/02/skos/core#altLabel> "калькирование"@ru .
 # 
 # http://w3id.org/meta-share/lexmeta/case
 <http://w3id.org/meta-share/lexmeta/case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1560,16 +1571,23 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "central list"@en .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "cos del diccionari"@ca .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "flettiorðalisti"@is .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "lemario"@gl .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "lemmaliste"@da .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "lista central"@es .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "lista centrale"@it .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "lista principală"@ro .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "pagrindinis žodyno tekstas"@lt .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "sõnaloend"@et .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "реестр входных слов"@ru .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "централен список"@mk .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2000/01/rdf-schema#label> "централни списак"@sr .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "cos"@ca .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "flettulisti"@is .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "liste over opslagsord"@da .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "listă generală"@ro .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "märksõnaloend"@et .
 <http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "ordliste"@da .
+<http://w3id.org/meta-share/lexmeta/centralList> <http://www.w3.org/2004/02/skos/core#altLabel> "макроструктура"@ru .
 # 
 # http://w3id.org/meta-share/lexmeta/childrensDictionary
 <http://w3id.org/meta-share/lexmeta/childrensDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2136,6 +2154,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "context"@ro .
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "contexte"@fr .
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "contexto"@es .
+<http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "contexto"@gl .
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "contexto"@pt .
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "kontekst"@da .
 <http://w3id.org/meta-share/lexmeta/context> <http://www.w3.org/2000/01/rdf-schema#label> "kontekst"@et .
@@ -2781,6 +2800,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://w3id.org/meta-share/lexmeta/dictionaryBookPublication
 <http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> .
+<http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q32770> .
 <https://lexbib.elex.is/entity/Q32770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/dictionaryBookPublication> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/paperDictionary> .
@@ -3048,9 +3068,14 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "direct entry"@it .
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada directa"@ca .
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada directa"@es .
+<http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada directa guiada polo primeiro constituínte"@gl .
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "flerordsudtryk alfabetiseret efter første led"@da .
+<http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "intrare"@ro .
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lemmaloend"@et .
 <http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "sarrera zuzen"@eu .
+<http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "директни унос"@sr .
+<http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2000/01/rdf-schema#label> "словарная статья, в которой входное слово представлено многословным выражением из которого во внимание берется только первый элемент"@ru .
+<http://w3id.org/meta-share/lexmeta/directEntry> <http://www.w3.org/2004/02/skos/core#altLabel> "prima literă"@ro .
 # 
 # http://w3id.org/meta-share/lexmeta/directSense
 <http://w3id.org/meta-share/lexmeta/directSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3827,15 +3852,24 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#definition> "the introductory material of a reference book prior to the wordlist, usually including a preface, explanatory notes, articles, pronunciation guide, abbreviations, and any other information on how to use the book; also called fore-matter." .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "Titelei"@de .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "aurreko gehigarri"@eu .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "boek ontwerp"@nl .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "eessõna"@et .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "fortekst"@da .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "front matter"@en .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "informații incluse la începutul cărții"@ro .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "prefacio"@gl .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "prefazione"@it .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "preliminares"@es .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "preliminars"@ca .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "įvadinė (žodyno, leidinio) dalis"@lt .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "εισαγωγικό μέρος"@el .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2000/01/rdf-schema#label> "вступительная часть печатного издания"@ru .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "coperta 2"@ro .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "esiosa"@et .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "prelims"@nl .
 <http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "presentazione"@it .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "εισαγωγή"@el .
+<http://w3id.org/meta-share/lexmeta/frontMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "титульные элементы книги"@ru .
 # 
 # http://w3id.org/meta-share/lexmeta/gender
 <http://w3id.org/meta-share/lexmeta/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4063,6 +4097,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme> .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2004/02/skos/core#definition> "a word or part of a word printed at the top or bottom of a reference book page to indicate what entries are included on that page. Also in learners’ dictionaries, the list of words at the beginning of a long entry to aid the user to find the sense required." .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "Custos (könyvészet)"@hu .
+<http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "Cuvântul principal care apare pe fiecare pagină de dicționar indicând primul cuvânt de pe pagină și ultimul."@ro .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "Kustosz"@pl .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "Leitwort"@de .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "custos"@nl .
@@ -4073,13 +4108,14 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "kustod"@sv .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "kustoda"@cs .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "leiðsöguorð"@is .
+<http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "palabra guía"@gl .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "puslapio antraštė"@lt .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "reclam"@ca .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "reclamo"@es .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "réclame"@fr .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "võtmesõna"@et .
+<http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "колонтитул"@ru .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "кустода"@be .
-<http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "кустода"@ru .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "кустос (у друкарстві)"@uk .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2000/01/rdf-schema#label> "שומר הדף"@he .
 <http://w3id.org/meta-share/lexmeta/guideWord> <http://www.w3.org/2004/02/skos/core#altLabel> "betydningsoverskrift"@da .
@@ -4328,6 +4364,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "esamolde"@eu .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "espressione idiomatica"@it .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "expresión idiomática"@es .
+<http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "expresión idiomática"@gl .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "expressão idiomática"@pt .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "fraseologism"@et .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2000/01/rdf-schema#label> "frazeoloģisms"@lv .
@@ -4360,6 +4397,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "expressió idiomàtica"@ca .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "fast udtryk"@da .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "fast vending"@da .
+<http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "frase feita"@gl .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "frase feta"@ca .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "frase hecha"@es .
 <http://w3id.org/meta-share/lexmeta/idiom> <http://www.w3.org/2004/02/skos/core#altLabel> "idioma"@it .
@@ -5259,6 +5297,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://lexbib.elex.is/entity/Q14419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme> .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "appendice"@it .
+<http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "corpo do dicionario"@gl .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "cos del diccionari"@ca .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "cuerpo del diccionario"@es .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "erdiko gehigarri"@eu .
@@ -5266,7 +5305,9 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "meginmál"@is .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "mellemtekst"@da .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "middle matter"@en .
-<http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "papildoma iliustracinė medžiaga"@lt .
+<http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "papildoma  medžiaga"@lt .
+<http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "μεσοδομή"@el .
+<http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2000/01/rdf-schema#label> "макроструктура"@ru .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "makroindskud"@da .
 <http://w3id.org/meta-share/lexmeta/middleMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "vaheosa"@et .
 # 
@@ -5738,14 +5779,10 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/number> <http://www.w3.org/2004/02/skos/core#altLabel> "número"@es .
 <http://w3id.org/meta-share/lexmeta/number> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://w3id.org/meta-share/meta-share/number> .
 # 
-# http://w3id.org/meta-share/lexmeta/numberOfEntries
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P161> .
-<https://lexbib.elex.is/entity/P161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
 # http://w3id.org/meta-share/lexmeta/offlineDictionary
 <http://w3id.org/meta-share/lexmeta/offlineDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> .
 <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/lexmeta/offlineDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/lexmeta/offlineDictionary> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q14304> .
 <https://lexbib.elex.is/entity/Q14304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/offlineDictionary> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/electronicDictionary> .
@@ -6070,8 +6107,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "omtekst"@da .
 <http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "outside matter"@en .
 <http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "outside matter"@it .
+<http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "paratexto"@gl .
 <http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "portada"@es .
 <http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "viðtexti"@is .
+<http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2000/01/rdf-schema#label> "внешняя структура"@ru .
+<http://w3id.org/meta-share/lexmeta/outsideMatter> <http://www.w3.org/2004/02/skos/core#altLabel> "все структурные части словаря, которые находятся за пределами макроструктуры, т.е. титульные элементы, приложения, иллюстративные вставки"@ru .
 # 
 # http://w3id.org/meta-share/lexmeta/overallDescriptiveDictionary
 <http://w3id.org/meta-share/lexmeta/overallDescriptiveDictionary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6261,6 +6301,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "lydskrift"@da .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "phonetic transcription"@en .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "phonetische Transkription"@de .
+<http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "transcrición fonética"@gl .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "transcriere fonetică"@ro .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "transcripció fonètica"@ca .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "transcripción fonética"@es .
@@ -6268,7 +6309,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "transkrypcja fonetyczna"@pl .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "trascrizione fonetica"@it .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "φωνητική μεταγραφή"@el .
-<http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "фонетический алфавит"@ru .
+<http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "фонетическая транскрипция"@ru .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "фонетична абетка"@uk .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "фонетична азбука"@bg .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2000/01/rdf-schema#label> "фонетска транскрипција"@sr .
@@ -6276,6 +6317,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2004/02/skos/core#altLabel> "alfabeto fonético"@es .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2004/02/skos/core#altLabel> "fonetisk transskription"@da .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2004/02/skos/core#altLabel> "phonetic alphabet"@en .
+<http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2004/02/skos/core#altLabel> "фонетический алфавит"@ru .
 <http://w3id.org/meta-share/lexmeta/phoneticTranscription> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://w3id.org/meta-share/meta-share/transcription> .
 # 
 # http://w3id.org/meta-share/lexmeta/phonologicDictionary
@@ -6665,14 +6707,20 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2004/02/skos/core#definition> "a table that translates the symbols used to represent speech sounds and gives representative words containing those speech sounds." .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "ahoskera-gida"@eu .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "chiave di pronuncia"@it .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "guía de pronuncia"@gl .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "hääldusmärgid"@et .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "klucz do wymowy"@pl .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "lydskriftoversigt"@da .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "pronunciation key"@en .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "simboluri fonetice"@ro .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "skýringar við hljóðtákn"@is .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "tarimas"@lt .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "transcripció fonètica"@ca .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "transcripción fonética"@es .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "ключ к произношению"@ru .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2000/01/rdf-schema#label> "кључ за изговор"@sr .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2004/02/skos/core#altLabel> "alfabet fonetic"@ro .
+<http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2004/02/skos/core#altLabel> "guía de pronunciación"@gl .
 <http://w3id.org/meta-share/lexmeta/pronunciationKey> <http://www.w3.org/2004/02/skos/core#altLabel> "udtalevejledning"@da .
 # 
 # http://w3id.org/meta-share/lexmeta/proscriptiveDictionary
@@ -6706,6 +6754,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "patarlė, priežodis"@lt .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "proverb"@en .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "proverb"@ro .
+<http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "proverbio"@gl .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "proverbio"@it .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "przysłowie"@pl .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2000/01/rdf-schema#label> "qawl"@mt .
@@ -6722,6 +6771,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "adage"@en .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "detto"@it .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "dita"@ca .
+<http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "dito"@gl .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "errefrau"@eu .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "esaera zahar"@eu .
 <http://w3id.org/meta-share/lexmeta/proverb> <http://www.w3.org/2004/02/skos/core#altLabel> "orðskviður"@is .
@@ -8766,6 +8816,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://w3id.org/meta-share/lexmeta/wikisourceTranscription
 <http://w3id.org/meta-share/lexmeta/wikisourceTranscription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/wikisourceTranscription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/meta-share/meta-share/DatasetDistributionForm> .
+<http://w3id.org/meta-share/lexmeta/wikisourceTranscription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://w3id.org/meta-share/lexmeta/wikisourceTranscription> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/Q24187> .
 <https://lexbib.elex.is/entity/Q24187> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/lexmeta/wikisourceTranscription> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/meta-share/lexmeta/dictionaryAccessibleThroughInterface> .
@@ -9183,6 +9234,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/meta-share/resourceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://w3id.org/meta-share/meta-share/resourceProvider> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P157> .
 <https://lexbib.elex.is/entity/P157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://w3id.org/meta-share/meta-share/size
+<http://w3id.org/meta-share/meta-share/size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/meta-share/meta-share/size> <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <https://lexbib.elex.is/entity/P161> .
+<https://lexbib.elex.is/entity/P161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://w3id.org/meta-share/meta-share/sourceLanguage
 <http://w3id.org/meta-share/meta-share/sourceLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -10255,7 +10311,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-<http://w3id.org/meta-share/lexmeta/LCRSeries> <http://www.w3.org/2000/01/rdf-schema#label> "Work"@en .
+<http://w3id.org/meta-share/lexmeta/LCRSeries> <http://www.w3.org/2000/01/rdf-schema#label> "LCR Series"@en .
 # 
 <http://w3id.org/meta-share/lexmeta/dictionaryAccessType> <http://www.w3.org/2000/01/rdf-schema#label> "dictionary access type"@en .
 # 
@@ -10271,8 +10327,6 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://w3id.org/meta-share/lexmeta/lexicographicalProcessType> <http://www.w3.org/2000/01/rdf-schema#label> "lexicographical process type"@en .
 # 
 <http://w3id.org/meta-share/lexmeta/microstructureFeature> <http://www.w3.org/2000/01/rdf-schema#label> "microstructure feature"@en .
-# 
-<http://w3id.org/meta-share/lexmeta/numberOfEntries> <http://www.w3.org/2000/01/rdf-schema#label> "number of entries"@en .
 # 
 <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to an equivalent entity described on wikidata or another wikibase."@en .
 <http://w3id.org/meta-share/lexmeta/wikibaseEntity> <http://www.w3.org/2000/01/rdf-schema#label> "wikibase entity"@en .
