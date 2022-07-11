@@ -5,7 +5,7 @@
       "@type" : "@id"
     },
     "abstract" : {
-      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+      "@id" : "http://purl.org/dc/terms/abstract"
     },
     "resourceCreator" : {
       "@id" : "http://w3id.org/meta-share/meta-share/resourceCreator",

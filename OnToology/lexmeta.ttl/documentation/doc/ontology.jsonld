@@ -146,9 +146,6 @@
     "@id" : "https://schema.org/Place"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -162,6 +159,9 @@
   }, {
     "@id" : "https://lexbib.elex.is/entity/Q8"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -465,10 +465,6 @@
 }, {
   "@id" : "http://w3id.org/meta-share/lexmeta",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/abstract" : [ {
-    "@language" : "en",
-    "@value" : "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."
-  } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
     "@value" : "LexMeta, a metadata model for the description of human-readable and computational lexical resources in catalogues."
@@ -476,6 +472,10 @@
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
     "@value" : "LexMeta ontology"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "LexMeta is a metadata model for the description of human-readable and computational lexical resources in catalogues. Our initial motivation is the extension of the LexBib knowledge graph with the addition of metadata for dictionaries, making it a catalogue of and about lexicographical works. The scope of the proposed model, however, is broader, aiming at the exchange of metadata with catalogues of Language Resources and Technologies and addressing a wider community of researchers besides lexicographers. For the definition of the LexMeta core classes and properties, we deploy widely used RDF vocabularies, mainly Meta-Share, a metadata model for Language Resources and Technologies, and FRBR, a model for bibliographic records."
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Christiane Klaes"
