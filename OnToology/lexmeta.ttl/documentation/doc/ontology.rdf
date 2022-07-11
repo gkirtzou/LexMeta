@@ -22,7 +22,7 @@
         <terms:creator>David Lindemann</terms:creator>
         <terms:creator>Penny Labropoulou</terms:creator>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified>2022-07-07T19:48:50</terms:modified>
+        <terms:modified>2022-07-08T17:05:09</terms:modified>
         <bibo:status>Draft</bibo:status>
         <vann:preferredNamespacePrefix>lexmeta</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/meta-share/lexmeta/"/>
@@ -622,6 +622,13 @@
     
 
 
+    <!-- http://w3id.org/meta-share/meta-share/size -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/meta-share/meta-share/size"/>
+    
+
+
     <!-- http://w3id.org/meta-share/meta-share/sourceLanguage -->
 
 
@@ -775,13 +782,6 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/volume">
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://w3id.org/meta-share/lexmeta/numberOfEntries -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/meta-share/lexmeta/numberOfEntries"/>
     
 
 
@@ -1910,15 +1910,23 @@
         <rdfs:label xml:lang="en">back matter</rdfs:label>
         <rdfs:label xml:lang="da">bagtekst</rdfs:label>
         <rdfs:label xml:lang="is">baktexti</rdfs:label>
+        <rdfs:label xml:lang="ro">materiale incluse la sfârșitul unei cărți</rdfs:label>
+        <rdfs:label xml:lang="nl">nawerk</rdfs:label>
+        <rdfs:label xml:lang="gl">posfacio</rdfs:label>
         <rdfs:label xml:lang="it">postfazione</rdfs:label>
         <rdfs:label xml:lang="es">secciones posteriores</rdfs:label>
         <rdfs:label xml:lang="ca">seccions posteriors</rdfs:label>
         <rdfs:label xml:lang="et">tagaosa</rdfs:label>
+        <rdfs:label xml:lang="el">οπισθόφυλλο</rdfs:label>
+        <rdfs:label xml:lang="mk">завршен дел</rdfs:label>
+        <rdfs:label xml:lang="ru">справочный аппарат словаря</rdfs:label>
         <skos:altLabel xml:lang="lt">baigiamoji medžiaga</skos:altLabel>
         <skos:altLabel xml:lang="et">järelsõna</skos:altLabel>
+        <skos:altLabel xml:lang="ro">note</skos:altLabel>
         <skos:altLabel xml:lang="es">secciones auxiliares</skos:altLabel>
         <skos:altLabel xml:lang="ca">seccions auxiliars</skos:altLabel>
         <skos:altLabel xml:lang="it">testo di chiusura</skos:altLabel>
+        <skos:altLabel xml:lang="ru">приложение</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -2054,7 +2062,6 @@
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme"/>
         <skos:definition>an expression (compound, derivative, or phrase) introduced into one language by translating its constituent parts from another language; for example, superman (English) from German Übermensch.</skos:definition>
         <skos:definition>word or expression adopted from a foreign language by translation of its constituent morphemes</skos:definition>
-        <rdfs:label xml:lang="gl">Calco léxico</rdfs:label>
         <rdfs:label xml:lang="nn">Importord</rdfs:label>
         <rdfs:label xml:lang="cs">Kalk</rdfs:label>
         <rdfs:label xml:lang="sk">Kalk</rdfs:label>
@@ -2064,6 +2071,7 @@
         <rdfs:label xml:lang="ro">calc</rdfs:label>
         <rdfs:label xml:lang="es">calco</rdfs:label>
         <rdfs:label xml:lang="it">calco</rdfs:label>
+        <rdfs:label xml:lang="gl">calco léxico</rdfs:label>
         <rdfs:label xml:lang="en">calque</rdfs:label>
         <rdfs:label xml:lang="fr">calque</rdfs:label>
         <rdfs:label xml:lang="pt">calque</rdfs:label>
@@ -2081,20 +2089,23 @@
         <rdfs:label xml:lang="sv">översättningslån</rdfs:label>
         <rdfs:label xml:lang="el">μεταφραστικό δάνειο</rdfs:label>
         <rdfs:label xml:lang="bg">Калка</rdfs:label>
-        <rdfs:label xml:lang="ru">Калька</rdfs:label>
         <rdfs:label xml:lang="sr">калк</rdfs:label>
         <rdfs:label xml:lang="be">калька</rdfs:label>
+        <rdfs:label xml:lang="ru">калька</rdfs:label>
         <rdfs:label xml:lang="uk">калька</rdfs:label>
         <rdfs:label xml:lang="mk">преведеница</rdfs:label>
         <rdfs:label xml:lang="he">תרגום שאילה</rdfs:label>
         <skos:altLabel xml:lang="ca">calc lingüístic</skos:altLabel>
+        <skos:altLabel xml:lang="gl">calco</skos:altLabel>
         <skos:altLabel xml:lang="it">calco linguistico</skos:altLabel>
+        <skos:altLabel xml:lang="nl">calque</skos:altLabel>
         <skos:altLabel xml:lang="et">kalka</skos:altLabel>
         <skos:altLabel xml:lang="da">kalke</skos:altLabel>
         <skos:altLabel xml:lang="lt">kalkė</skos:altLabel>
         <skos:altLabel xml:lang="en">loan translation</skos:altLabel>
         <skos:altLabel xml:lang="es">préstamo</skos:altLabel>
         <skos:altLabel xml:lang="da">sproglig kalke</skos:altLabel>
+        <skos:altLabel xml:lang="ru">калькирование</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -2233,16 +2244,23 @@
         <rdfs:label xml:lang="en">central list</rdfs:label>
         <rdfs:label xml:lang="ca">cos del diccionari</rdfs:label>
         <rdfs:label xml:lang="is">flettiorðalisti</rdfs:label>
+        <rdfs:label xml:lang="gl">lemario</rdfs:label>
         <rdfs:label xml:lang="da">lemmaliste</rdfs:label>
         <rdfs:label xml:lang="es">lista central</rdfs:label>
         <rdfs:label xml:lang="it">lista centrale</rdfs:label>
+        <rdfs:label xml:lang="ro">lista principală</rdfs:label>
         <rdfs:label xml:lang="lt">pagrindinis žodyno tekstas</rdfs:label>
         <rdfs:label xml:lang="et">sõnaloend</rdfs:label>
+        <rdfs:label xml:lang="ru">реестр входных слов</rdfs:label>
+        <rdfs:label xml:lang="mk">централен список</rdfs:label>
+        <rdfs:label xml:lang="sr">централни списак</rdfs:label>
         <skos:altLabel xml:lang="ca">cos</skos:altLabel>
         <skos:altLabel xml:lang="is">flettulisti</skos:altLabel>
         <skos:altLabel xml:lang="da">liste over opslagsord</skos:altLabel>
+        <skos:altLabel xml:lang="ro">listă generală</skos:altLabel>
         <skos:altLabel xml:lang="et">märksõnaloend</skos:altLabel>
         <skos:altLabel xml:lang="da">ordliste</skos:altLabel>
+        <skos:altLabel xml:lang="ru">макроструктура</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -2872,6 +2890,7 @@
         <rdfs:label xml:lang="ro">context</rdfs:label>
         <rdfs:label xml:lang="fr">contexte</rdfs:label>
         <rdfs:label xml:lang="es">contexto</rdfs:label>
+        <rdfs:label xml:lang="gl">contexto</rdfs:label>
         <rdfs:label xml:lang="pt">contexto</rdfs:label>
         <rdfs:label xml:lang="da">kontekst</rdfs:label>
         <rdfs:label xml:lang="et">kontekst</rdfs:label>
@@ -3588,6 +3607,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryBookPublication">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/Q32770"/>
         <skos:broader rdf:resource="http://w3id.org/meta-share/lexmeta/paperDictionary"/>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme"/>
@@ -3920,9 +3940,14 @@
         <rdfs:label xml:lang="it">direct entry</rdfs:label>
         <rdfs:label xml:lang="ca">entrada directa</rdfs:label>
         <rdfs:label xml:lang="es">entrada directa</rdfs:label>
+        <rdfs:label xml:lang="gl">entrada directa guiada polo primeiro constituínte</rdfs:label>
         <rdfs:label xml:lang="da">flerordsudtryk alfabetiseret efter første led</rdfs:label>
+        <rdfs:label xml:lang="ro">intrare</rdfs:label>
         <rdfs:label xml:lang="et">lemmaloend</rdfs:label>
         <rdfs:label xml:lang="eu">sarrera zuzen</rdfs:label>
+        <rdfs:label xml:lang="sr">директни унос</rdfs:label>
+        <rdfs:label xml:lang="ru">словарная статья, в которой входное слово представлено многословным выражением из которого во внимание берется только первый элемент</rdfs:label>
+        <skos:altLabel xml:lang="ro">prima literă</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4812,15 +4837,24 @@
         <skos:definition>the introductory material of a reference book prior to the wordlist, usually including a preface, explanatory notes, articles, pronunciation guide, abbreviations, and any other information on how to use the book; also called fore-matter.</skos:definition>
         <rdfs:label xml:lang="de">Titelei</rdfs:label>
         <rdfs:label xml:lang="eu">aurreko gehigarri</rdfs:label>
+        <rdfs:label xml:lang="nl">boek ontwerp</rdfs:label>
         <rdfs:label xml:lang="et">eessõna</rdfs:label>
         <rdfs:label xml:lang="da">fortekst</rdfs:label>
         <rdfs:label xml:lang="en">front matter</rdfs:label>
+        <rdfs:label xml:lang="ro">informații incluse la începutul cărții</rdfs:label>
+        <rdfs:label xml:lang="gl">prefacio</rdfs:label>
         <rdfs:label xml:lang="it">prefazione</rdfs:label>
         <rdfs:label xml:lang="es">preliminares</rdfs:label>
         <rdfs:label xml:lang="ca">preliminars</rdfs:label>
         <rdfs:label xml:lang="lt">įvadinė (žodyno, leidinio) dalis</rdfs:label>
+        <rdfs:label xml:lang="el">εισαγωγικό μέρος</rdfs:label>
+        <rdfs:label xml:lang="ru">вступительная часть печатного издания</rdfs:label>
+        <skos:altLabel xml:lang="ro">coperta 2</skos:altLabel>
         <skos:altLabel xml:lang="et">esiosa</skos:altLabel>
+        <skos:altLabel xml:lang="nl">prelims</skos:altLabel>
         <skos:altLabel xml:lang="it">presentazione</skos:altLabel>
+        <skos:altLabel xml:lang="el">εισαγωγή</skos:altLabel>
+        <skos:altLabel xml:lang="ru">титульные элементы книги</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5068,6 +5102,7 @@
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"/>
         <skos:definition>a word or part of a word printed at the top or bottom of a reference book page to indicate what entries are included on that page. Also in learners’ dictionaries, the list of words at the beginning of a long entry to aid the user to find the sense required.</skos:definition>
         <rdfs:label xml:lang="hu">Custos (könyvészet)</rdfs:label>
+        <rdfs:label xml:lang="ro">Cuvântul principal care apare pe fiecare pagină de dicționar indicând primul cuvânt de pe pagină și ultimul.</rdfs:label>
         <rdfs:label xml:lang="pl">Kustosz</rdfs:label>
         <rdfs:label xml:lang="de">Leitwort</rdfs:label>
         <rdfs:label xml:lang="nl">custos</rdfs:label>
@@ -5078,13 +5113,14 @@
         <rdfs:label xml:lang="sv">kustod</rdfs:label>
         <rdfs:label xml:lang="cs">kustoda</rdfs:label>
         <rdfs:label xml:lang="is">leiðsöguorð</rdfs:label>
+        <rdfs:label xml:lang="gl">palabra guía</rdfs:label>
         <rdfs:label xml:lang="lt">puslapio antraštė</rdfs:label>
         <rdfs:label xml:lang="ca">reclam</rdfs:label>
         <rdfs:label xml:lang="es">reclamo</rdfs:label>
         <rdfs:label xml:lang="fr">réclame</rdfs:label>
         <rdfs:label xml:lang="et">võtmesõna</rdfs:label>
+        <rdfs:label xml:lang="ru">колонтитул</rdfs:label>
         <rdfs:label xml:lang="be">кустода</rdfs:label>
-        <rdfs:label xml:lang="ru">кустода</rdfs:label>
         <rdfs:label xml:lang="uk">кустос (у друкарстві)</rdfs:label>
         <rdfs:label xml:lang="he">שומר הדף</rdfs:label>
         <skos:altLabel xml:lang="da">betydningsoverskrift</skos:altLabel>
@@ -5368,6 +5404,7 @@
         <rdfs:label xml:lang="eu">esamolde</rdfs:label>
         <rdfs:label xml:lang="it">espressione idiomatica</rdfs:label>
         <rdfs:label xml:lang="es">expresión idiomática</rdfs:label>
+        <rdfs:label xml:lang="gl">expresión idiomática</rdfs:label>
         <rdfs:label xml:lang="pt">expressão idiomática</rdfs:label>
         <rdfs:label xml:lang="et">fraseologism</rdfs:label>
         <rdfs:label xml:lang="lv">frazeoloģisms</rdfs:label>
@@ -5400,6 +5437,7 @@
         <skos:altLabel xml:lang="ca">expressió idiomàtica</skos:altLabel>
         <skos:altLabel xml:lang="da">fast udtryk</skos:altLabel>
         <skos:altLabel xml:lang="da">fast vending</skos:altLabel>
+        <skos:altLabel xml:lang="gl">frase feita</skos:altLabel>
         <skos:altLabel xml:lang="ca">frase feta</skos:altLabel>
         <skos:altLabel xml:lang="es">frase hecha</skos:altLabel>
         <skos:altLabel xml:lang="it">idioma</skos:altLabel>
@@ -6418,6 +6456,7 @@
         <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/Q14419"/>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"/>
         <rdfs:label xml:lang="it">appendice</rdfs:label>
+        <rdfs:label xml:lang="gl">corpo do dicionario</rdfs:label>
         <rdfs:label xml:lang="ca">cos del diccionari</rdfs:label>
         <rdfs:label xml:lang="es">cuerpo del diccionario</rdfs:label>
         <rdfs:label xml:lang="eu">erdiko gehigarri</rdfs:label>
@@ -6425,7 +6464,9 @@
         <rdfs:label xml:lang="is">meginmál</rdfs:label>
         <rdfs:label xml:lang="da">mellemtekst</rdfs:label>
         <rdfs:label xml:lang="en">middle matter</rdfs:label>
-        <rdfs:label xml:lang="lt">papildoma iliustracinė medžiaga</rdfs:label>
+        <rdfs:label xml:lang="lt">papildoma  medžiaga</rdfs:label>
+        <rdfs:label xml:lang="el">μεσοδομή</rdfs:label>
+        <rdfs:label xml:lang="ru">макроструктура</rdfs:label>
         <skos:altLabel xml:lang="da">makroindskud</skos:altLabel>
         <skos:altLabel xml:lang="et">vaheosa</skos:altLabel>
     </owl:NamedIndividual>
@@ -6949,20 +6990,12 @@
     
 
 
-    <!-- http://w3id.org/meta-share/lexmeta/numberOfEntries -->
-
-
-    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/numberOfEntries">
-        <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/P161"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://w3id.org/meta-share/lexmeta/offlineDictionary -->
 
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/offlineDictionary">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/Q14304"/>
         <skos:broader rdf:resource="http://w3id.org/meta-share/lexmeta/electronicDictionary"/>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme"/>
@@ -7320,8 +7353,11 @@
         <rdfs:label xml:lang="da">omtekst</rdfs:label>
         <rdfs:label xml:lang="en">outside matter</rdfs:label>
         <rdfs:label xml:lang="it">outside matter</rdfs:label>
+        <rdfs:label xml:lang="gl">paratexto</rdfs:label>
         <rdfs:label xml:lang="es">portada</rdfs:label>
         <rdfs:label xml:lang="is">viðtexti</rdfs:label>
+        <rdfs:label xml:lang="ru">внешняя структура</rdfs:label>
+        <skos:altLabel xml:lang="ru">все структурные части словаря, которые находятся за пределами макроструктуры, т.е. титульные элементы, приложения, иллюстративные вставки</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -7542,6 +7578,7 @@
         <rdfs:label xml:lang="da">lydskrift</rdfs:label>
         <rdfs:label xml:lang="en">phonetic transcription</rdfs:label>
         <rdfs:label xml:lang="de">phonetische Transkription</rdfs:label>
+        <rdfs:label xml:lang="gl">transcrición fonética</rdfs:label>
         <rdfs:label xml:lang="ro">transcriere fonetică</rdfs:label>
         <rdfs:label xml:lang="ca">transcripció fonètica</rdfs:label>
         <rdfs:label xml:lang="es">transcripción fonética</rdfs:label>
@@ -7549,7 +7586,7 @@
         <rdfs:label xml:lang="pl">transkrypcja fonetyczna</rdfs:label>
         <rdfs:label xml:lang="it">trascrizione fonetica</rdfs:label>
         <rdfs:label xml:lang="el">φωνητική μεταγραφή</rdfs:label>
-        <rdfs:label xml:lang="ru">фонетический алфавит</rdfs:label>
+        <rdfs:label xml:lang="ru">фонетическая транскрипция</rdfs:label>
         <rdfs:label xml:lang="uk">фонетична абетка</rdfs:label>
         <rdfs:label xml:lang="bg">фонетична азбука</rdfs:label>
         <rdfs:label xml:lang="sr">фонетска транскрипција</rdfs:label>
@@ -7557,6 +7594,7 @@
         <skos:altLabel xml:lang="es">alfabeto fonético</skos:altLabel>
         <skos:altLabel xml:lang="da">fonetisk transskription</skos:altLabel>
         <skos:altLabel xml:lang="en">phonetic alphabet</skos:altLabel>
+        <skos:altLabel xml:lang="ru">фонетический алфавит</skos:altLabel>
         <skos:exactMatch rdf:resource="http://w3id.org/meta-share/meta-share/transcription"/>
     </owl:NamedIndividual>
     
@@ -8001,14 +8039,20 @@
         <skos:definition>a table that translates the symbols used to represent speech sounds and gives representative words containing those speech sounds.</skos:definition>
         <rdfs:label xml:lang="eu">ahoskera-gida</rdfs:label>
         <rdfs:label xml:lang="it">chiave di pronuncia</rdfs:label>
+        <rdfs:label xml:lang="gl">guía de pronuncia</rdfs:label>
         <rdfs:label xml:lang="et">hääldusmärgid</rdfs:label>
         <rdfs:label xml:lang="pl">klucz do wymowy</rdfs:label>
         <rdfs:label xml:lang="da">lydskriftoversigt</rdfs:label>
         <rdfs:label xml:lang="en">pronunciation key</rdfs:label>
+        <rdfs:label xml:lang="ro">simboluri fonetice</rdfs:label>
         <rdfs:label xml:lang="is">skýringar við hljóðtákn</rdfs:label>
         <rdfs:label xml:lang="lt">tarimas</rdfs:label>
         <rdfs:label xml:lang="ca">transcripció fonètica</rdfs:label>
         <rdfs:label xml:lang="es">transcripción fonética</rdfs:label>
+        <rdfs:label xml:lang="ru">ключ к произношению</rdfs:label>
+        <rdfs:label xml:lang="sr">кључ за изговор</rdfs:label>
+        <skos:altLabel xml:lang="ro">alfabet fonetic</skos:altLabel>
+        <skos:altLabel xml:lang="gl">guía de pronunciación</skos:altLabel>
         <skos:altLabel xml:lang="da">udtalevejledning</skos:altLabel>
     </owl:NamedIndividual>
     
@@ -8050,6 +8094,7 @@
         <rdfs:label xml:lang="lt">patarlė, priežodis</rdfs:label>
         <rdfs:label xml:lang="en">proverb</rdfs:label>
         <rdfs:label xml:lang="ro">proverb</rdfs:label>
+        <rdfs:label xml:lang="gl">proverbio</rdfs:label>
         <rdfs:label xml:lang="it">proverbio</rdfs:label>
         <rdfs:label xml:lang="pl">przysłowie</rdfs:label>
         <rdfs:label xml:lang="mt">qawl</rdfs:label>
@@ -8066,6 +8111,7 @@
         <skos:altLabel xml:lang="en">adage</skos:altLabel>
         <skos:altLabel xml:lang="it">detto</skos:altLabel>
         <skos:altLabel xml:lang="ca">dita</skos:altLabel>
+        <skos:altLabel xml:lang="gl">dito</skos:altLabel>
         <skos:altLabel xml:lang="eu">errefrau</skos:altLabel>
         <skos:altLabel xml:lang="eu">esaera zahar</skos:altLabel>
         <skos:altLabel xml:lang="is">orðskviður</skos:altLabel>
@@ -10419,6 +10465,7 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/lexmeta/wikisourceTranscription">
         <rdf:type rdf:resource="http://w3id.org/meta-share/meta-share/DatasetDistributionForm"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/Q24187"/>
         <skos:broader rdf:resource="http://w3id.org/meta-share/lexmeta/dictionaryAccessibleThroughInterface"/>
         <skos:inScheme rdf:resource="http://w3id.org/meta-share/lexmeta/DatasetDistributionFormScheme"/>
@@ -10991,6 +11038,15 @@
 
     <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/resourceProvider">
         <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/P157"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/meta-share/meta-share/size -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/meta-share/meta-share/size">
+        <lexmeta:wikibaseEntity rdf:resource="https://lexbib.elex.is/entity/P161"/>
     </owl:NamedIndividual>
     
 
@@ -14608,7 +14664,7 @@
 
 
     <rdf:Description rdf:about="http://w3id.org/meta-share/lexmeta/LCRSeries">
-        <rdfs:label xml:lang="en">Work</rdfs:label>
+        <rdfs:label xml:lang="en">LCR Series</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/lexmeta/dictionaryAccessType">
         <rdfs:label xml:lang="en">dictionary access type</rdfs:label>
@@ -14631,9 +14687,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/lexmeta/microstructureFeature">
         <rdfs:label xml:lang="en">microstructure feature</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://w3id.org/meta-share/lexmeta/numberOfEntries">
-        <rdfs:label xml:lang="en">number of entries</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/meta-share/lexmeta/wikibaseEntity">
         <rdfs:comment xml:lang="en">Points to an equivalent entity described on wikidata or another wikibase.</rdfs:comment>
