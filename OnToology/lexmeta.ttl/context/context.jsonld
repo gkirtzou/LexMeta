@@ -88,9 +88,6 @@
     "Endeavour" : {
       "@id" : "http://purl.org/vocab/frbr/core#Endeavour"
     },
-    "numberOfEntries" : {
-      "@id" : "http://w3id.org/meta-share/lexmeta/numberOfEntries"
-    },
     "hasPart" : {
       "@id" : "http://w3id.org/meta-share/meta-share/hasPart",
       "@type" : "@id"
@@ -267,6 +264,10 @@
     },
     "cites" : {
       "@id" : "http://purl.org/ontology/bibo/cites",
+      "@type" : "@id"
+    },
+    "size" : {
+      "@id" : "http://w3id.org/meta-share/meta-share/size",
       "@type" : "@id"
     },
     "isRelatedToLR" : {

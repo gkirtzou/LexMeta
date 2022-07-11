@@ -491,7 +491,7 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2022-07-07T19:48:50"
+    "@value" : "2022-07-08T17:05:09"
   } ],
   "http://purl.org/ontology/bibo/status" : [ {
     "@value" : "Draft"
@@ -614,7 +614,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Work"
+    "@value" : "LCR Series"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/frbr/core#Work"
@@ -1815,6 +1815,15 @@
     "@language" : "is",
     "@value" : "baktexti"
   }, {
+    "@language" : "ro",
+    "@value" : "materiale incluse la sfârșitul unei cărți"
+  }, {
+    "@language" : "nl",
+    "@value" : "nawerk"
+  }, {
+    "@language" : "gl",
+    "@value" : "posfacio"
+  }, {
     "@language" : "it",
     "@value" : "postfazione"
   }, {
@@ -1826,6 +1835,15 @@
   }, {
     "@language" : "et",
     "@value" : "tagaosa"
+  }, {
+    "@language" : "el",
+    "@value" : "οπισθόφυλλο"
+  }, {
+    "@language" : "mk",
+    "@value" : "завршен дел"
+  }, {
+    "@language" : "ru",
+    "@value" : "справочный аппарат словаря"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "lt",
@@ -1833,6 +1851,9 @@
   }, {
     "@language" : "et",
     "@value" : "järelsõna"
+  }, {
+    "@language" : "ro",
+    "@value" : "note"
   }, {
     "@language" : "es",
     "@value" : "secciones auxiliares"
@@ -1842,6 +1863,9 @@
   }, {
     "@language" : "it",
     "@value" : "testo di chiusura"
+  }, {
+    "@language" : "ru",
+    "@value" : "приложение"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"
@@ -2133,9 +2157,6 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "gl",
-    "@value" : "Calco léxico"
-  }, {
     "@language" : "nn",
     "@value" : "Importord"
   }, {
@@ -2162,6 +2183,9 @@
   }, {
     "@language" : "it",
     "@value" : "calco"
+  }, {
+    "@language" : "gl",
+    "@value" : "calco léxico"
   }, {
     "@language" : "en",
     "@value" : "calque"
@@ -2214,13 +2238,13 @@
     "@language" : "bg",
     "@value" : "Калка"
   }, {
-    "@language" : "ru",
-    "@value" : "Калька"
-  }, {
     "@language" : "sr",
     "@value" : "калк"
   }, {
     "@language" : "be",
+    "@value" : "калька"
+  }, {
+    "@language" : "ru",
     "@value" : "калька"
   }, {
     "@language" : "uk",
@@ -2236,8 +2260,14 @@
     "@language" : "ca",
     "@value" : "calc lingüístic"
   }, {
+    "@language" : "gl",
+    "@value" : "calco"
+  }, {
     "@language" : "it",
     "@value" : "calco linguistico"
+  }, {
+    "@language" : "nl",
+    "@value" : "calque"
   }, {
     "@language" : "et",
     "@value" : "kalka"
@@ -2256,6 +2286,9 @@
   }, {
     "@language" : "da",
     "@value" : "sproglig kalke"
+  }, {
+    "@language" : "ru",
+    "@value" : "калькирование"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/etymologicalInformation"
@@ -2598,6 +2631,9 @@
     "@language" : "is",
     "@value" : "flettiorðalisti"
   }, {
+    "@language" : "gl",
+    "@value" : "lemario"
+  }, {
     "@language" : "da",
     "@value" : "lemmaliste"
   }, {
@@ -2607,11 +2643,23 @@
     "@language" : "it",
     "@value" : "lista centrale"
   }, {
+    "@language" : "ro",
+    "@value" : "lista principală"
+  }, {
     "@language" : "lt",
     "@value" : "pagrindinis žodyno tekstas"
   }, {
     "@language" : "et",
     "@value" : "sõnaloend"
+  }, {
+    "@language" : "ru",
+    "@value" : "реестр входных слов"
+  }, {
+    "@language" : "mk",
+    "@value" : "централен список"
+  }, {
+    "@language" : "sr",
+    "@value" : "централни списак"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "ca",
@@ -2623,11 +2671,17 @@
     "@language" : "da",
     "@value" : "liste over opslagsord"
   }, {
+    "@language" : "ro",
+    "@value" : "listă generală"
+  }, {
     "@language" : "et",
     "@value" : "märksõnaloend"
   }, {
     "@language" : "da",
     "@value" : "ordliste"
+  }, {
+    "@language" : "ru",
+    "@value" : "макроструктура"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"
@@ -4150,6 +4204,9 @@
     "@value" : "contexte"
   }, {
     "@language" : "es",
+    "@value" : "contexto"
+  }, {
+    "@language" : "gl",
     "@value" : "contexto"
   }, {
     "@language" : "pt",
@@ -5923,6 +5980,8 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistributionForm"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6599,14 +6658,30 @@
     "@language" : "es",
     "@value" : "entrada directa"
   }, {
+    "@language" : "gl",
+    "@value" : "entrada directa guiada polo primeiro constituínte"
+  }, {
     "@language" : "da",
     "@value" : "flerordsudtryk alfabetiseret efter første led"
+  }, {
+    "@language" : "ro",
+    "@value" : "intrare"
   }, {
     "@language" : "et",
     "@value" : "lemmaloend"
   }, {
     "@language" : "eu",
     "@value" : "sarrera zuzen"
+  }, {
+    "@language" : "sr",
+    "@value" : "директни унос"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарная статья, в которой входное слово представлено многословным выражением из которого во внимание берется только первый элемент"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "prima literă"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/dictionaryEntry"
@@ -8700,6 +8775,9 @@
     "@language" : "eu",
     "@value" : "aurreko gehigarri"
   }, {
+    "@language" : "nl",
+    "@value" : "boek ontwerp"
+  }, {
     "@language" : "et",
     "@value" : "eessõna"
   }, {
@@ -8708,6 +8786,12 @@
   }, {
     "@language" : "en",
     "@value" : "front matter"
+  }, {
+    "@language" : "ro",
+    "@value" : "informații incluse la începutul cărții"
+  }, {
+    "@language" : "gl",
+    "@value" : "prefacio"
   }, {
     "@language" : "it",
     "@value" : "prefazione"
@@ -8720,13 +8804,31 @@
   }, {
     "@language" : "lt",
     "@value" : "įvadinė (žodyno, leidinio) dalis"
+  }, {
+    "@language" : "el",
+    "@value" : "εισαγωγικό μέρος"
+  }, {
+    "@language" : "ru",
+    "@value" : "вступительная часть печатного издания"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "coperta 2"
+  }, {
     "@language" : "et",
     "@value" : "esiosa"
   }, {
+    "@language" : "nl",
+    "@value" : "prelims"
+  }, {
     "@language" : "it",
     "@value" : "presentazione"
+  }, {
+    "@language" : "el",
+    "@value" : "εισαγωγή"
+  }, {
+    "@language" : "ru",
+    "@value" : "титульные элементы книги"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "the introductory material of a reference book prior to the wordlist, usually including a preface, explanatory notes, articles, pronunciation guide, abbreviations, and any other information on how to use the book; also called fore-matter."
@@ -9347,6 +9449,9 @@
     "@language" : "hu",
     "@value" : "Custos (könyvészet)"
   }, {
+    "@language" : "ro",
+    "@value" : "Cuvântul principal care apare pe fiecare pagină de dicționar indicând primul cuvânt de pe pagină și ultimul."
+  }, {
     "@language" : "pl",
     "@value" : "Kustosz"
   }, {
@@ -9377,6 +9482,9 @@
     "@language" : "is",
     "@value" : "leiðsöguorð"
   }, {
+    "@language" : "gl",
+    "@value" : "palabra guía"
+  }, {
     "@language" : "lt",
     "@value" : "puslapio antraštė"
   }, {
@@ -9392,10 +9500,10 @@
     "@language" : "et",
     "@value" : "võtmesõna"
   }, {
-    "@language" : "be",
-    "@value" : "кустода"
-  }, {
     "@language" : "ru",
+    "@value" : "колонтитул"
+  }, {
+    "@language" : "be",
     "@value" : "кустода"
   }, {
     "@language" : "uk",
@@ -10047,6 +10155,9 @@
     "@language" : "es",
     "@value" : "expresión idiomática"
   }, {
+    "@language" : "gl",
+    "@value" : "expresión idiomática"
+  }, {
     "@language" : "pt",
     "@value" : "expressão idiomática"
   }, {
@@ -10143,6 +10254,9 @@
   }, {
     "@language" : "da",
     "@value" : "fast vending"
+  }, {
+    "@language" : "gl",
+    "@value" : "frase feita"
   }, {
     "@language" : "ca",
     "@value" : "frase feta"
@@ -12602,6 +12716,9 @@
     "@language" : "it",
     "@value" : "appendice"
   }, {
+    "@language" : "gl",
+    "@value" : "corpo do dicionario"
+  }, {
     "@language" : "ca",
     "@value" : "cos del diccionari"
   }, {
@@ -12624,7 +12741,13 @@
     "@value" : "middle matter"
   }, {
     "@language" : "lt",
-    "@value" : "papildoma iliustracinė medžiaga"
+    "@value" : "papildoma  medžiaga"
+  }, {
+    "@language" : "el",
+    "@value" : "μεσοδομή"
+  }, {
+    "@language" : "ru",
+    "@value" : "макроструктура"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "da",
@@ -13926,16 +14049,6 @@
     "@id" : "http://w3id.org/meta-share/lexmeta/MicrostructureFeatureScheme"
   } ]
 }, {
-  "@id" : "http://w3id.org/meta-share/lexmeta/numberOfEntries",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
-    "@id" : "https://lexbib.elex.is/entity/P161"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "number of entries"
-  } ]
-}, {
   "@id" : "http://w3id.org/meta-share/lexmeta/offlineDictionary",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
@@ -13943,6 +14056,8 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistributionForm"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "et",
@@ -14829,11 +14944,21 @@
     "@language" : "it",
     "@value" : "outside matter"
   }, {
+    "@language" : "gl",
+    "@value" : "paratexto"
+  }, {
     "@language" : "es",
     "@value" : "portada"
   }, {
     "@language" : "is",
     "@value" : "viðtexti"
+  }, {
+    "@language" : "ru",
+    "@value" : "внешняя структура"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ru",
+    "@value" : "все структурные части словаря, которые находятся за пределами макроструктуры, т.е. титульные элементы, приложения, иллюстративные вставки"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/DictionaryTextPartScheme"
@@ -15331,6 +15456,9 @@
     "@language" : "de",
     "@value" : "phonetische Transkription"
   }, {
+    "@language" : "gl",
+    "@value" : "transcrición fonética"
+  }, {
     "@language" : "ro",
     "@value" : "transcriere fonetică"
   }, {
@@ -15353,7 +15481,7 @@
     "@value" : "φωνητική μεταγραφή"
   }, {
     "@language" : "ru",
-    "@value" : "фонетический алфавит"
+    "@value" : "фонетическая транскрипция"
   }, {
     "@language" : "uk",
     "@value" : "фонетична абетка"
@@ -15376,6 +15504,9 @@
   }, {
     "@language" : "en",
     "@value" : "phonetic alphabet"
+  }, {
+    "@language" : "ru",
+    "@value" : "фонетический алфавит"
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://w3id.org/meta-share/lexmeta/pronunciation"
@@ -16432,6 +16563,9 @@
     "@language" : "it",
     "@value" : "chiave di pronuncia"
   }, {
+    "@language" : "gl",
+    "@value" : "guía de pronuncia"
+  }, {
     "@language" : "et",
     "@value" : "hääldusmärgid"
   }, {
@@ -16444,6 +16578,9 @@
     "@language" : "en",
     "@value" : "pronunciation key"
   }, {
+    "@language" : "ro",
+    "@value" : "simboluri fonetice"
+  }, {
     "@language" : "is",
     "@value" : "skýringar við hljóðtákn"
   }, {
@@ -16455,8 +16592,20 @@
   }, {
     "@language" : "es",
     "@value" : "transcripción fonética"
+  }, {
+    "@language" : "ru",
+    "@value" : "ключ к произношению"
+  }, {
+    "@language" : "sr",
+    "@value" : "кључ за изговор"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "ro",
+    "@value" : "alfabet fonetic"
+  }, {
+    "@language" : "gl",
+    "@value" : "guía de pronunciación"
+  }, {
     "@language" : "da",
     "@value" : "udtalevejledning"
   } ],
@@ -16536,6 +16685,9 @@
     "@language" : "ro",
     "@value" : "proverb"
   }, {
+    "@language" : "gl",
+    "@value" : "proverbio"
+  }, {
     "@language" : "it",
     "@value" : "proverbio"
   }, {
@@ -16584,6 +16736,9 @@
   }, {
     "@language" : "ca",
     "@value" : "dita"
+  }, {
+    "@language" : "gl",
+    "@value" : "dito"
   }, {
     "@language" : "eu",
     "@value" : "errefrau"
@@ -22074,6 +22229,8 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/DatasetDistributionForm"
+  }, {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -23126,6 +23283,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://w3id.org/meta-share/meta-share/LexicalConceptualResource"
+  } ]
+}, {
+  "@id" : "http://w3id.org/meta-share/meta-share/size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://w3id.org/meta-share/lexmeta/wikibaseEntity" : [ {
+    "@id" : "https://lexbib.elex.is/entity/P161"
   } ]
 }, {
   "@id" : "http://w3id.org/meta-share/meta-share/sourceLanguage",
